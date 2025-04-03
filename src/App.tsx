@@ -4,7 +4,7 @@ import ArticleCard from './components/ArticleCard';
 import SearchBar from './components/SearchBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NewPage from './articles/GoogleSucks'; // Removed .tsx extension
-import HomePage from '../src/'; // Ensure this is the correct path
+import HomePage from './src/App.tsx'; // Ensure this is the correct path
 
 const App: React.FC = () => {
   const [articles] = useState([
