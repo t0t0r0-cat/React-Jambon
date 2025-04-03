@@ -1,7 +1,7 @@
 // src/components/Navbar.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';  // Import the CSS for Navbar styles
+import './App.css';  // Import the CSS for Navbar styles
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
