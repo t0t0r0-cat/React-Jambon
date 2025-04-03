@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import ArticleCard from './components/ArticleCard';
 import SearchBar from './components/SearchBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NewPage from './articles/GoogleSucks'; // Removed .tsx extension
-import HomePage from './src/App.tsx'; // Ensure this is the correct path
+import NewPage from './articles/GoogleSucks';
 
 const App: React.FC = () => {
   const [articles] = useState([
@@ -33,6 +32,7 @@ const App: React.FC = () => {
 
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
+  // Search handler to filter articles based on query
   const handleSearch = (query: string) => {
     const filtered = articles.filter((article) =>
       article.title.toLowerCase().includes(query.toLowerCase())
@@ -45,21 +45,29 @@ const App: React.FC = () => {
       <div className="app">
         <h1>Journal Etudiant</h1>
         <h2>La maison de jambon</h2>
+
+        {/* Search Bar */}
         <SearchBar onSearch={handleSearch} />
+        
+        {/* Article List */}
         <div className="article-list">
-          {filteredArticles.map((article, index) => (
-            <ArticleCard
-              key={index}
-              title={article.title}
-              description={article.description}
-              imageUrl={article.imageUrl}
-              articleUrl={article.articleUrl || ''}
-            />
-          ))}
+          {filteredArticles.length > 0 ? (
+            filteredArticles.map((article, index) => (
+              <ArticleCard
+                key={index}
+                title={article.title}
+                description={article.description}
+                imageUrl={article.imageUrl}
+                articleUrl={article.articleUrl || ''}
+              />
+            ))
+          ) : (
+            <p>No articles found</p>
+          )}
         </div>
 
+        {/* Routing */}
         <Routes>
-          <Route path="/" element={<HomePage />} />
           <Route path="/newpage/:id" element={<NewPage />} />
         </Routes>
       </div>
