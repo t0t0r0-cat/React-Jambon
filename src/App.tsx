@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import ArticleCard from './components/ArticleCard';
 import SearchBar from './components/SearchBar';
+import Navbar from './components/Navbar'; 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NewPage from './articles/GoogleSucks';
 
@@ -45,6 +46,7 @@ const App: React.FC = () => {
       <div className="app">
         <h1>Journal Etudiant</h1>
         <h2>La maison de jambon</h2>
+
 
         {/* Search Bar */}
         <SearchBar onSearch={handleSearch} />
