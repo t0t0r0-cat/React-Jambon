@@ -8,70 +8,78 @@
     background-color: #333;
     padding: 10px 20px;
     color: white;
-  }
-  
-  .navbar .logo a {
+    position: fixed; /* Make navbar fixed at the top */
+    top: 0;          /* Position it at the top of the screen */
+    left: 0;         /* Align to the left */
+    right: 0;        /* Align to the right */
+    z-index: 1000;   /* Ensure it's above other content */
+    width: 100%;     /* Ensure the navbar spans the full width */
+    box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+.navbar .logo a {
     text-decoration: none;
     color: white;
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  .nav-links {
+    background-color: #333;
+    box-shadow: #333;
+}
+
+.nav-links {
     display: flex;
     gap: 20px;
-  }
-  
-  /* Hide the nav-links on mobile initially */
-  .nav-links li {
+}
+
+/* Hide the nav-links on mobile initially */
+.nav-links li {
     list-style-type: none;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-  }
-  
-  /* Styles for the hamburger icon (menu button on small screens) */
-  .menu-toggle {
+}
+
+/* Styles for the hamburger icon (menu button on small screens) */
+.menu-toggle {
     display: none;
     font-size: 30px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-  }
-  
-  /* Media Query for small screens (mobile) */
-  @media (max-width: 768px) {
+}
+
+/* Media Query for small screens (mobile) */
+@media (max-width: 768px) {
     /* Display the menu button (hamburger) */
     .menu-toggle {
-      display: block;
+        display: block;
     }
-  
+
     /* Hide the nav-links by default */
     .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
     }
-  
+
     /* Show the nav-links when the menu is open */
     .nav-links.active {
-      display: flex;
+        display: flex;
     }
-  
+
     /* Styling for each item in the mobile menu */
     .nav-links a {
-      padding: 10px;
-      text-align: center;
-      width: 100%;
-      display: block;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        display: block;
     }
-  }
-  
+}

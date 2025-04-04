@@ -24,7 +24,8 @@ const Navbar: React.FC = () => {
       {/* Navigation links */}
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li>
-          <Link to="/">Home</Link> {/* Home link */}
+          <Link to="/">|Home|</Link> {/* Home link */}
+          <Link to="https://www.google.com">|Don't|</Link>
         </li>
       </ul>
     </nav>

@@ -20,8 +20,8 @@ const App: React.FC = () => {
       imageUrl: 'https://via.placeholder.com/400x200?text=Article+2',
     },
     {
-      title: 'Article 3',
-      description: 'Description of article 3',
+      title: 'Google sucks',
+      description: 'Dont click here its going to steal your data',
       imageUrl: 'https://tse3.mm.bing.net/th?id=OIP.pmvwb_-_CO2vH-pU7ZMHkQHaEo&pid=Api',
       articleUrl: 'https://www.google.com',
     },
@@ -52,6 +52,9 @@ const App: React.FC = () => {
           {/* Home route */}
           <Route path="/" element={
             <div>
+              <br></br>
+              <br></br>
+              <br></br>
               <h1>Journal Etudiant</h1>
               <h2>La maison de jambon</h2>
 
