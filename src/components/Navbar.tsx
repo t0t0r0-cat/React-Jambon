@@ -1,7 +1,6 @@
-// src/components/Navbar.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './src/App.css';  // Import the CSS for Navbar styles
+import './Navbar.css'; // Import the CSS for Navbar styles
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,13 +24,7 @@ const Navbar: React.FC = () => {
       {/* Navigation links */}
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/">Home</Link> {/* Home link */}
         </li>
       </ul>
     </nav>

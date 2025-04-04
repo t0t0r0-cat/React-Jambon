@@ -1,21 +1,24 @@
-// src/components/ArticleCard.tsx
 import React from 'react';
 
-interface ArticleProps {
+interface ArticleCardProps {
   title: string;
   description: string;
   imageUrl: string;
   articleUrl: string;
 }
 
-const ArticleCard: React.FC<ArticleProps> = ({ title, description, imageUrl }) => {
+const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl, articleUrl }) => {
   return (
-    <a href="{articleUrl}" >
-    <div className="article-card"> 
-      <img src={imageUrl} alt={title} className="article-image" />
+    <div className="article-card">
+      <img src={imageUrl} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
-      </div></a>
+      {articleUrl && (
+        <a href={articleUrl} target="_blank" rel="noopener noreferrer">
+          Read more
+        </a>
+      )}
+    </div>
   );
 };
 
