@@ -56,7 +56,7 @@ const App: React.FC = () => {
               <br></br>
               <br></br>
               <br></br>
-              <h1>Journal Etudiant</h1>
+              <h1>Eco de l'île</h1>
               <h2>La maison de jambon</h2>
               <br></br>
               <p>L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les élèves. Bonne lecture :)</p>

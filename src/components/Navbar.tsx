@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">Journal Etudiant</Link>
+        <Link to="/">Eco de l'île</Link>
       </div>
 
       {/* Toggle menu button for mobile */}

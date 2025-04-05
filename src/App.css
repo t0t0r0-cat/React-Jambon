@@ -32,24 +32,30 @@ body {
 
 .search-bar {
   margin-bottom: 20px;
-  display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .search-bar input {
-  padding: 8px;
+  padding: 10px;
+  padding-left: 50px;
   font-size: 16px;
   color: white;
+  align: center;
+  
 }
 
 .search-bar button {
-  padding: 8px 12px;
+  padding: 12px;
   cursor: pointer;
   background-color: #333;
   color: white;
   border: none;
   font-size: 16px;
+  align-items: center;
+  border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .article-list {
