@@ -12,7 +12,7 @@ const ArticleCard: React.FC<ArticleProps> = ({ title, description, imageUrl }) =
   return (
     <a href="{articleUrl}" >
     <div className="article-card"> 
-      <img src="{imageUrl}" alt="{title}" className="article-image" />
+      <img src={imageUrl} alt={title} className="article-image" />
       <h3>{title}</h3>
       <p>{description}</p>
       </div></a>

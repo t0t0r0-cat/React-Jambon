@@ -21,9 +21,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         type="text"
         value={query}
         onChange={handleChange}
-        placeholder="Search for articles"
+        placeholder="Tout trouver"
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch}>Chercher nos articles</button>
     </div>
   );
 };

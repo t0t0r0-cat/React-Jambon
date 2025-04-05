@@ -13,6 +13,7 @@ const App: React.FC = () => {
       title: 'Article 1',
       description: 'Description of article 1',
       imageUrl: 'https://via.placeholder.com/400x200?text=Article+1',
+      articleUrl: './src/articles/Googlesucks.tsx'
     },
     {
       title: 'Article 2',
@@ -57,6 +58,11 @@ const App: React.FC = () => {
               <br></br>
               <h1>Journal Etudiant</h1>
               <h2>La maison de jambon</h2>
+              <br></br>
+              <p>L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les élèves. Bonne lecture :)</p>
+              <br></br>
+              <br></br>
+              <br></br>
 
               {/* Search bar component */}
               <SearchBar onSearch={handleSearch} />
@@ -64,16 +70,17 @@ const App: React.FC = () => {
               {/* Article list */}
               <div className="article-list">
                 {filteredArticles.map((article, index) => (
-                  <ArticleCard
+                  <><ArticleCard
                     key={index}
                     title={article.title}
                     description={article.description}
                     imageUrl={article.imageUrl}
-                    articleUrl={article.articleUrl || ''}
-                  />
+                    articleUrl={article.articleUrl || ''} /></>
                 ))}
               </div>
+              <br></br>
             </div>
+            
           } />
 
           {/* Route for NewPage */}
