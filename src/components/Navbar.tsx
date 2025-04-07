@@ -17,9 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
 
   return (
     <nav className="navbar">
-      <div className="logo">
-        <Link to="/">Éco de l'île</Link>
-      </div>
+       <a href="/" className="brand">Éco de l'île</a>
       <div className="navbar-search-bar-container">
         <SearchBar onSearch={onSearch} />
       </div>

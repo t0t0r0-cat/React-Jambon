@@ -9,33 +9,13 @@ import ContactUs from './articles/ContactUs'; // Import the Contact Us page
 import EspaceJambon from './articles/EspaceJambon'; // Import the Espace Jambon page
 import './App.css'; // Correct import for App.css
 import SearchBar from './components/SearchBar'; // Correct import for SearchBar
+import articlesData from './articles/articlesData'; // Import the external articles file
 
 const App: React.FC = () => {
-  const [articles] = useState([
-    {
-      title: 'Article 1',
-      description: 'Ceci est le contenu de l\'Article 1.',
-      imageUrl: 'https://via.placeholder.com/400x200?text=Article+1',
-      articleUrl: '/article/1',
-    },
-    {
-      title: 'Article 2',
-      description: 'Ceci est le contenu de l\'Article 2.',
-      imageUrl: 'https://via.placeholder.com/400x200?text=Article+2',
-      articleUrl: '/article/2',
-    },
-    {
-      title: 'Article 3',
-      description: 'Ceci est le contenu de l\'Article 3.',
-      imageUrl: 'https://via.placeholder.com/400x200?text=Article+3',
-      articleUrl: '/article/3',
-    },
-  ]);
-
-  const [filteredArticles, setFilteredArticles] = useState(articles);
+  const [filteredArticles, setFilteredArticles] = useState(articlesData);
 
   const handleSearch = (query: string) => {
-    const filtered = articles.filter((article) =>
+    const filtered = articlesData.filter((article) =>
       article.title.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredArticles(filtered);
@@ -44,7 +24,7 @@ const App: React.FC = () => {
   const HomePage: React.FC = () => {
     return (
       <div>
-<br></br>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>
