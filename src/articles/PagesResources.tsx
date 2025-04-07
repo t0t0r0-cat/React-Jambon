@@ -1,9 +1,9 @@
 import React from 'react';
 
-const NewPage: React.FC = () => {
+const PagesResources: React.FC = () => {
   return (
     <div>
-      <br></br>
+<br></br>
       <br></br>
       <br></br>
       <br></br>
@@ -308,4 +308,4 @@ Site Internet : www.schizophrenie.qc.ca
   );
 };
 
-export default NewPage;
+export default PagesResources;

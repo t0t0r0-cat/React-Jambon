@@ -1,45 +1,46 @@
+// Navbar.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SearchBar from './SearchBar'; // Import the SearchBar component
-import './Navbar.css'; // Import the CSS for Navbar styles
+import SearchBar from './SearchBar';
+import './Navbar.css'; // Import the CSS file
 
-const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+interface NavbarProps {
+  onSearch: (query: string) => void;
+}
 
-  // Toggle the menu on mobile
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
+const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">Eco de l'île</Link>
+        <Link to="/">Éco de l'île</Link>
       </div>
-
-      {/* Search bar */}
       <div className="navbar-search-bar-container">
-        <SearchBar onSearch={(query) => console.log('Search query:', query)} />
+        <SearchBar onSearch={onSearch} />
       </div>
-
-      {/* Toggle menu button for mobile */}
-      <button className="menu-toggle" onClick={handleMenuToggle}>
-        ☰
+      <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+        ☰ {/* Mobile menu icon */}
       </button>
-
-      {/* Navigation links */}
-      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+      <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/resources">Ressources</Link>
         </li>
         <li>
-          <Link to="/google-sucks">Google Sucks</Link>
+          <Link to="/about-us">À propos</Link>
         </li>
         <li>
-          <Link to="/resources">Resources</Link>
+          <Link to="/contact-us">Contactez-nous</Link>
         </li>
         <li>
-          <Link to="/about-us">About Us</Link>
+          <Link to="https://ile.csspo.gouv.qc.ca/">Site Internet De L'ecole</Link>
+        </li>
+        <li>
+          <Link to="/espace-jambon">Espace Jambon</Link> {/* Add Espace Jambon link */}
         </li>
       </ul>
     </nav>
@@ -47,3 +48,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+

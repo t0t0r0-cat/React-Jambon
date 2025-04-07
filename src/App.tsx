@@ -1,53 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import ArticleCard from './components/ArticleCard';
-import SearchBar from './components/SearchBar';
-import GoogleSucks from './articles/GoogleSucks';
-import PagesResources from './articles/PagesResources';
-import AboutUs from './articles/AboutUs'; // Import the About Us page
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Correct import for Navbar
+import ArticleCard from './components/ArticleCard'; // Correct import for ArticleCard
+import PagesResources from './articles/PagesResources'; // Correct import for PagesResources
+import AboutUs from './articles/AboutUs'; // Correct import for AboutUs
+import ArticlePage from './articles/ArticlePage'; // Correct import for ArticlePage
+import ContactUs from './articles/ContactUs'; // Import the Contact Us page
+import EspaceJambon from './articles/EspaceJambon'; // Import the Espace Jambon page
+import './App.css'; // Correct import for App.css
+import SearchBar from './components/SearchBar'; // Correct import for SearchBar
 
 const App: React.FC = () => {
   const [articles] = useState([
     {
-      title: 'Google Sucks',
-      description: 'Don’t click here, it’s going to steal your data',
-      imageUrl: 'https://tse3.mm.bing.net/th?id=OIP.pmvwb_-_CO2vH-pU7ZMHkQHaEo&pid=Api',
-      articleUrl: '/google-sucks',
+      title: 'Article 1',
+      description: 'Ceci est le contenu de l\'Article 1.',
+      imageUrl: 'https://via.placeholder.com/400x200?text=Article+1',
+      articleUrl: '/article/1',
     },
     {
-      title: 'Resources',
-      description: 'Find helpful resources and organizations here.',
-      imageUrl: 'https://via.placeholder.com/400x200?text=Resources',
-      articleUrl: '/resources',
+      title: 'Article 2',
+      description: 'Ceci est le contenu de l\'Article 2.',
+      imageUrl: 'https://via.placeholder.com/400x200?text=Article+2',
+      articleUrl: '/article/2',
+    },
+    {
+      title: 'Article 3',
+      description: 'Ceci est le contenu de l\'Article 3.',
+      imageUrl: 'https://via.placeholder.com/400x200?text=Article+3',
+      articleUrl: '/article/3',
     },
   ]);
 
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
-  const useQuery = () => {
-    return new URLSearchParams(useLocation().search);
+  const handleSearch = (query: string) => {
+    const filtered = articles.filter((article) =>
+      article.title.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredArticles(filtered);
   };
 
   const HomePage: React.FC = () => {
-    const query = useQuery().get('search');
-
-    useEffect(() => {
-      if (query) {
-        handleSearch(query);
-      }
-    }, [query]);
-
-    const handleSearch = (query: string) => {
-      const filtered = articles.filter((article) =>
-        article.title.toLowerCase().includes(query.toLowerCase())
-      );
-      setFilteredArticles(filtered);
-    };
-
     return (
       <div>
+<br></br>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>
@@ -59,7 +57,7 @@ const App: React.FC = () => {
           des élèves pour les élèves. Bonne lecture :)
         </p>
         <SearchBar onSearch={handleSearch} />
-        <div className="article-list">
+        <div className="article-grid">
           {filteredArticles.map((article, index) => (
             <ArticleCard
               key={index}
@@ -76,15 +74,15 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <Navbar />
-      <div className="app">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/google-sucks" element={<GoogleSucks />} />
-          <Route path="/resources" element={<PagesResources />} />
-          <Route path="/about-us" element={<AboutUs />} /> {/* Add About Us route */}
-        </Routes>
-      </div>
+      <Navbar onSearch={handleSearch} />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/resources" element={<PagesResources />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} /> {/* Add Contact Us route */}
+        <Route path="/espace-jambon" element={<EspaceJambon />} /> {/* Add Espace Jambon route */}
+        <Route path="/article/:id" element={<ArticlePage />} />
+      </Routes>
     </Router>
   );
 };

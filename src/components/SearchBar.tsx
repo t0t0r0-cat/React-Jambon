@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaSearch } from 'react-icons/fa'; // Import the Font Awesome search icon
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -7,46 +7,24 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [query, setQuery] = useState('');
+  const navigate = useNavigate(); // Hook for programmatic navigation
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(event.target.value);
-  };
-
-  const handleSearch = () => {
-    const sanitizedQuery = query.replace(/[^a-zA-Z0-9 ]/g, ''); // Sanitize input
-    if (!sanitizedQuery.trim()) return; // Prevent empty queries
-
-    const currentPath = window.location.pathname;
-
-    if (currentPath !== '/') {
-      // Open a new tab with the sanitized search results
-      const searchUrl = `/?search=${encodeURIComponent(sanitizedQuery)}`;
-      window.open(searchUrl, '_blank');
-    } else {
-      // Trigger the search on the current page
-      onSearch(sanitizedQuery);
-    }
-  };
-
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter') {
-      handleSearch(); // Trigger search when Enter is pressed
-    }
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSearch(query); // Call the onSearch function with the query
+    navigate('/'); // Navigate to the homepage
   };
 
   return (
-    <div className="search-bar">
+    <form className="search-bar" onSubmit={handleSubmit}>
       <input
         type="text"
+        placeholder="Rechercher des articles..."
         value={query}
-        onChange={handleChange}
-        onKeyDown={handleKeyDown} // Add keydown event listener
-        placeholder="Tout trouver"
+        onChange={(e) => setQuery(e.target.value)}
       />
-      <button onClick={handleSearch} aria-label="Search">
-        <FaSearch /> {/* Magnifying glass icon */}
-      </button>
-    </div>
+      <button type="submit">Rechercher</button>
+    </form>
   );
 };
 

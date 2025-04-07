@@ -1,120 +1,95 @@
-/* src/components/Navbar.css */
 
-/* Base styles for the navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #333;
+}
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    color: white;
-    position: fixed; /* Make navbar fixed at the top */
-    top: 0;          /* Position it at the top of the screen */
-    left: 0;         /* Align to the left */
-    right: 0;        /* Align to the right */
-    z-index: 1000;   /* Ensure it's above other content */
-    width: 100%;     /* Ensure the navbar spans the full width */
-    box-sizing: border-box; /* Prevent padding from affecting width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
 }
 
 .navbar .logo a {
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #333;
-    box-shadow: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-search-bar-container {
+  flex: 1;
+  margin: 0 20px;
+  background-color: #333;
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
-    background-color: #333;
-}
-
-/* Hide the nav-links on mobile initially */
-.nav-links li {
-    list-style-type: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-/* Styles for the hamburger icon (menu button on small screens) */
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* Style the search bar specifically in the navbar */
-.navbar-search-bar-container {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
+  gap: 15px;
   background-color: #333;
 }
 
-.navbar-search-bar-container .search-bar {
-  width: 300px; /* Adjust the width of the search bar */
-  background-color: #333;
-}
-
-.navbar-search-bar-container .search-bar input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.navbar-search-bar-container .search-bar button {
-  padding: 8px 12px;
-  background-color: #007bff;
+.nav-links li a {
   color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
   border: none;
-  border-radius: 4px;
+  color: white;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
-.navbar-search-bar-container .search-bar button:hover {
-  background-color: #0056b3;
+.nav-links.mobile-menu-open {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
 }
 
-/* Media Query for small screens (mobile) */
+.nav-links.mobile-menu-open li {
+  margin: 10px 0;
+  background-color: #333;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    /* Display the menu button (hamburger) */
-    .menu-toggle {
-        display: block;
-    }
+  .navbar-search-bar-container {
+    display: none;
+  }
 
-    /* Hide the nav-links by default */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-    }
+  .nav-links {
+    display: none;
+    background-color: #333;
+    flex-direction: column;
+  }
 
-    /* Show the nav-links when the menu is open */
-    .nav-links.active {
-        display: flex;
-    }
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
 
-    /* Styling for each item in the mobile menu */
-    .nav-links a {
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        display: block;
-    }
+.navbar .search-bar {
+  align-items: center;
+  padding-top: 20px;
+  background-color: #333;
 }
