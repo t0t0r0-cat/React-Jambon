@@ -3,6 +3,13 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import fs from 'fs';
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
+
+console.log('EMAIL_USER:', process.env.EMAIL_USER);
+console.log('EMAIL_PASS:', process.env.EMAIL_PASS);
 
 const app = express();
 const PORT = 5000;
@@ -11,15 +18,36 @@ const PORT = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
+// Function to log messages to a file
+const logToFile = (message) => {
+  const timestamp = new Date().toISOString();
+  const logMessage = `[${timestamp}] ${message}\n`;
+  fs.appendFile('server.log', logMessage, (err) => {
+    if (err) {
+      console.error('Error writing to log file:', err);
+    }
+  });
+};
+
+// Route to handle the root URL
+app.get('/', (req, res) => {
+  logToFile('GET / - Root URL accessed');
+  res.send('Welcome to the Éco de l\'île server! The API is running.');
+});
+
 // Route to handle form submissions
 app.post('/api/contact', (req, res) => {
   const { name, email, message } = req.body;
+
+  // Log the form submission
+  logToFile(`POST /api/contact - Form submission received: Name=${name}, Email=${email}, Message=${message}`);
 
   // Save the data to a file
   const data = `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n\n`;
   fs.appendFile('contact_messages.txt', data, (err) => {
     if (err) {
       console.error('Error saving message to file:', err);
+      logToFile(`Error saving message to file: ${err.message}`);
       return res.status(500).json({ message: 'Failed to save message.' });
     }
 
@@ -27,13 +55,13 @@ app.post('/api/contact', (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'your-email@gmail.com', // Replace with your email
-        pass: 'your-email-password', // Replace with your email password or app password
+        user: process.env.EMAIL_USER, // Use environment variable
+        pass: process.env.EMAIL_PASS, // Use environment variable
       },
     });
 
     const mailOptions = {
-      from: 'your-email@gmail.com', // Replace with your email
+      from: process.env.EMAIL_USER, // Use environment variable
       to: email, // Send verification email to the user
       subject: 'Confirmation de réception de votre message',
       text: `Bonjour ${name},\n\nNous avons bien reçu votre message :\n"${message}"\n\nMerci de nous avoir contactés !\n\nCordialement,\nL'équipe Éco de l'île`,
@@ -42,10 +70,12 @@ app.post('/api/contact', (req, res) => {
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error('Error sending email:', error);
-        return res.status(500).json({ message: 'Failed to send verification email.' });
+        logToFile(`Error sending email: ${error.message}`);
+        return res.status(500).json({ message: `Failed to send verification email: ${error.message}` });
       }
 
       console.log('Email sent:', info.response);
+      logToFile(`Email sent successfully to ${email}: ${info.response}`);
       res.status(200).json({ message: 'Message received and email sent successfully!' });
     });
   });
@@ -53,5 +83,7 @@ app.post('/api/contact', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  const startMessage = `Server is running on http://localhost:${PORT}`;
+  console.log(startMessage);
+  logToFile(startMessage);
 });
