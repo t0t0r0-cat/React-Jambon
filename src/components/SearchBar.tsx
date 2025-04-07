@@ -13,7 +13,19 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   const handleSearch = () => {
-    onSearch(query);
+    const sanitizedQuery = query.replace(/[^a-zA-Z0-9 ]/g, ''); // Sanitize input
+    if (!sanitizedQuery.trim()) return; // Prevent empty queries
+
+    const currentPath = window.location.pathname;
+
+    if (currentPath !== '/') {
+      // Open a new tab with the sanitized search results
+      const searchUrl = `/?search=${encodeURIComponent(sanitizedQuery)}`;
+      window.open(searchUrl, '_blank');
+    } else {
+      // Trigger the search on the current page
+      onSearch(sanitizedQuery);
+    }
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {

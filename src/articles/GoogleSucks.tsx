@@ -1,15 +1,20 @@
-import React from 'react';
+// GoogleSucks.tsx
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-const NewPage: React.FC = () => {
+const GoogleSucks: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+
+  useEffect(() => {
+    console.log('GoogleSucks component mounted or updated');
+  }, []);
 
   return (
     <div>
-      <h1>New Page: {id}</h1>
-      <p>This is a new page with the ID: {id}</p>
+      <h1>Google Sucks</h1>
+      <p>This is the Google Sucks page with ID: {id}</p>
     </div>
   );
 };
 
-export default NewPage;
+export default GoogleSucks;
