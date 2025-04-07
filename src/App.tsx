@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ArticleCard from './components/ArticleCard';
 import SearchBar from './components/SearchBar';
 import GoogleSucks from './articles/GoogleSucks';
 import PagesResources from './articles/PagesResources';
+import AboutUs from './articles/AboutUs'; // Import the About Us page
 import './App.css';
 
 const App: React.FC = () => {
@@ -25,17 +26,16 @@ const App: React.FC = () => {
 
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
-  // Custom hook to get the query parameter
   const useQuery = () => {
     return new URLSearchParams(useLocation().search);
   };
 
   const HomePage: React.FC = () => {
-    const query = useQuery().get('search'); // Get the 'search' query parameter
+    const query = useQuery().get('search');
 
     useEffect(() => {
       if (query) {
-        handleSearch(query); // Trigger search if query exists
+        handleSearch(query);
       }
     }, [query]);
 
@@ -48,7 +48,6 @@ const App: React.FC = () => {
 
     return (
       <div>
-        <br></br>
         <br></br>
         <br></br>
         <br></br>
@@ -77,17 +76,13 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <Navbar onSearch={(query) => {
-        const filtered = articles.filter((article) =>
-          article.title.toLowerCase().includes(query.toLowerCase())
-        );
-        setFilteredArticles(filtered);
-      }} />
+      <Navbar />
       <div className="app">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/google-sucks" element={<GoogleSucks />} />
           <Route path="/resources" element={<PagesResources />} />
+          <Route path="/about-us" element={<AboutUs />} /> {/* Add About Us route */}
         </Routes>
       </div>
     </Router>

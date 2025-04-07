@@ -3,6 +3,10 @@ import React from 'react';
 const NewPage: React.FC = () => {
   return (
     <div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <h1>Ressources</h1>
       <p>
 Salut toi ! Dans cette section, tu trouveras quelques organismes qui ont différentes missions et services. Certains d'entres eux ont été trouvés à l'aide du site Tel-Jeunes (une ressource très universelle pour les jeunes de 5 à 20 ans).  Évidemment, ces organismes sont situés au Québec et certains particulièrement en Outaouais, n'hésite donc pas à chercher et utiliser les ressources disponibles dans ta région. Pour avoir accès à la ressource, clique sur son titre, il te dirigera vers son site web. Si jamais une ressource ne fonctionne pas ou que tu ne trouve pas celle dont tu aurais besoin, consulte la section « Nous joindre » et écris nous ! N'oublie pas qu'il n'y a aucune honte à demander de l'aide et sache que les ressources sont aussi disponible pour t'appuyer si toi ou l'un de tes proches vit une situation difficile ou de détresse. 
