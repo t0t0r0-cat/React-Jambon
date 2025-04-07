@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar'; // Import the SearchBar component
 import './Navbar.css'; // Import the CSS for Navbar styles
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  onSearch: (query: string) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Toggle the menu on mobile
@@ -16,6 +21,11 @@ const Navbar: React.FC = () => {
         <Link to="/">Eco de l'île</Link>
       </div>
 
+      {/* Search bar */}
+      <div className="navbar-search-bar-container">
+        <SearchBar onSearch={onSearch} />
+      </div>
+
       {/* Toggle menu button for mobile */}
       <button className="menu-toggle" onClick={handleMenuToggle}>
         ☰
@@ -24,8 +34,13 @@ const Navbar: React.FC = () => {
       {/* Navigation links */}
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li>
-          <Link to="/">|Home|</Link> {/* Home link */}
-          <Link to="https://www.google.com">|Don't|</Link>
+          <Link to="/">|Home|</Link>
+        </li>
+        <li>
+          <Link to="/google-sucks">|Google Sucks|</Link>
+        </li>
+        <li>
+          <Link to="/resources">|Page Resource|</Link>
         </li>
       </ul>
     </nav>

@@ -1,35 +1,25 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'; // Import Navbar component
+import Navbar from './components/Navbar'; // Import Navbar component (ensure it accepts props or is static)
 import ArticleCard from './components/ArticleCard'; // Import ArticleCard component
 import SearchBar from './components/SearchBar'; // Import SearchBar component
-import HomePage from './HomePage'; // Import HomePage component
-import NewPage from './articles/GoogleSucks'; // Import NewPage component
+import GoogleSucks from './articles/GoogleSucks'; // Import GoogleSucks article
+import PagesResources from './articles/PagesResources'; // Import PagesResources article
 import './App.css'; // Import global styles
 
 const App: React.FC = () => {
   const [articles] = useState([
     {
-      title: 'Article 1',
-      description: 'Description of article 1',
-      imageUrl: 'https://via.placeholder.com/400x200?text=Article+1',
-      articleUrl: './src/articles/Googlesucks.tsx'
-    },
-    {
-      title: 'Article 2',
-      description: 'Description of article 2',
-      imageUrl: 'https://via.placeholder.com/400x200?text=Article+2',
-    },
-    {
-      title: 'Google sucks',
-      description: 'Dont click here its going to steal your data',
+      title: 'Google Sucks',
+      description: 'Don’t click here, it’s going to steal your data',
       imageUrl: 'https://tse3.mm.bing.net/th?id=OIP.pmvwb_-_CO2vH-pU7ZMHkQHaEo&pid=Api',
-      articleUrl: 'https://www.google.com',
+      articleUrl: './src/articles/google-sucks', // Matches the route for GoogleSucks
     },
     {
-      title: 'Test 99',
-      description: 'testing 12 12',
-      imageUrl: 'google.com',
+      title: 'Resources',
+      description: 'Find helpful resources and organizations here.',
+      imageUrl: 'https://via.placeholder.com/400x200?text=Resources',
+      articleUrl: '/resources', // Matches the route for PagesResources
     },
   ]);
 
@@ -44,47 +34,49 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      {/* Navbar will be rendered on all pages */}
-      <Navbar />
-
-      {/* Content for each page */}
+      <Navbar onSearch={handleSearch} />
       <div className="app">
         <Routes>
           {/* Home route */}
-          <Route path="/" element={
-            <div>
-              <br></br>
-              <br></br>
-              <br></br>
-              <h1>Eco de l'île</h1>
-              <h2>La maison de jambon</h2>
-              <br></br>
-              <p>L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les élèves. Bonne lecture :)</p>
-              <br></br>
-              <br></br>
-              <br></br>
-
-              {/* Search bar component */}
-              <SearchBar onSearch={handleSearch} />
-
-              {/* Article list */}
-              <div className="article-list">
-                {filteredArticles.map((article, index) => (
-                  <><ArticleCard
-                    key={index}
-                    title={article.title}
-                    description={article.description}
-                    imageUrl={article.imageUrl}
-                    articleUrl={article.articleUrl || ''} /></>
-                ))}
+          <Route
+            path="/"
+            element={
+              <div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h1>Eco de l'île</h1>
+                <h2>La maison de jambon</h2>
+                <p>
+                  L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par
+                  des élèves pour les élèves. Bonne lecture :)
+                </p>
+                <SearchBar onSearch={handleSearch} />
+                <div className="article-list">
+                  {filteredArticles.map((article, index) => (
+                    <ArticleCard
+                      key={index}
+                      title={article.title}
+                      description={article.description}
+                      imageUrl={article.imageUrl}
+                      articleUrl={article.articleUrl}
+                    />
+                  ))}
+                </div>
               </div>
-              <br></br>
-            </div>
-            
-          } />
+            }
+          />
 
-          {/* Route for NewPage */}
-          <Route path="/newpage/:id" element={<NewPage />} />
+          {/* Route for GoogleSucks article */}
+          <Route path="/google-sucks" element={<GoogleSucks />} />
+
+          {/* Route for PagesResources article */}
+          <Route path="/resources" element={<PagesResources />} />
         </Routes>
       </div>
     </Router>
