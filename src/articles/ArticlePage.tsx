@@ -9,6 +9,8 @@ const ArticlePage: React.FC = () => {
     title: 'Article introuvable',
     description: 'L\'article que vous recherchez n\'existe pas.',
     imageUrl: 'https://via.placeholder.com/600x300?text=Not+Found',
+    date: 'N/A',
+    author: 'Unknown',
   };
 
   return (
@@ -19,6 +21,8 @@ const ArticlePage: React.FC = () => {
       <br></br>
       <br></br>
       <h1>{article.title}</h1>
+      <p><strong>Author:</strong> {article.author}</p>
+      <p><strong>Date:</strong> {article.date}</p>
       <img src={article.imageUrl} alt={article.title} style={{ maxWidth: '100%', height: 'auto' }} />
       <p>{article.description}</p>
     </div>
