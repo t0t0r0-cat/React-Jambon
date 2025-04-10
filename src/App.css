@@ -3,14 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  color: purple;
 }
 
 a {
@@ -23,32 +16,34 @@ a {
 }
 
 h1 {
+  color: purple;
   text-align: center;
   font-size: 390%;
-  color: purple;
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 h2 {
   text-align: center;
-  color: purple;
+  color: ;
 }
 
 body {
-  background-color: #f4f4f4;
-  color: #333;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: purple; /* Accent color */
+  color:purple ; /* Accent color */
 }
 
 a {
-  color: purple; /* Accent color for links */
+  color: ; /* Accent color for links */
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #800080; /* Darker purple on hover */
+  color: ; /* Darker purple on hover */
 }
 
 .app {
@@ -67,15 +62,12 @@ a:hover {
   padding: 10px;
   padding-left: 50px;
   font-size: 16px;
-  color: white;
   box-align: center;
 }
 
 .search-bar button {
   padding: 12px;
   cursor: pointer;
-  background-color: #333;
-  color: white;
   border: none;
   font-size: 16px;
   align-items: center;
@@ -102,17 +94,13 @@ a:hover {
 }
 
 .article-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .article-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .article-card img {
@@ -128,12 +116,10 @@ a:hover {
 .article-card p {
   font-size: 1rem;
   margin: 16px;
-  color: #666;
 }
 
 .article-card a {
   text-decoration: none;
-  color: #007bff;
   font-weight: bold;
 }
 
@@ -155,25 +141,15 @@ a:hover {
 .home-page {
   padding: 20px;
   text-align: center;
-  background-color: #fff;
-  color: #333;
   border-radius: 8px;
-}
-
-.home-page h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 .home-page p {
   font-size: 18px;
-  color: whitesmoke;
 }
 
 p {
   padding: 30px;
-  color: whitesmoke;
 }
 
 .article-list a {
@@ -188,7 +164,7 @@ p {
 
 .search-bar input {
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 4px;
   flex: 1;
 }
@@ -198,26 +174,22 @@ p {
   align-items: center;
   justify-content: center;
   padding: 8px;
-  background-color: purple;
-  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: rgb(161, 1, 161);
 }
 
 .search-bar button:hover {
-  background-color: purple;
+
 }
 
 .search-bar button svg {
   width: 16px;
   height: 16px;
-  background-color: rgb(161, 1, 161);
 }
 
 .search-bar button svg:hover {
-  background-color: purple;
+
 }
 
 .navbar {
@@ -225,64 +197,72 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #ddd;
+  position: fixed; /* Fix the navbar to the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the navbar span the full width */
+  background-color: #333; /* Set a consistent background color */
+  z-index: 1000; /* Ensure the navbar stays above other elements */
 }
 
 .navbar h1 {
   font-size: 1.5rem;
-  color: purple; /* Accent color for the navbar title */
+  color: white; /* Ensure text is visible on dark background */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px; /* Add spacing between list items */
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li a {
-  color: purple; /* Accent color for navbar links */
+  color: white; /* Set link color */
+  text-decoration: none; /* Remove underline */
+  padding: 8px 12px; /* Add padding for clickable area */
+  border-radius: 4px; /* Add slight rounding for better aesthetics */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
 .navbar ul li a:hover {
-  color: #800080; /* Darker purple on hover */
+  background-color: #555; /* Add hover background color */
+  color: #ddd; /* Lighten text color on hover */
 }
 
 .navbar a {
-  color: white; /* Keep the text color white */
-  text-decoration: none;
-  background-color: transparent; /* Remove background color */
-  border: none; /* Remove any borders */
-  box-shadow: none; /* Remove any box shadows */
-  padding: 10px; /* Optional: Add padding for spacing */
-}
-
-.navbar a:hover {
-  background-color: transparent; /* Ensure no hover background color */
-  box-shadow: none; /* Remove hover box shadow */
+  text-decoration: none; /* Remove underline */
+  color: white; /* Ensure consistent text color */
 }
 
 .navbar li {
   list-style: none; /* Remove bullet points */
-  background-color: transparent; /* Remove background color from list items */
-  border: none; /* Remove any borders */
-  box-shadow: none; /* Remove any box shadows */
-  margin: 0; /* Remove any margins */
-  padding: 0; /* Remove any padding */
 }
 
 .navbar .brand {
-  background-color: transparent; /* Remove black background */
-  color: white; /* Keep the text color white */
-  font-size: 1.5rem; /* Adjust font size if needed */
+  font-size: 1.5rem; /* Adjust font size for branding */
   text-decoration: none; /* Remove underline */
-  padding: 10px; /* Optional: Add padding for spacing */
-  border: none; /* Remove any borders */
-  box-shadow: none; /* Remove any box shadows */
+  color: white; /* Ensure branding text is visible */
 }
 
-/* Remove navbar background for smaller screens */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  .navbar a {
-    background-color: transparent; /* Ensure no background for smaller screens */
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px;
   }
 
-  .navbar a:hover {
-    background-color: transparent; /* Ensure no hover background for smaller screens */
+  .navbar ul {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 10px; /* Add spacing between items */
+    width: 100%; /* Ensure full width for menu */
+  }
+
+  .navbar ul li a {
+    width: 100%; /* Make links span full width */
+    text-align: left; /* Align text to the left */
   }
 }
 
@@ -296,7 +276,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  color: whitesmoke;
 }
 
 .contact-form label {
@@ -307,22 +286,18 @@ p {
 .contact-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
   border-radius: 4px;
-  color: whitesmoke;
 }
 
 .contact-form button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+
 }
 
 .espace-jambon {
@@ -331,38 +306,10 @@ p {
   margin: 0 auto;
 }
 
-.espace-jambon h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
 .espace-jambon p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: whitesmoke;
+
 }
 
-.espace-jambon ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
 
-.espace-jambon ul li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.search-input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.homepage h1, .homepage h2 {
-  color: purple; /* Accent color for homepage headings */
-}
-
-.homepage p {
-  font-size: 1rem;
-  color: #555;
-}
