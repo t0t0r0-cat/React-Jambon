@@ -4,6 +4,8 @@ import bodyParser from 'body-parser';
 import fs from 'fs';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import path from 'path';
+import 'altcha';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -17,6 +19,10 @@ const PORT = 5000;
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+
+// Serve static files from the React app
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, 'build')));
 
 // Function to log messages to a file
 const logToFile = (message) => {
@@ -79,6 +85,11 @@ app.post('/api/contact', (req, res) => {
       res.status(200).json({ message: 'Message received and email sent successfully!' });
     });
   });
+});
+
+// Fallback for React routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 // Start the server

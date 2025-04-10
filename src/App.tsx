@@ -1,69 +1,64 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'; // Correct import for Navbar
-import ArticleCard from './components/ArticleCard'; // Correct import for ArticleCard
-import PagesResources from './articles/PagesResources'; // Correct import for PagesResources
-import AboutUs from './articles/AboutUs'; // Correct import for AboutUs
-import ArticlePage from './articles/ArticlePage'; // Correct import for ArticlePage
-import ContactUs from './articles/ContactUs'; // Import the Contact Us page
-import EspaceJambon from './articles/EspaceJambon'; // Import the Espace Jambon page
-import './App.css'; // Correct import for App.css
-import SearchBar from './components/SearchBar'; // Correct import for SearchBar
-import articlesData from './articles/articlesData'; // Import the external articles file
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import PagesResources from './articles/PagesResources';
+import AboutUs from './articles/AboutUs';
+import ArticlePage from './articles/ArticlePage';
+import ContactUs from './articles/ContactUs';
+import EspaceJambon from './articles/EspaceJambon';
+import GoogleSucks from './articles/GoogleSucks';
+import ArticleCard from './components/ArticleCard';
+import articlesData from './articles/articlesData';
+import './App.css';
 
 const App: React.FC = () => {
-  const [filteredArticles, setFilteredArticles] = useState(articlesData);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = (query: string) => {
-    const filtered = articlesData.filter((article) =>
-      article.title.toLowerCase().includes(query.toLowerCase())
-    );
-    setFilteredArticles(filtered);
+    console.log('Search query:', query);
+    setSearchQuery(query); // Update the search query state
   };
 
-  const HomePage: React.FC = () => {
-    return (
-      <div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <h1>Eco de l'île</h1>
-        <h2>La maison de jambon</h2>
-        <p>
-          L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par
-          des élèves pour les élèves. Bonne lecture :)
-        </p>
-        <SearchBar onSearch={handleSearch} />
-        <div className="article-grid">
-          {filteredArticles.map((article, index) => (
-            <ArticleCard
-              key={index}
-              title={article.title}
-              description={article.description}
-              imageUrl={article.imageUrl}
-              articleUrl={article.articleUrl}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  };
+  const filteredArticles = articlesData.filter((article) =>
+    article.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
-    <Router>
+    <>
       <Navbar onSearch={handleSearch} />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/"
+          element={
+            <div className="homepage">
+              <h1>Eco de l'île</h1>
+              <h2>La maison de jambon</h2>
+              <p>
+                L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par
+                des élèves pour les élèves. Bonne lecture :)
+              </p>
+              <div className="article-grid">
+                {filteredArticles.map((article) => (
+                  <ArticleCard
+                    key={article.id}
+                    title={article.title}
+                    description={article.description}
+                    imageUrl={article.imageUrl}
+                    articleUrl={`/article/${article.id}`}
+                  />
+                ))}
+              </div>
+            </div>
+          }
+        />
         <Route path="/resources" element={<PagesResources />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact-us" element={<ContactUs />} /> {/* Add Contact Us route */}
-        <Route path="/espace-jambon" element={<EspaceJambon />} /> {/* Add Espace Jambon route */}
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/espace-jambon" element={<EspaceJambon />} />
         <Route path="/article/:id" element={<ArticlePage />} />
+        <Route path="/google-sucks/:id?" element={<GoogleSucks />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 

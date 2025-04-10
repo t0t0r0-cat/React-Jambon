@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
         Tout d’abord, de nombreux journaux et mensuels ont comme titre « Écho […] », un mot faisant référence à une rubrique journalistique consacrée aux anecdotes du jour (aux articles de « commérage » plus ou moins scandaleux). Ce mot est donc très représentatif d’un journal, permettant donc aux navigateurs de comprendre l’objectif du <u>nouveau</u> site web. Ce nouveau site web est <i>open source</i> <a href="https://github.com/t0t0r0-cat/React-Jambon">disponible ici</a>.
       </p>
       <figure>
-        <img src="./public/La-vague-verte.jpg" alt="La vague verte - Canada C3, 2018" />
+        <img src="/La-vague-verte.jpg" alt="La vague verte - Canada C3, 2018" />
         <figcaption>La vague verte - Canada C3, 2018</figcaption>
       </figure>
       <p>

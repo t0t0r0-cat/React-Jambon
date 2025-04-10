@@ -1,4 +1,4 @@
-name: Deploy Server
+name: Deploy React App
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,12 +21,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start server
+      - name: Build the app
         env:
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-        run: |
-          node server.js
+          REACT_APP_TURNSTILE_SITE_KEY: ${{ secrets.TURNSTILE_SITE_KEY }}
+        run: npm run build
+
+      - name: Deploy
+        # Add your deployment steps here
 
 name: Test Email
 
@@ -54,8 +55,12 @@ jobs:
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
         run: |
-          echo "EMAIL_USER=${EMAIL_USER}"
-          echo "EMAIL_PASS=${EMAIL_PASS}"
+          if [ -z "$EMAIL_USER" ] || [ -z "$EMAIL_PASS" ]; then
+            echo "Error: EMAIL_USER or EMAIL_PASS is not set."
+            exit 1
+          else
+            echo "Environment variables are set."
+          fi
 
       - name: Run test-email.js
         env:
