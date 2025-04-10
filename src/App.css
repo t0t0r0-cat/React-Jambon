@@ -24,6 +24,9 @@ h1 {
   text-align: center;
 }
 
+.navbar-brand h1 a {
+  background-color: #333;
+} 
 h2 {
   text-align: center;
   color: ;
@@ -192,77 +195,83 @@ p {
 
 }
 
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  position: fixed; /* Fix the navbar to the top of the page */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Make the navbar span the full width */
-  background-color: #333; /* Set a consistent background color */
-  z-index: 1000; /* Ensure the navbar stays above other elements */
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
 }
 
 .navbar h1 {
   font-size: 1.5rem;
-  color: white; /* Ensure text is visible on dark background */
+  color: white;
 }
 
-.navbar ul {
+.navbar .navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar .navbar-links {
   display: flex;
-  gap: 15px; /* Add spacing between list items */
-  list-style: none; /* Remove bullet points */
-  margin: 0;
-  padding: 0;
+  gap: 15px;
 }
 
-.navbar ul li a {
-  color: white; /* Set link color */
-  text-decoration: none; /* Remove underline */
-  padding: 8px 12px; /* Add padding for clickable area */
-  border-radius: 4px; /* Add slight rounding for better aesthetics */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+.navbar .navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navbar ul li a:hover {
-  background-color: #555; /* Add hover background color */
-  color: #ddd; /* Lighten text color on hover */
+.navbar .navbar-links a:hover {
+  background-color: #555;
+  color: #ddd;
 }
 
-.navbar a {
-  text-decoration: none; /* Remove underline */
-  color: white; /* Ensure consistent text color */
+/* Collapsible Navbar */
+.navbar .navbar-links.collapsed {
+  display: none;
 }
 
-.navbar li {
-  list-style: none; /* Remove bullet points */
-}
-
-.navbar .brand {
-  font-size: 1.5rem; /* Adjust font size for branding */
-  text-decoration: none; /* Remove underline */
-  color: white; /* Ensure branding text is visible */
-}
-
-/* Responsive adjustments for smaller screens */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .navbar ul {
-    flex-direction: column; /* Stack menu items vertically */
-    gap: 10px; /* Add spacing between items */
-    width: 100%; /* Ensure full width for menu */
+  .navbar .navbar-toggle {
+    display: block;
   }
 
-  .navbar ul li a {
-    width: 100%; /* Make links span full width */
-    text-align: left; /* Align text to the left */
+  .navbar .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .navbar .navbar-links.collapsed {
+    display: flex;
+  }
+
+  .navbar .navbar-links a {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
   }
 }
 
@@ -300,6 +309,23 @@ p {
 
 }
 
+/* Contact Form Mobile Styling */
+@media (max-width: 768px) {
+  .contact-form {
+    gap: 10px; /* Reduce spacing between form elements */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .contact-form button {
+    font-size: 14px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
 .espace-jambon {
   padding: 20px;
   max-width: 800px;
@@ -310,6 +336,47 @@ p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 
+}
+
+/* Espace Jambon Mobile Styling */
+@media (max-width: 768px) {
+  .espace-jambon {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .espace-jambon p {
+    font-size: 1rem; /* Adjust font size for readability */
+  }
+}
+
+/* Article Grid Mobile Styling */
+@media (max-width: 768px) {
+  .article-grid {
+    grid-template-columns: 1fr; /* Stack articles in a single column */
+    gap: 15px; /* Adjust spacing between articles */
+  }
+
+  .article-list {
+    flex-direction: column; /* Stack articles vertically */
+    gap: 15px; /* Adjust spacing between articles */
+  }
+}
+
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem; /* Adjust heading sizes for smaller screens */
+    text-align: center; /* Center-align headings */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph font size */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .home-page {
+    padding: 10px; /* Reduce padding for the homepage */
+  }
 }
 
 
