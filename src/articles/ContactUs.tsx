@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const ContactUs: React.FC = () => {
@@ -9,7 +9,6 @@ const ContactUs: React.FC = () => {
   });
 
   const [responseMessage, setResponseMessage] = useState('');
-  const [isChallengePassed, setIsChallengePassed] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -19,54 +18,26 @@ const ContactUs: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!isChallengePassed) {
-      alert('Veuillez compléter le défi Turnstile avant de soumettre le formulaire.');
-      return;
-    }
-
     try {
       const response = await axios.post('http://localhost:5000/api/contact', formData);
       setResponseMessage(response.data.message);
       setFormData({ name: '', email: '', message: '' }); // Clear the form
-      setIsChallengePassed(false); // Reset the challenge state
     } catch (error) {
       console.error('Error submitting the form:', error);
       setResponseMessage('Une erreur s\'est produite. Veuillez réessayer.');
     }
   };
 
-  // Dynamically load the Turnstile script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '/proxy/turnstile'; // Load the script from your proxy
-    script.async = true;
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script); // Clean up the script when the component unmounts
-    };
-  }, []);
-
   return (
     <div className="contact-us">
-      <br />
-      <br />
-      <br />
-      <br />
       <h1>Contactez-nous</h1>
       <p>
-        Si vous avez des questions, des suggestions, des demandes spéciales ou tout autre type de commentaire, vous pouvez communiquez avec nous à l'aide des informations suivantes :<br />
-        ✓ Formulaire de commentaires :{' '}
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=ie86K3Ta9UabAwA9BpkJ5-pGwQBtt3RAmNmTT5UeaGpURDdPTlIyWVZLNFU4UDg5U0JPRVA2Tlo2VS4u">
-          Cliquez ici pour accéder au formulaire Ou ci-dessous
-        </a>
-        <br />
-        <br />
-        📧 Adresse courriel : JOURNAL048@csspo.gouv.qc.ca<br />
-        <br />
-        🖧 Teams : JOURNAL048<br />
-        OU<br />
-        🖧 Teams : JOURNAL ÉTUDIANT 048<br />
+Si vous avez des questions, des suggestions, des demandes spéciales ou tout autre type de commentaire, vous pouvez communiquez avec nous à l'aide des informations suivantes :<br></br>
+ ✓   Formulaire de commentaires : <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=ie86K3Ta9UabAwA9BpkJ5-pGwQBtt3RAmNmTT5UeaGpURDdPTlIyWVZLNFU4UDg5U0JPRVA2Tlo2VS4u'>Clique ici pour accéder au formulaire Ou ci-dessous</a><br></br><br></br>
+📧 Adresse courriel : JOURNAL048@csspo.gouv.qc.ca<br></br><br></br>
+🖧  Teams : JOURNAL048<br></br>
+                    OU<br></br>
+🖧  Teams : JOURNAL ÉTUDIANT 048<br></br>
       </p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div>
@@ -104,14 +75,7 @@ const ContactUs: React.FC = () => {
             required
           ></textarea>
         </div>
-        <div
-          className="cf-turnstile"
-          data-sitekey={import.meta.env.VITE_TURNSTILE_SITE_KEY}
-          data-callback="handleTurnstileCallback"
-        ></div>
-        <button type="submit" disabled={!isChallengePassed}>
-          Envoyer
-        </button>
+        <button type="submit">Envoyer</button>
       </form>
       {responseMessage && <p>{responseMessage}</p>}
     </div>
