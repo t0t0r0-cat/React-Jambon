@@ -1,4 +1,4 @@
-/* Define the font */
+/* Global Reset and Font Styles */
 @font-face {
   font-family: 'Fira Sans';
   src: url('./fonts/FiraSans-Regular.woff2') format('woff2'),
@@ -15,14 +15,27 @@
   font-style: normal;
 }
 
-/* Apply the font */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
-  text-decoration: none;
   font-family: 'Fira Sans', sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* General Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
 }
 
 /* Navbar Styles */
@@ -33,383 +46,21 @@
   padding: 10px 20px;
   background-color: #333;
   color: white;
-}
-
-.navbar .logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar-search-bar-container {
-  flex: 1;
-  margin: 0 20px;
-  background-color: #333;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  background-color: #333;
-}
-
-.nav-links li a {
-  color: purple; /* Switched with hover color */
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.nav-links li a:hover {
-  text-decoration: none;
-  color: white; /* Switched with neutral color */
-}
-
-/* Mobile Menu Styles */
-.mobile-menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.nav-links.mobile-menu-open {
-  display: block;
-  position: absolute;
-  top: 60px;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.nav-links.mobile-menu-open li {
-  margin: 10px 0;
-  background-color: #333;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar-search-bar-container {
-    display: none;
-  }
-
-  .nav-links {
-    display: none;
-    background-color: #333;
-    flex-direction: column;
-  }
-
-  .mobile-menu-toggle {
-    display: block;
-  }
-}
-
-.navbar .search-bar {
-  align-items: center;
-  padding-top: 20px;
-  background-color: #333;
-}
-
-h1 {
-  text-align: center;
-  font-size: 390%;
-  color: purple;
-}
-
-h2 {
-  text-align: center; 
-  color: purple;
-}
-
-body {
-  font-family: 'Fira Sans', sans-serif;
-  background-color: black;
-  color: #333;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.search-bar {
-  margin-bottom: 20px;
-  align-items: center;
-  gap: 10px;
-}
-
-.search-bar input {
-  padding: 10px;
-  padding-left: 50px;
-  font-size: 16px;
-  color: white;
-  box-align: center;
-  
-}
-
-.search-bar button {
-  padding: 12px;
-  cursor: pointer;
-  background-color: #333;
-  color: white;
-  border: none;
-  font-size: 16px;
-  align-items: center;
-  border-radius: 5px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.article-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  width: 90%;
-  max-width: 1200px;
-  padding-left: 5px;
-}
-
-.article-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
-
-.article-card:hover {
-  transform: scale(1.05);
-}
-
-.article-card img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-
-.article-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-}
-
-.article-card p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 12px;
-}
-
-.article-card a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-
-.article-card a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 968px) {
-  .search-bar {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .article-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-.home-page {
-  padding: 20px;
-  text-align: center;
-  background-color: #fff;
-  color: #333;
-  border-radius: 8px;
-}
-
-.home-page h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.home-page p {
-  font-size: 18px;
-}
-
-p {
-  padding: 30px;
-  color: whitesmoke;
-
-}
-
-.article-card p {
-  padding: 1px;
-}
-
-.article-list a {
-  padding-left: 5%;
-}
-.search-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.search-bar input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1;
-}
-
-.search-bar button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  background-color: purple;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: rgb(161, 1, 161);
-}
-
-.search-bar button:hover {
-  background-color: purple;
-}
-
-.search-bar button svg {
-  width: 16px;
-  height: 16px;
-  background-color: rgb(161, 1, 161);
-}
-
-.search-bar button svg:hover {
-  background-color: purple;
+  z-index: 1000;
 }
 
 .navbar a {
-  color: white; /* Keep the text color white */
+  color: white;
   text-decoration: none;
-  background-color: transparent; /* Remove background color */
-  border: none; /* Remove any borders */
-  box-shadow: none; /* Remove any box shadows */
-  padding: 10px; /* Optional: Add padding for spacing */
+  padding: 10px;
 }
 
 .navbar a:hover {
-  background-color: transparent; /* Ensure no hover background color */
-  box-shadow: none; /* Remove hover box shadow */
+  color: purple;
 }
 
-.navbar li {
-  list-style: none; /* Remove bullet points */
-  background-color: transparent; /* Remove background color from list items */
-  border: none; /* Remove any borders */
-  box-shadow: none; /* Remove any box shadows */
-  margin: 0; /* Remove any margins */
-  padding: 0; /* Remove any padding */
-}
-
-.navbar .brand {
-  background-color: transparent; /* Remove black background */
-  color: white; /* Keep the text color white */
-  font-size: 1.5rem; /* Adjust font size if needed */
-  text-decoration: none; /* Remove underline */
-  padding: 10px; /* Optional: Add padding for spacing */
-  border: none; /* Remove any borders */
-  box-shadow: none; /* Remove any box shadows */
-}
-
-/* Remove navbar background for smaller screens */
-@media (max-width: 768px) {
-  .navbar a {
-    background-color: transparent; /* Ensure no background for smaller screens */
-  }
-
-  .navbar a:hover {
-    background-color: transparent; /* Ensure no hover background for smaller screens */
-  }
-}
-
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.contact-us {
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  color: whitesmoke;
-}
-
-.contact-form label {
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  color: whitesmoke;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #0056b3;
-}
-
-.espace-jambon {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.espace-jambon h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.espace-jambon p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.espace-jambon ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.espace-jambon ul li {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
+/* Add other global styles here */
