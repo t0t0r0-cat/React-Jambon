@@ -1,5 +1,5 @@
 import React from 'react';
-import './../styles/EspaceJambon.css'; // Import CSS for styling
+import './src/App.css'; // Import CSS for styling
 
 const EspaceJambon: React.FC = () => {
   return (
