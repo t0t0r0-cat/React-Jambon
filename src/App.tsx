@@ -9,8 +9,6 @@ import ContactUs from './articles/ContactUs'; // Import the Contact Us page
 import EspaceJambon from './articles/EspaceJambon'; // Import the Espace Jambon page
 import './App.css'; // Correct import for App.css
 import SearchBar from './components/SearchBar'; // Correct import for SearchBar
-import articlesData from './articles/articlesData'; // Import the external articles file
-import './styles/HomePage.css'; // Import HomePage styles
 
 const App: React.FC = () => {
   const [filteredArticles, setFilteredArticles] = useState(articlesData);

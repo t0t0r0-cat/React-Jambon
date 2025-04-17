@@ -9,16 +9,14 @@ interface ArticleCardProps {
   articleUrl: string;
 }
 
-const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl, articleUrl }) => {
-  return (
+const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl, articleUrl, AltImage }) => (
+  <Link to={articleUrl}>
     <div className="article-card">
-      <Link to={articleUrl}>
-      <img src={imageUrl} alt={title} />
+      <img src={imageUrl} alt={AltImage} />
       <h3>{title}</h3>
       <p>{description}</p>
-      </Link>
     </div>
-  );
-};
+  </Link>
+);
 
 export default ArticleCard;
