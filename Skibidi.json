@@ -1,0 +1,23 @@
+{
+    "system":{
+        "id": "1",
+        "article": "/article/skibidi",
+
+    },
+    "Content":{
+        "title": "Skibidi",
+        "description": "Ceci est le contenu du skibidi de l'Article 3.",
+        "content": "sigma rizz",
+        "imageUrl": "https://addons-media.operacdn.com/media/CACHE/images/themes/50/286850/1.0-rev1/images/83fd60840076eb190c4e3fbdeb30b184/5491362f165917e1eb870d2b4429ae0b.jpg",
+        "imageAlt": "Skibidi-themed image for Article 3",
+    },
+    "Metadata":{
+        "imageUrl": "https://addons-media.operacdn.com/media/CACHE/images/themes/50/286850/1.0-rev1/images/83fd60840076eb190c4e3fbdeb30b184/5491362f165917e1eb870d2b4429ae0b.jpg",
+        "imageAlt": "Skibidi-themed image for Article 3",
+        "date": "2025-04-06",
+        "author": "Charlie Huguet-Latour",
+        "programe": "PEI",
+        "Niveau": "17"
+    }
+
+}
