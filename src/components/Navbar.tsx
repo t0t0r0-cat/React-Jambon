@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
-import './Navbar.css'; // Import the CSS file
+import '../App.css';
 
 interface NavbarProps {
   onSearch: (query: string) => void;
