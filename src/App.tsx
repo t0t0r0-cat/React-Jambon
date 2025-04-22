@@ -7,7 +7,7 @@ import AboutUs from './articles/AboutUs';
 import ArticlePage from './articles/ArticlePage';
 import ContactUs from './articles/ContactUs';
 import EspaceJambon from './articles/EspaceJambon';
-import './App.css';
+import './styles/App.css';
 import SearchBar from './components/SearchBar';
 import { loadAllArticles } from './articles/loadArticles.ts';
 
@@ -31,7 +31,7 @@ const App: React.FC = () => {
 
   const HomePage: React.FC = () => (
     <div>
-      <br /><br /><br /><br /><br /><br />
+      <br /><br />
       <h1>Eco de l'île</h1>
       <h2>La maison de jambon</h2>
       <p>

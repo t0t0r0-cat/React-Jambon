@@ -1,0 +1,60 @@
+.image-container {
+   /* border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    display: block; */
+    background: scroll;
+    background-image: url(${article.imageUrl});
+    background-size: cover;
+    background-position: center;
+}
+
+.article-page {
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .article-banner {
+    width: 100%;
+    height: 340px; /* Increase height for better visibility */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .banner-overlay {
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    padding: 40px 0 20px 0;
+    text-align: center;
+  }
+  
+  .banner-title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 0 2px 8px #000;
+  }
+  
+  .article-content {
+    background: var(--article-bg, #181818);
+    color: var(--article-color, #fff);
+    max-width: 800px;
+    margin: -80px auto 0 auto; /* Less negative margin so more of the banner shows */
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    padding: 32px 24px 24px 24px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  body.light-mode .article-content {
+    background: #fff;
+    color: #222;
+  }

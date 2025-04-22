@@ -1,0 +1,64 @@
+/* src/styles/ArticleCard.css */
+.article-card {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  width: auto;
+  max-width: 70%;
+  padding: 20px;
+  margin: 16px; /* Add space between cards */
+}
+
+.article-card:hover {
+  transform: scale(1.05);
+}
+
+.article-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  /* Prevent card from being wider than the image */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.article-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 12px;
+  padding: 1px;
+}
+
+.article-card a {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.article-card a:hover {
+  text-decoration: underline;
+}
+
+body.light-mode .article-card {
+  background-color: #fff !important;
+  color: #222 !important;
+}
+body.light-mode .article-card p {
+  color: #222 !important;
+}
+body.light-mode .article-card a {
+  color: #007bff !important;
+}
+body.light-mode .article-card a:hover {
+  color: #0056b3 !important;
+}

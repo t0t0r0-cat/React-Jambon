@@ -1,0 +1,15 @@
+/* src/styles/ArticleList.css */
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px; /* Increase gap between cards */
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  padding-left: 5px;
+}
+@media (max-width: 968px) {
+  .article-list {
+    grid-template-columns: 1fr;
+  }
+}

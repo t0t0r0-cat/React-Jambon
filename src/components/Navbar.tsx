@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
-import '../App.css';
+import '../styles/App.css';
+import '../styles/Navbar.css';
 
 interface NavbarProps {
   onSearch: (query: string) => void;
@@ -13,7 +14,13 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
   const [darkMode, setDarkMode] = useState(true); // Night mode by default
 
   useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
+    }
   }, [darkMode]);
 
   const toggleMobileMenu = () => {
@@ -33,9 +40,16 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
       <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
         ☰
       </button>
-      <button className="darkmode-toggle" onClick={toggleDarkMode}>
-        {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-      </button>
+      {/* Switch for dark/light mode */}
+      <label className="switch">
+        <input
+          type="checkbox"
+          checked={darkMode}
+          onChange={toggleDarkMode}
+          aria-label="Toggle dark mode"
+        />
+        <span className="slider"></span>
+      </label>
       <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <li>
           <Link to="/resources">Ressources</Link>

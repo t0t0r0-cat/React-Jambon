@@ -1,0 +1,23 @@
+/* src/styles/Resources.css */
+.resources-page h1, .resources-page h2 {
+  text-align: center;
+  color: purple;
+}
+.resources-page h3 {
+  color: purple;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.resources-page p {
+  padding: 30px;
+  color: whitesmoke;
+}
+body.light-mode .resources-page h1,
+body.light-mode .resources-page h2,
+body.light-mode .resources-page h3 {
+  color: purple !important;
+}
+body.light-mode .resources-page p {
+  color: #222 !important;
+  background: #fff !important;
+}

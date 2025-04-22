@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import '../styles/SearchBar.css'; // Import CSS for styling
+import '../styles/App.css'; // Import CSS for styling
 
 interface SearchBarProps {
   onSearch: (query: string) => void;

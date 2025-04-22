@@ -1,0 +1,130 @@
+/* src/styles/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+.navbar .brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 10px;
+}
+.navbar-search-bar-container {
+  flex: 1;
+  margin: 0 20px;
+  background-color: #333;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  background-color: #333;
+}
+.nav-links li a {
+  color: purple;
+  font-size: 1rem;
+  transform: scale(1.05);
+}
+.nav-links li a:hover {
+  color: white;
+  transform: scale(1.05);
+}
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar-search-bar-container { display: none; }
+  .nav-links { display: none; flex-direction: column; }
+  .mobile-menu-toggle { display: block; }
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1rem;
+  user-select: none;
+  background-color: transparent;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  width: 40px;
+  height: 22px;
+  background: white;
+  border-radius: 22px;
+  position: relative;
+  transition: background 0.3s;
+  margin-right: 8px;
+  outline: #333 solid 1px;
+}
+.slider:before {
+  content: "☀️";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  z-index: 2;
+}
+.switch input:checked + .slider {
+  background: black;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(18px);
+  background-color: black;
+}
+.switch-label {
+  font-size: 1.2rem;
+  margin-left: 4px;
+}
+
+/* Add moon/sun emoji as the logo inside the circle */
+.switch input:not(:checked) + .slider:before {
+  content: "☀️";
+  color: white;
+  background-color: white;
+  box-shadow: #222;
+}
+.switch input:checked + .slider:before {
+  content: "🌙";
+  color: black;
+  background-color: black;
+}
+
+body.light-mode .navbar,
+body.light-mode .navbar-search-bar-container,
+body.light-mode .nav-links,
+body.light-mode .mobile-menu-toggle {
+  background-color: #f8f8f8 !important;
+  color: #222 !important;
+}
+body.light-mode .navbar .brand {
+  color: #222 !important;
+}
+body.light-mode .nav-links li a {
+  color: purple !important;
+}
+body.light-mode .nav-links li a:hover {
+  color:#222 !important;
+}

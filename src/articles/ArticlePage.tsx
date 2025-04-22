@@ -1,5 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import '../styles/ArticlePage.css';
+import '../styles/App.css';
 
 interface ArticlePageProps {
   articles: any[];
@@ -14,14 +16,25 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ articles }) => {
   }
 
   return (
-    <div>
-      <br /><br /><br /><br /><br />
-      <h1>{article.title}</h1>
-      <p><strong>Author:</strong> {article.author}</p>
-      <p><strong>Date:</strong> {article.date}</p>
-      <img src={article.imageUrl} alt={article.title} style={{ maxWidth: '100%', height: 'auto' }} />
-      <p>{article.description}</p>
-      <div>{article.content}</div>
+    <div className="article-page">
+      <div
+        className="article-banner"
+        style={{
+          backgroundImage: `url(${article.imageUrl})`,
+        }}
+      >
+        <div className="banner-overlay">
+
+          <h1 className="banner-title">{article.title}</h1>
+        </div>
+        <br></br><br></br><br></br>
+      </div>
+      <div className="article-content">
+        <p><strong>Author:</strong> {article.author}</p>
+        <p><strong>Date:</strong> {article.date}</p>
+        <p>{article.description}</p>
+        <div dangerouslySetInnerHTML={{ __html: article.content }} />
+      </div>
     </div>
   );
 };

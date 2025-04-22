@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Ressources.css';
 
 const PagesResources: React.FC = () => {
   return (
@@ -121,12 +122,18 @@ const PagesResources: React.FC = () => {
           Tél : <a href="tel:+15143505128">514 350-5128</a><br />
           Fax : <a href="tel:+15143505198">514 350-5198</a><br />
           Site Internet : <a href="https://ampq.org/" target="_blank" rel="noopener noreferrer">ampq.org</a><br />
-          Le Réseau Avant de craquer est un organisme communautaire provincial (Québec) à but non lucratif dont la mission consiste à regrouper, représenter, soutenir et mobiliser des organismes qui oeuvrent à briser l'isolement et à actualiser le potentiel des membres de l'entourage qui accompagnent un proche atteint de maladie mentale.<br />
-          <a href="https://www.avantdecraquer.com/" target="_blank" rel="noopener noreferrer">203-1990, rue Cyrille-Duquet, Québec (QC) G1N 4K8</a><br />
-          Tél: <a href="tel:+18552727837">1 855 CRAQUER (272-7837)</a><br />
-          Site internet: <a href="https://www.avantdecraquer.com" target="_blank" rel="noopener noreferrer">www.avantdecraquer.com</a>
-        </p>
+          </p>
       </div>
+
+        <div>
+          <h3>Avant de craquer</h3>
+          <p>
+            Le Réseau Avant de craquer est un organisme communautaire provincial (Québec) à but non lucratif dont la mission consiste à regrouper, représenter, soutenir et mobiliser des organismes qui oeuvrent à briser l'isolement et à actualiser le potentiel des membres de l'entourage qui accompagnent un proche atteint de maladie mentale.<br />
+            <a href="https://www.avantdecraquer.com/" target="_blank" rel="noopener noreferrer">203-1990, rue Cyrille-Duquet, Québec (QC) G1N 4K8</a><br />
+            Tél: <a href="tel:+18552727837">1 855 CRAQUER (272-7837)</a><br />
+            Site internet: <a href="https://www.avantdecraquer.com" target="_blank" rel="noopener noreferrer">www.avantdecraquer.com</a>
+          </p>
+        </div>
 
       <div>
         <h3>Ça suffit</h3>
