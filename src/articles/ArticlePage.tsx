@@ -16,26 +16,23 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ articles }) => {
   }
 
   return (
-    <div className="article-page">
-      <div
-        className="article-banner"
-        style={{
-          backgroundImage: `url(${article.imageUrl})`,
-        }}
-      >
-        <div className="banner-overlay">
+    <>
+      <div className="padding image-title-container">
+        <img
+          src={article.imageUrl}
+          alt={article.imageAlt}
+          className="article-image-centered"
+        />
 
-          <h1 className="banner-title">{article.title}</h1>
-        </div>
-        <br></br><br></br><br></br>
       </div>
       <div className="article-content">
+        <h1>{article.title}</h1>
         <p><strong>Author:</strong> {article.author}</p>
         <p><strong>Date:</strong> {article.date}</p>
         <p>{article.description}</p>
         <div dangerouslySetInnerHTML={{ __html: article.content }} />
       </div>
-    </div>
+    </>  
   );
 };
 

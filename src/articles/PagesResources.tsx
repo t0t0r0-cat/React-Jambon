@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Ressources.css';
+import BottomBar from '../components/bottomBar';
 
 const PagesResources: React.FC = () => {
   return (
@@ -435,6 +436,9 @@ const PagesResources: React.FC = () => {
           Site Internet : <a href="https://www.schizophrenie.qc.ca" target="_blank" rel="noopener noreferrer">www.schizophrenie.qc.ca</a>
         </p>
       </div>
+      <nav>
+        <BottomBar />
+      </nav>
     </div>
   );
 };

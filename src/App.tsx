@@ -7,6 +7,7 @@ import AboutUs from './articles/AboutUs';
 import ArticlePage from './articles/ArticlePage';
 import ContactUs from './articles/ContactUs';
 import EspaceJambon from './articles/EspaceJambon';
+import BottomBar from './components/bottomBar.tsx';
 import './styles/App.css';
 import SearchBar from './components/SearchBar';
 import { loadAllArticles } from './articles/loadArticles.ts';
@@ -51,6 +52,9 @@ const App: React.FC = () => {
           />
         ))}
       </div>
+      <nav>
+        <BottomBar />
+      </nav>
     </div>
   );
 

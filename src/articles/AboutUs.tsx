@@ -1,4 +1,5 @@
 import React from 'react';
+import BottomBar from '../components/bottomBar';
 
 const AboutUs: React.FC = () => {
   return (
@@ -30,6 +31,9 @@ const AboutUs: React.FC = () => {
         Néanmoins, nous avons choisi de modifier le mot, afin d’y représenter un court jeu de mot. L’orthographe « <u>Éco</u> » à la place de « Écho » a été sélectionné afin de faire note du côté vert et écologique de notre et école, en plus de celui du journal. En effet, le journal sera en mesure de soutenir les mouvements verts de l’école comme la vague verte et bleue et ce en optant pour un journal numérique, favorisant l’environnement au médium papier.
         Finalement, nous voulions absolument représenter l’école et c’est pourquoi, c’est sans surprise que le qualitatif ajouté à la suite de « L’Éco » est « de l’Île », pour l’école secondaire de l’Île.
       </p>
+      <nav>
+        <BottomBar />
+      </nav>
     </div>
   );
 };

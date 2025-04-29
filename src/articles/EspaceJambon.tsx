@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/App.css'; // Import CSS for styling
 import '../styles/EspaceJambon.css';
+import BottomBar from '../components/bottomBar';
 
 const EspaceJambon: React.FC = () => {
   return (
@@ -27,6 +28,9 @@ const EspaceJambon: React.FC = () => {
           <h2>Jambon et Bean à l'Halloween - Octobre 2023</h2>
         </div>
       </div>
+      <nav>
+        <BottomBar />
+      </nav>
     </div>
   );
 };

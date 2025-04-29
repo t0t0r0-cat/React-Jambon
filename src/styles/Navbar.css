@@ -7,9 +7,13 @@
   color: white;
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
 }
 .navbar .brand {
-  color: white;
+  color: purple;
   font-size: 1.5rem;
   font-weight: bold;
   background-color: transparent;
@@ -120,11 +124,65 @@ body.light-mode .mobile-menu-toggle {
   color: #222 !important;
 }
 body.light-mode .navbar .brand {
-  color: #222 !important;
+  color: purple !important;
 }
 body.light-mode .nav-links li a {
   color: purple !important;
 }
 body.light-mode .nav-links li a:hover {
   color:#222 !important;
+}
+
+.article-content {
+  margin: -100px auto 0 auto; /* Negative top margin to float over banner */
+  position: relative;
+  z-index: 2;
+  background: var(--article-bg, #181818);
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: transparent;
+    width: auto;
+    padding: 0;
+    gap: 15px;
+  }
+  .nav-links li a {
+    color: purple;
+  }
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    z-index: 1000;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+  .nav-links.mobile-menu-open {
+    display: flex;
+  }
+  .nav-links li a {
+    color: purple;
+  }
+  .nav-links li a:hover {
+    color: white;
+  }
+  .mobile-menu-toggle {
+    display: block;
+  }
 }
