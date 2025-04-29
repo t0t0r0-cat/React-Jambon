@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
   };
 
   const toggleDarkMode = () => {
-    setDarkMode((prev) => !prev);
+    setDarkMode((prev:boolean) => !prev);
   };
 
   return (
