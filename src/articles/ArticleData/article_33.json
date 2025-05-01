@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "33",
+        "article": "/article/article-33"
+    },
+    "Content": {
+        "title": "Langue pour ce blog",
+        "description": "fr...",
+        "content": "fr",
+        "imageUrl": "",
+        "imageAlt": "Image for article 33"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 33",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "fr"
+}

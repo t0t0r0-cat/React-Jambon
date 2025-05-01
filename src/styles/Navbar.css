@@ -18,10 +18,10 @@
   font-weight: bold;
   background-color: transparent;
   padding: 10px;
+  width: 20%;
 }
 .navbar-search-bar-container {
-  flex: 1;
-  margin: 0 20px;
+  flex: 2;
   background-color: #333;
 }
 .nav-links {
@@ -29,6 +29,9 @@
   display: flex;
   gap: 15px;
   background-color: #333;
+  align-items: flex-end;
+  flex: 3;
+  padding: 0%;
 }
 .nav-links li a {
   color: purple;
@@ -185,4 +188,13 @@ body.light-mode .nav-links li a:hover {
   .mobile-menu-toggle {
     display: block;
   }
+}
+
+.nav-links {
+  width: 100%;
+}
+
+.div{
+  padding: 0%;
+  background-color: #333;
 }

@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "9",
+        "article": "/article/article-9"
+    },
+    "Content": {
+        "title": "Fournir ou non une page d'archivage pour chaque article",
+        "description": "true...",
+        "content": "true",
+        "imageUrl": "",
+        "imageAlt": "Image for article 9"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 9",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "true"
+}

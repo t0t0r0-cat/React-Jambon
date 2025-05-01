@@ -1,15 +1,15 @@
 /* src/styles/base.css */
 @font-face {
   font-family: 'Fira Sans';
-  src: url('../fonts/FiraSans-Regular.woff2') format('woff2'),
-       url('../fonts/FiraSans-Regular.woff') format('woff');
+  src: url('/fonts/FiraSans-Regular.woff2') format('woff2'),
+       url('/fonts/FiraSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Fira Sans';
-  src: url('../fonts/FiraSans-Bold.woff2') format('woff2'),
-       url('../fonts/FiraSans-Bold.woff') format('woff');
+  src: url('/fonts/FiraSans-Bold.woff2') format('woff2'),
+       url('/fonts/FiraSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -45,4 +45,11 @@ h3 {
 body.light-mode {
   background-color: white !important;
   color: #222 !important;
+}
+
+img.logo {
+  display: block;
+  position: relative;
+  align-items: center;
+
 }

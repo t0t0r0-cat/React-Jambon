@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "19",
+        "article": "/article/article-19"
+    },
+    "Content": {
+        "title": "Activer ou non l'affichage des images de profil dans les commentaires",
+        "description": "true...",
+        "content": "true",
+        "imageUrl": "",
+        "imageAlt": "Image for article 19"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 19",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "true"
+}

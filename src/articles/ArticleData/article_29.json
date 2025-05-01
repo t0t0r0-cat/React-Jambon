@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "29",
+        "article": "/article/article-29"
+    },
+    "Content": {
+        "title": "Une description du blog",
+        "description": "L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les ...",
+        "content": "L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les élèves. Évidemment, nous vous demanderions de restez respectueux dans les commentaires.\n\n\n Bonne lecture :)",
+        "imageUrl": "",
+        "imageAlt": "Image for article 29"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 29",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les élèves. Évidemment, nous vous demanderions de restez respectueux dans les commentaires.\n\n\n Bonne lecture :)"
+}

@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "12",
+        "article": "/article/article-12"
+    },
+    "Content": {
+        "title": "Liste d'adresses e-mail auxquelles les notifications de nouveaux commentaires doivent être envoyées",
+        "description": "journal048@gmail.com...",
+        "content": "journal048@gmail.com",
+        "imageUrl": "",
+        "imageAlt": "Image for article 12"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 12",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "journal048@gmail.com"
+}

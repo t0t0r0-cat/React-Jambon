@@ -33,6 +33,7 @@ const App: React.FC = () => {
   const HomePage: React.FC = () => (
     <div>
       <br /><br />
+      <img src="/public/vite.svg" alt="Logo" className="logo" />
       <h1>Eco de l'île</h1>
       <h2>La maison de jambon</h2>
       <p>

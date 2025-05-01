@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "43",
+        "article": "/article/article-43"
+    },
+    "Content": {
+        "title": "Activer ou non la Modification rapide",
+        "description": "false...",
+        "content": "false",
+        "imageUrl": "",
+        "imageAlt": "Image for article 43"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 43",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "false"
+}

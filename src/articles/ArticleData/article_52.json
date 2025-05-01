@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "52",
+        "article": "/article/article-52"
+    },
+    "Content": {
+        "title": "Indique s'il faut afficher les images en mode lightbox lorsque l'utilisateur clique sur ces dernières",
+        "description": "false...",
+        "content": "false",
+        "imageUrl": "",
+        "imageAlt": "Image for article 52"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 52",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "false"
+}

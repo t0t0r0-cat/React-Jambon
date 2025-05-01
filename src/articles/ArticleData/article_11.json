@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "11",
+        "article": "/article/article-11"
+    },
+    "Content": {
+        "title": "Demander ou non aux auteurs de commentaires de passer un test Captcha",
+        "description": "true...",
+        "content": "true",
+        "imageUrl": "",
+        "imageAlt": "Image for article 11"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 11",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "true"
+}

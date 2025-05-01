@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "48",
+        "article": "/article/article-48"
+    },
+    "Content": {
+        "title": "Activer ou non l'affichage d'un champ pour le lien associé dans la fenêtre de rédaction des articles",
+        "description": "true...",
+        "content": "true",
+        "imageUrl": "",
+        "imageAlt": "Image for article 48"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 48",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "true"
+}

@@ -2,7 +2,7 @@
 /* Import the custom font */
 @font-face {
   font-family: 'Asap';
-  src: url('./src/fonts/CustomFont.ttf') format('truetype');
+  src: url('/fonts/CustomFont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

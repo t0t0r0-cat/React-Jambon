@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "17",
+        "article": "/article/article-17"
+    },
+    "Content": {
+        "title": "Nombre de jours à l'issue duquel les nouveaux commentaires feront l'objet d'une modération",
+        "description": "14...",
+        "content": "14",
+        "imageUrl": "",
+        "imageAlt": "Image for article 17"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 17",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "14"
+}

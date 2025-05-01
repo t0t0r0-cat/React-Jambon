@@ -1,0 +1,22 @@
+{
+    "system": {
+        "id": "44",
+        "article": "/article/article-44"
+    },
+    "Content": {
+        "title": "Type d'accès pour les lecteurs du blog.",
+        "description": "PUBLIC...",
+        "content": "PUBLIC",
+        "imageUrl": "",
+        "imageAlt": "Image for article 44"
+    },
+    "Metadata": {
+        "imageUrl": "",
+        "imageAlt": "Image for article 44",
+        "date": "2021-12-09",
+        "author": "Journal étudiant de l'école secondaire de l'Île",
+        "programe": "",
+        "Niveau": ""
+    },
+    "htmlContent": "PUBLIC"
+}
