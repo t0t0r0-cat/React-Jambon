@@ -1,11 +1,11 @@
 {
     "system": {
         "id": "39",
-        "article": "/article/article-39"
+        "article": "/article/Type_de_flux_à_fournir_pour_les_articles_de_blog"
     },
     "Content": {
-        "title": "Type de flux à fournir pour les commentaires associés à des articles de blog particuliers",
-        "description": "FULL...",
+        "title": "Type de flux à fournir pour les articles de blog",
+        "description": "FULL",
         "content": "FULL",
         "imageUrl": "",
         "imageAlt": "Image for article 39"
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 39",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
     "htmlContent": "FULL"
 }

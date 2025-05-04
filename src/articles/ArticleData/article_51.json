@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "51",
-        "article": "/article/article-51"
+        "article": "/article/Indique_s'il_faut_afficher_les_images_en_mode_lightbox_lorsque_l'utilisateur_clique_sur_ces_dernières"
     },
     "Content": {
-        "title": "Le fuseau horaire pour ce blog",
-        "description": "America/Toronto...",
-        "content": "America/Toronto",
+        "title": "Indique s'il faut afficher les images en mode lightbox lorsque l'utilisateur clique sur ces dernières",
+        "description": "false",
+        "content": "false",
         "imageUrl": "",
         "imageAlt": "Image for article 51"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 51",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "America/Toronto"
+    "htmlContent": "false"
 }

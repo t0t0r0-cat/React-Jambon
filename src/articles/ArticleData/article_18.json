@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "18",
-        "article": "/article/article-18"
+        "article": "/article/Activer_ou_non_l'affichage_des_images_de_profil_dans_les_commentaires"
     },
     "Content": {
-        "title": "Adresse e-mail à laquelle doivent être envoyées les notifications des nouveaux commentaires nécessitant une modération",
-        "description": "",
-        "content": null,
+        "title": "Activer ou non l'affichage des images de profil dans les commentaires",
+        "description": "true",
+        "content": "true",
         "imageUrl": "",
         "imageAlt": "Image for article 18"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 18",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": null
+    "htmlContent": "true"
 }

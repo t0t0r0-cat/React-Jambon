@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "34",
-        "article": "/article/article-34"
+        "article": "/article/Ensemble_d'éléments_à_afficher_sur_la_page_principale"
     },
     "Content": {
-        "title": "Nombre maximum d'éléments à afficher sur la page principale\"",
-        "description": "13...",
-        "content": "13",
+        "title": "Ensemble d'éléments à afficher sur la page principale",
+        "description": "POSTS",
+        "content": "POSTS",
         "imageUrl": "",
         "imageAlt": "Image for article 34"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 34",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "13"
+    "htmlContent": "POSTS"
 }

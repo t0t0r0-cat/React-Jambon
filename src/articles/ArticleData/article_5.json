@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "5",
-        "article": "/article/article-5"
+        "article": "/article/Le_numéro_de_format_de_date_de_l'index_des_archives"
     },
     "Content": {
-        "title": "Numéro de compte Google Analytics du blog",
-        "description": "UA-325822208-9...",
-        "content": "UA-325822208-9",
+        "title": "Le numéro de format de date de l'index des archives",
+        "description": "9",
+        "content": "9",
         "imageUrl": "",
         "imageAlt": "Image for article 5"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 5",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "UA-325822208-9"
+    "htmlContent": "9"
 }

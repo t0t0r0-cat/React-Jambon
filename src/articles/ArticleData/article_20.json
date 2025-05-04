@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "20",
-        "article": "/article/article-20"
+        "article": "/article/Numéro_de_format_de_l'horodatage_du_commentaire"
     },
     "Content": {
-        "title": "Activer ou non l'affichage de commentaires",
-        "description": "true...",
-        "content": "true",
+        "title": "Numéro de format de l'horodatage du commentaire",
+        "description": "20",
+        "content": "20",
         "imageUrl": "",
         "imageAlt": "Image for article 20"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 20",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": "20"
 }

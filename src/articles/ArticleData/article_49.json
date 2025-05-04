@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "49",
-        "article": "/article/article-49"
+        "article": "/article/Le_numéro_de_format_d'horodatage"
     },
     "Content": {
-        "title": "Sous-domaine BlogSpot sur lequel votre blog doit être publié",
-        "description": "lecodelile...",
-        "content": "lecodelile",
+        "title": "Le numéro de format d'horodatage",
+        "description": "15",
+        "content": "15",
         "imageUrl": "",
         "imageAlt": "Image for article 49"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 49",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "lecodelile"
+    "htmlContent": "15"
 }

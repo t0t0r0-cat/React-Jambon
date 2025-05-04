@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "11",
-        "article": "/article/article-11"
+        "article": "/article/Liste_d'adresses_e-mail_auxquelles_les_notifications_de_nouveaux_commentaires_doivent_être_envoyées"
     },
     "Content": {
-        "title": "Demander ou non aux auteurs de commentaires de passer un test Captcha",
-        "description": "true...",
-        "content": "true",
+        "title": "Liste d'adresses e-mail auxquelles les notifications de nouveaux commentaires doivent être envoyées",
+        "description": "journal048@gmail.com",
+        "content": "journal048@gmail.com",
         "imageUrl": "",
         "imageAlt": "Image for article 11"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 11",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": "journal048@gmail.com"
 }

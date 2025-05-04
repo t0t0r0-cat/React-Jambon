@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "30",
-        "article": "/article/article-30"
+        "article": "/article/URL_vers_laquelle_les_demandes_de_flux_d'articles_doivent_être_redirigées"
     },
     "Content": {
-        "title": "Afficher ou non un lien d'envoi des articles par e-mail pour les utilisateurs",
-        "description": "true...",
-        "content": "true",
+        "title": "URL vers laquelle les demandes de flux d'articles doivent être redirigées",
+        "description": null,
+        "content": null,
         "imageUrl": "",
         "imageAlt": "Image for article 30"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 30",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": null
 }

@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "22",
-        "article": "/article/article-22"
+        "article": "/article/Indique_si_ce_blog_renvoie_un_fichier_ads.txt_personnalisé_aux_moteurs_de_recherche_diffusant_des_annonces."
     },
     "Content": {
-        "title": "Fichier ads.txt personnalisé du blog renvoyé aux moteurs de recherche diffusant des annonces.",
-        "description": "",
-        "content": null,
+        "title": "Indique si ce blog renvoie un fichier ads.txt personnalisé aux moteurs de recherche diffusant des annonces.",
+        "description": "false",
+        "content": "false",
         "imageUrl": "",
         "imageAlt": "Image for article 22"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 22",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": null
+    "htmlContent": "false"
 }

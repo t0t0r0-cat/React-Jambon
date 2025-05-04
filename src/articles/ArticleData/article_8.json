@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "8",
-        "article": "/article/article-8"
+        "article": "/article/Fournir_ou_non_une_page_d'archivage_pour_chaque_article"
     },
     "Content": {
-        "title": "Liste des adresses e-mail des auteurs autorisés à publier.",
-        "description": "",
-        "content": null,
+        "title": "Fournir ou non une page d'archivage pour chaque article",
+        "description": "true",
+        "content": "true",
         "imageUrl": "",
         "imageAlt": "Image for article 8"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 8",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": null
+    "htmlContent": "true"
 }

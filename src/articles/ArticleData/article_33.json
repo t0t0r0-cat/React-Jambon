@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "33",
-        "article": "/article/article-33"
+        "article": "/article/Nombre_maximum_d'éléments_à_afficher_sur_la_page_principale\""
     },
     "Content": {
-        "title": "Langue pour ce blog",
-        "description": "fr...",
-        "content": "fr",
+        "title": "Nombre maximum d'éléments à afficher sur la page principale\"",
+        "description": "13",
+        "content": "13",
         "imageUrl": "",
         "imageAlt": "Image for article 33"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 33",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "fr"
+    "htmlContent": "13"
 }

@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "31",
-        "article": "/article/article-31"
+        "article": "/article/Activer_ou_non_l'alignement_flottant_pour_le_blog"
     },
     "Content": {
-        "title": "URL vers laquelle les demandes de flux d'articles doivent être redirigées",
-        "description": "",
-        "content": null,
+        "title": "Activer ou non l'alignement flottant pour le blog",
+        "description": "true",
+        "content": "true",
         "imageUrl": "",
         "imageAlt": "Image for article 31"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 31",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": null
+    "htmlContent": "true"
 }

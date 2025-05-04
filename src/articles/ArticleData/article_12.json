@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "12",
-        "article": "/article/article-12"
+        "article": "/article/Type_de_flux_à_fournir_pour_les_commentaires_de_blog"
     },
     "Content": {
-        "title": "Liste d'adresses e-mail auxquelles les notifications de nouveaux commentaires doivent être envoyées",
-        "description": "journal048@gmail.com...",
-        "content": "journal048@gmail.com",
+        "title": "Type de flux à fournir pour les commentaires de blog",
+        "description": "FULL",
+        "content": "FULL",
         "imageUrl": "",
         "imageAlt": "Image for article 12"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 12",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "journal048@gmail.com"
+    "htmlContent": "FULL"
 }

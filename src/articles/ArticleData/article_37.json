@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "37",
-        "article": "/article/article-37"
+        "article": "/article/Le_nom_du_blog"
     },
     "Content": {
-        "title": "Référencement du blog à l'aide de balises meta description.",
-        "description": "true...",
-        "content": "true",
+        "title": "Le nom du blog",
+        "description": "L'Éco de l'Île",
+        "content": "L'Éco de l'Île",
         "imageUrl": "",
         "imageAlt": "Image for article 37"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 37",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": "L'Éco de l'Île"
 }

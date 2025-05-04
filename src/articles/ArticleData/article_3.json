@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "3",
-        "article": "/article/article-3"
+        "article": "/article/Déterminer_si_ce_blog_comporte_des_éléments_réservés_aux_adultes"
     },
     "Content": {
-        "title": "Liste des e-mails des administrateurs du blog.",
-        "description": "journal048@gmail.com...",
-        "content": "journal048@gmail.com",
+        "title": "Déterminer si ce blog comporte des éléments réservés aux adultes",
+        "description": "false",
+        "content": "false",
         "imageUrl": "",
         "imageAlt": "Image for article 3"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 3",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "journal048@gmail.com"
+    "htmlContent": "false"
 }

@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "35",
-        "article": "/article/article-35"
+        "article": "/article/Texte_de_la_balise_meta_description_du_blog_trouvé_par_les_moteurs_de_recherche."
     },
     "Content": {
-        "title": "Ensemble d'éléments à afficher sur la page principale",
-        "description": "POSTS...",
-        "content": "POSTS",
+        "title": "Texte de la balise meta description du blog trouvé par les moteurs de recherche.",
+        "description": null,
+        "content": null,
         "imageUrl": "",
         "imageAlt": "Image for article 35"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 35",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "POSTS"
+    "htmlContent": null
 }

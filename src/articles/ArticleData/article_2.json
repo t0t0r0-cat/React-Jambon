@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "2",
-        "article": "/article/article-2"
+        "article": "/article/Liste_des_e-mails_des_administrateurs_du_blog."
     },
     "Content": {
-        "title": "Type de publication réalisée pour ce blog.",
-        "description": "PUBLISH_MODE_BLOGSPOT...",
-        "content": "PUBLISH_MODE_BLOGSPOT",
+        "title": "Liste des e-mails des administrateurs du blog.",
+        "description": "journal048@gmail.com",
+        "content": "journal048@gmail.com",
         "imageUrl": "",
         "imageAlt": "Image for article 2"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 2",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "PUBLISH_MODE_BLOGSPOT"
+    "htmlContent": "journal048@gmail.com"
 }

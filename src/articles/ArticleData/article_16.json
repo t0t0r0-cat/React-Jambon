@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "16",
-        "article": "/article/article-16"
+        "article": "/article/Nombre_de_jours_à_l'issue_duquel_les_nouveaux_commentaires_feront_l'objet_d'une_modération"
     },
     "Content": {
-        "title": "Activer ou non la modération des commentaires",
-        "description": "ON_OLD_POSTS...",
-        "content": "ON_OLD_POSTS",
+        "title": "Nombre de jours à l'issue duquel les nouveaux commentaires feront l'objet d'une modération",
+        "description": "14",
+        "content": "14",
         "imageUrl": "",
         "imageAlt": "Image for article 16"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 16",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "ON_OLD_POSTS"
+    "htmlContent": "14"
 }

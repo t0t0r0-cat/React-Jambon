@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "4",
-        "article": "/article/article-4"
+        "article": "/article/Numéro_de_compte_Google_Analytics_du_blog"
     },
     "Content": {
-        "title": "Déterminer si ce blog comporte des éléments réservés aux adultes",
-        "description": "false...",
-        "content": "false",
+        "title": "Numéro de compte Google Analytics du blog",
+        "description": "UA-325822208-9",
+        "content": "UA-325822208-9",
         "imageUrl": "",
         "imageAlt": "Image for article 4"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 4",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "false"
+    "htmlContent": "UA-325822208-9"
 }

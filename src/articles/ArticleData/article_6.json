@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "6",
-        "article": "/article/article-6"
+        "article": "/article/Fréquence_à_laquelle_ce_blog_doit_être_archivé"
     },
     "Content": {
-        "title": "Le numéro de format de date de l'index des archives",
-        "description": "9...",
-        "content": "9",
+        "title": "Fréquence à laquelle ce blog doit être archivé",
+        "description": "MONTHLY",
+        "content": "MONTHLY",
         "imageUrl": "",
         "imageAlt": "Image for article 6"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 6",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "9"
+    "htmlContent": "MONTHLY"
 }

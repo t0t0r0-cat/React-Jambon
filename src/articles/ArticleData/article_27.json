@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "27",
-        "article": "/article/article-27"
+        "article": "/article/Mode_commentaire_par_défaut_pour_les_articles"
     },
     "Content": {
-        "title": "Le numéro de format d'en-tête de la date",
-        "description": "23...",
-        "content": "23",
+        "title": "Mode commentaire par défaut pour les articles",
+        "description": "DEFAULT_HAVE_COMMENTS",
+        "content": "DEFAULT_HAVE_COMMENTS",
         "imageUrl": "",
         "imageAlt": "Image for article 27"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 27",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "23"
+    "htmlContent": "DEFAULT_HAVE_COMMENTS"
 }

@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "50",
-        "article": "/article/article-50"
+        "article": "/article/Le_fuseau_horaire_pour_ce_blog"
     },
     "Content": {
-        "title": "Le numéro de format d'horodatage",
-        "description": "15...",
-        "content": "15",
+        "title": "Le fuseau horaire pour ce blog",
+        "description": "America/Toronto",
+        "content": "America/Toronto",
         "imageUrl": "",
         "imageAlt": "Image for article 50"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 50",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "15"
+    "htmlContent": "America/Toronto"
 }

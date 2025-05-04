@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "32",
-        "article": "/article/article-32"
+        "article": "/article/Langue_pour_ce_blog"
     },
     "Content": {
-        "title": "Activer ou non l'alignement flottant pour le blog",
-        "description": "true...",
-        "content": "true",
+        "title": "Langue pour ce blog",
+        "description": "fr",
+        "content": "fr",
         "imageUrl": "",
         "imageAlt": "Image for article 32"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 32",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": "fr"
 }

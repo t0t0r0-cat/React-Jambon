@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "23",
-        "article": "/article/article-23"
+        "article": "/article/Contenu_affiché_lorsque_l'article_ou_la_page_demandés_ne_sont_pas_trouvés."
     },
     "Content": {
-        "title": "Indique si ce blog renvoie un fichier ads.txt personnalisé aux moteurs de recherche diffusant des annonces.",
-        "description": "false...",
-        "content": "false",
+        "title": "Contenu affiché lorsque l'article ou la page demandés ne sont pas trouvés.",
+        "description": "erreur 404 haha\nVoici une petite vidéo :  https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "content": "erreur 404 haha\nVoici une petite vidéo :  https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imageUrl": "",
         "imageAlt": "Image for article 23"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 23",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "false"
+    "htmlContent": "erreur 404 haha\nVoici une petite vidéo :  https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }

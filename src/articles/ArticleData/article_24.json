@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "24",
-        "article": "/article/article-24"
+        "article": "/article/Fichier_robots.txt_personnalisé_du_blog_renvoyé_aux_moteurs_de_recherche."
     },
     "Content": {
-        "title": "Contenu affiché lorsque l'article ou la page demandés ne sont pas trouvés.",
-        "description": "erreur 404 haha\nVoici une petite vidéo :  https://www.youtube.com/watch?v=dQw4w9WgXcQ...",
-        "content": "erreur 404 haha\nVoici une petite vidéo :  https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "title": "Fichier robots.txt personnalisé du blog renvoyé aux moteurs de recherche.",
+        "description": null,
+        "content": null,
         "imageUrl": "",
         "imageAlt": "Image for article 24"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 24",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "erreur 404 haha\nVoici une petite vidéo :  https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "htmlContent": null
 }

@@ -1,11 +1,11 @@
 {
     "system": {
         "id": "41",
-        "article": "/article/article-41"
+        "article": "/article/Le_modèle_des_articles_du_blog"
     },
     "Content": {
-        "title": "Pied de page à ajouter à la fin de chaque entrée du flux d'articles",
-        "description": "",
+        "title": "Le modèle des articles du blog",
+        "description": null,
         "content": null,
         "imageUrl": "",
         "imageAlt": "Image for article 41"
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 41",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
     "htmlContent": null
 }

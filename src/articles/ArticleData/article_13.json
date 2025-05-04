@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "13",
-        "article": "/article/article-13"
+        "article": "/article/Emplacement_du_formulaire_de_commentaire_de_blog"
     },
     "Content": {
-        "title": "Type de flux à fournir pour les commentaires de blog",
-        "description": "FULL...",
-        "content": "FULL",
+        "title": "Emplacement du formulaire de commentaire de blog",
+        "description": "EMBEDDED_IFRAME",
+        "content": "EMBEDDED_IFRAME",
         "imageUrl": "",
         "imageAlt": "Image for article 13"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 13",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "FULL"
+    "htmlContent": "EMBEDDED_IFRAME"
 }

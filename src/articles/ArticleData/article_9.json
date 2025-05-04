@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "9",
-        "article": "/article/article-9"
+        "article": "/article/Qui_peut_ajouter_des_commentaires"
     },
     "Content": {
-        "title": "Fournir ou non une page d'archivage pour chaque article",
-        "description": "true...",
-        "content": "true",
+        "title": "Qui peut ajouter des commentaires",
+        "description": "ANYONE_NEW",
+        "content": "ANYONE_NEW",
         "imageUrl": "",
         "imageAlt": "Image for article 9"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 9",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": "ANYONE_NEW"
 }

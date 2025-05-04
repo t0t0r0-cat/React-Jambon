@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "46",
-        "article": "/article/article-46"
+        "article": "/article/Liste_d'adresses_e-mail_séparées_par_une_virgule_auxquelles_les_nouveaux_articles_de_blog_doivent_être_envoyés"
     },
     "Content": {
-        "title": "Activer ou non l'indexation de ce blog par des moteurs de recherche",
-        "description": "true...",
-        "content": "true",
+        "title": "Liste d'adresses e-mail séparées par une virgule auxquelles les nouveaux articles de blog doivent être envoyés",
+        "description": null,
+        "content": null,
         "imageUrl": "",
         "imageAlt": "Image for article 46"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 46",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": null
 }

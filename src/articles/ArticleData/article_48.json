@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "48",
-        "article": "/article/article-48"
+        "article": "/article/Sous-domaine_BlogSpot_sur_lequel_votre_blog_doit_être_publié"
     },
     "Content": {
-        "title": "Activer ou non l'affichage d'un champ pour le lien associé dans la fenêtre de rédaction des articles",
-        "description": "true...",
-        "content": "true",
+        "title": "Sous-domaine BlogSpot sur lequel votre blog doit être publié",
+        "description": "lecodelile",
+        "content": "lecodelile",
         "imageUrl": "",
         "imageAlt": "Image for article 48"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 48",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "true"
+    "htmlContent": "lecodelile"
 }

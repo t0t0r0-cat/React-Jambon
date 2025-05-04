@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "26",
-        "article": "/article/article-26"
+        "article": "/article/Le_numéro_de_format_d'en-tête_de_la_date"
     },
     "Content": {
-        "title": "Indique si ce blog renvoie un fichier robots.txt personnalisé aux moteurs de recherche.",
-        "description": "false...",
-        "content": "false",
+        "title": "Le numéro de format d'en-tête de la date",
+        "description": "23",
+        "content": "23",
         "imageUrl": "",
         "imageAlt": "Image for article 26"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 26",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "false"
+    "htmlContent": "23"
 }

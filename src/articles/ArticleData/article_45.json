@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "45",
-        "article": "/article/article-45"
+        "article": "/article/Activer_ou_non_l'indexation_de_ce_blog_par_des_moteurs_de_recherche"
     },
     "Content": {
-        "title": "Liste d'e-mails des utilisateurs qui sont autorisés à lire le blog.",
-        "description": "",
-        "content": null,
+        "title": "Activer ou non l'indexation de ce blog par des moteurs de recherche",
+        "description": "true",
+        "content": "true",
         "imageUrl": "",
         "imageAlt": "Image for article 45"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 45",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": null
+    "htmlContent": "true"
 }

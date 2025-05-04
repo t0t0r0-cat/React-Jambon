@@ -1,11 +1,11 @@
 {
     "system": {
         "id": "19",
-        "article": "/article/article-19"
+        "article": "/article/Activer_ou_non_l'affichage_de_commentaires"
     },
     "Content": {
-        "title": "Activer ou non l'affichage des images de profil dans les commentaires",
-        "description": "true...",
+        "title": "Activer ou non l'affichage de commentaires",
+        "description": "true",
         "content": "true",
         "imageUrl": "",
         "imageAlt": "Image for article 19"
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 19",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
     "htmlContent": "true"
 }

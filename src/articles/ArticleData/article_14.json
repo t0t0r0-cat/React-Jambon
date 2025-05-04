@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "14",
-        "article": "/article/article-14"
+        "article": "/article/Message_de_commentaire_de_blog"
     },
     "Content": {
-        "title": "Emplacement du formulaire de commentaire de blog",
-        "description": "EMBEDDED_IFRAME...",
-        "content": "EMBEDDED_IFRAME",
+        "title": "Message de commentaire de blog",
+        "description": null,
+        "content": null,
         "imageUrl": "",
         "imageAlt": "Image for article 14"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 14",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "EMBEDDED_IFRAME"
+    "htmlContent": null
 }

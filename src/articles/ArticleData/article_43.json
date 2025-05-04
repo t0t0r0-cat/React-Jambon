@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "43",
-        "article": "/article/article-43"
+        "article": "/article/Type_d'accès_pour_les_lecteurs_du_blog."
     },
     "Content": {
-        "title": "Activer ou non la Modification rapide",
-        "description": "false...",
-        "content": "false",
+        "title": "Type d'accès pour les lecteurs du blog.",
+        "description": "PUBLIC",
+        "content": "PUBLIC",
         "imageUrl": "",
         "imageAlt": "Image for article 43"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 43",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "false"
+    "htmlContent": "PUBLIC"
 }

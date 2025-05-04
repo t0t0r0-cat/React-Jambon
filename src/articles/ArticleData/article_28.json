@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "28",
-        "article": "/article/article-28"
+        "article": "/article/Une_description_du_blog"
     },
     "Content": {
-        "title": "Mode commentaire par défaut pour les articles",
-        "description": "DEFAULT_HAVE_COMMENTS...",
-        "content": "DEFAULT_HAVE_COMMENTS",
+        "title": "Une description du blog",
+        "description": "L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les ...",
+        "content": "L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les élèves. Évidemment, nous vous demanderions de restez respectueux dans les commentaires.\n\n\n Bonne lecture :)",
         "imageUrl": "",
         "imageAlt": "Image for article 28"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 28",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": "DEFAULT_HAVE_COMMENTS"
+    "htmlContent": "L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par des élèves pour les élèves. Évidemment, nous vous demanderions de rest..."
 }

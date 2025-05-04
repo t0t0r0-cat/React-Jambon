@@ -1,12 +1,12 @@
 {
     "system": {
         "id": "36",
-        "article": "/article/article-36"
+        "article": "/article/Référencement_du_blog_à_l'aide_de_balises_meta_description."
     },
     "Content": {
-        "title": "Texte de la balise meta description du blog trouvé par les moteurs de recherche.",
-        "description": "",
-        "content": null,
+        "title": "Référencement du blog à l'aide de balises meta description.",
+        "description": "true",
+        "content": "true",
         "imageUrl": "",
         "imageAlt": "Image for article 36"
     },
@@ -14,9 +14,9 @@
         "imageUrl": "",
         "imageAlt": "Image for article 36",
         "date": "2021-12-09",
-        "author": "Journal étudiant de l'école secondaire de l'Île",
-        "programe": "",
-        "Niveau": ""
+        "author": "Unknown",
+        "programe": "Unknown",
+        "Niveau": "Unknown"
     },
-    "htmlContent": null
+    "htmlContent": "true"
 }
