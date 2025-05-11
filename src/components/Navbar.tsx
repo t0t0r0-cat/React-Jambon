@@ -1,4 +1,3 @@
-// Navbar.tsx
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
@@ -14,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
   const [darkMode, setDarkMode] = useState(() => {
     const stored = localStorage.getItem('darkMode');
     return stored ? JSON.parse(stored) : true;
-  }); // Night mode by default or from storage
+  });
 
   useEffect(() => {
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
@@ -45,7 +44,6 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
       <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
         ☰
       </button>
-      {/* Switch for dark/light mode */}
       <label className="switch">
         <input
           type="checkbox"

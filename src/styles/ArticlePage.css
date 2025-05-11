@@ -2,7 +2,7 @@
    background: var(--article-bg, #181818);
    color: var(--article-color, #fff);
    max-width: 95%;
-   margin: -15px auto 0 auto; /* Less negative margin so more of the banner shows */
+   margin: -15px auto 0 auto;
    border-radius: 16px;
    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
    padding: 32px 24px 24px 24px;

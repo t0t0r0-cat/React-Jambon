@@ -1,4 +1,3 @@
-// src/components/ArticleCard.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/ArticleCard.css';
@@ -8,7 +7,7 @@ interface ArticleCardProps {
   description: string;
   imageUrl: string;
   articleUrl: string;
-  imageAlt: string; // <-- Add this line
+  imageAlt: string;
 }
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl, articleUrl, imageAlt }) => (

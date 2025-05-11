@@ -1,4 +1,3 @@
-/* src/styles/ArticleCard.css */
 .article-card {
   display: inline-block;
   border: 1px solid #380f70;
@@ -10,7 +9,7 @@
   width: auto;
   max-width: 70%;
   padding: 20px;
-  margin: 16px; /* Add space between cards */
+  margin: 16px;
   background-color: #310F62;
 }
 
@@ -24,7 +23,6 @@
   height: auto;
   border-radius: 8px;
   margin-bottom: 12px;
-  /* Prevent card from being wider than the image */
   margin-left: auto;
   margin-right: auto;
 }

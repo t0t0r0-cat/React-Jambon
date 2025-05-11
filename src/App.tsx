@@ -50,7 +50,7 @@ const App: React.FC = () => {
             description={article.description}
             imageUrl={article.imageUrl}
             articleUrl={article.articleUrl}
-            imageAlt={article.imageAlt} // <-- CORRECT
+            imageAlt={article.imageAlt}
           />
         ))}
       </div>

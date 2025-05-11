@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
-import '../styles/SearchBar.css'; // Import CSS for styling
-import '../styles/App.css'; // Import CSS for styling
+import { useNavigate } from 'react-router-dom';
+import '../styles/SearchBar.css';
+import '../styles/App.css';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -9,12 +9,12 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [query, setQuery] = useState('');
-  const navigate = useNavigate(); // Hook for programmatic navigation
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSearch(query); // Call the onSearch function with the query
-    navigate('/'); // Navigate to the homepage
+    onSearch(query);
+    navigate('/');
   };
 
   return (

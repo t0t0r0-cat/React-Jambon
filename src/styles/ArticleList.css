@@ -1,8 +1,7 @@
-/* src/styles/ArticleList.css */
 .article-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px; /* Increase gap between cards */
+  gap: 32px;
   justify-content: center;
   width: 90%;
   max-width: 1200px;

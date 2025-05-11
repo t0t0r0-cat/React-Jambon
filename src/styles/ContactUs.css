@@ -1,4 +1,3 @@
-/* src/styles/ContactUs.css */
 .contact-us {
   padding: 20px;
   max-width: 600px;
@@ -33,7 +32,7 @@
   background-color: #0056b3;
 }
 body.light-mode .contact-us {
-  background-color: #fff !important;
+  background-color: #EDC9FF !important;
   color: #222 !important;
 }
 body.light-mode .contact-form,

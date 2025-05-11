@@ -1,10 +1,6 @@
 export async function loadAllArticles() {
-  // Import all JSON files in ArticleData folder
   const modules = import.meta.glob('./ArticleData/*.json', { eager: true });
-  // Each module is an object with a default export (the JSON)
   const articles = Object.values(modules).map((mod: any) => {
-    // Flatten and normalize the structure as needed
-    // Example for your Skibidi.json structure:
     const content = mod.Content || {};
     const meta = mod.Metadata || {};
     const system = mod.system || {};
