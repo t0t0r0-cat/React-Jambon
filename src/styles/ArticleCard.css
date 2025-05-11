@@ -1,16 +1,17 @@
 /* src/styles/ArticleCard.css */
 .article-card {
   display: inline-block;
-  border: 1px solid #ddd;
+  border: 1px solid #380f70;
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(86, 3, 134, 0.37);
   transition: transform 0.2s ease-in-out;
   text-align: center;
   width: auto;
   max-width: 70%;
   padding: 20px;
   margin: 16px; /* Add space between cards */
+  background-color: #310F62;
 }
 
 .article-card:hover {
@@ -50,8 +51,9 @@
 }
 
 body.light-mode .article-card {
-  background-color: #fff !important;
+  background-color: #FFC849 !important;
   color: #222 !important;
+  border: 1px solid #c49529 !important;
 }
 body.light-mode .article-card p {
   color: #222 !important;

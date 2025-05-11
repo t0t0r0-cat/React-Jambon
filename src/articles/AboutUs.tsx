@@ -9,9 +9,6 @@ const AboutUs: React.FC = () => {
       <br></br>
       <br></br>
       <h1>À propos</h1>
-      <p>
-        skibidi bop yes yes yes est un projet créé par des élèves de l'école secondaire de l'île.
-      </p>
       <h2>Notre histoire</h2>
       <p>
         L’Éco de l’Ile est le journal étudiant de l’école secondaire de l’Île située à Gatineau. Ce projet a été créé en 2021 par Charlie Huguet-Latour, une élève de cinquième secondaire du programme d’éducation intermédiaire (PEI), dans le cadre de son projet personnel de fin de parcours.

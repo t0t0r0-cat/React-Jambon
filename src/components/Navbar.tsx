@@ -36,6 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
   };
 
   return (
+    <>
     <nav className="navbar">
       <a href="/" className="brand">Éco de l'île</a>
       <div className="navbar-search-bar-container">
@@ -67,11 +68,17 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
         <li>
           <Link to="https://ile.csspo.gouv.qc.ca/">Site Internet De L'ecole</Link>
         </li>
-        <li>
+        <li style={{ position: "relative" }}>
           <Link to="/espace-jambon">Espace Jambon</Link>
+          <img
+            src="/Jambon/JambonLogo.png"
+            alt="Logo jambon"
+            className="img jambon-hang"
+          />
         </li>
       </ul>
     </nav>
+    </>
   );
 };
 

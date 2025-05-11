@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #310F62;
   color: white;
   position: fixed;
   width: 100%;
@@ -13,7 +13,7 @@
   z-index: 1000;
 }
 .navbar .brand {
-  color: purple;
+  color: #FFC849;
   font-size: 1.5rem;
   font-weight: bold;
   background-color: transparent;
@@ -22,24 +22,22 @@
 }
 .navbar-search-bar-container {
   flex: 2;
-  background-color: #333;
+  background-color: #310F62;
 }
 .nav-links {
   list-style: none;
   display: flex;
   gap: 15px;
-  background-color: #333;
+  background-color: #310F62;
   align-items: flex-end;
   flex: 3;
   padding: 0%;
 }
 .nav-links li a {
-  color: purple;
   font-size: 1rem;
   transform: scale(1.05);
 }
 .nav-links li a:hover {
-  color: white;
   transform: scale(1.05);
 }
 .mobile-menu-toggle {
@@ -75,7 +73,7 @@
   position: relative;
   transition: background 0.3s;
   margin-right: 8px;
-  outline: #333 solid 1px;
+  outline: #310F62 solid 1px;
 }
 .slider:before {
   content: "☀️";
@@ -123,17 +121,17 @@ body.light-mode .navbar,
 body.light-mode .navbar-search-bar-container,
 body.light-mode .nav-links,
 body.light-mode .mobile-menu-toggle {
-  background-color: #f8f8f8 !important;
+  background-color: #9A66D5 !important;
   color: #222 !important;
 }
 body.light-mode .navbar .brand {
-  color: purple !important;
+  color: #FFC849 !important;
 }
 body.light-mode .nav-links li a {
-  color: purple !important;
+  color: #FFC849 !important;
 }
 body.light-mode .nav-links li a:hover {
-  color:#222 !important;
+  color: #F9E0B4 !important;
 }
 
 .article-content {
@@ -154,9 +152,6 @@ body.light-mode .nav-links li a:hover {
     padding: 0;
     gap: 15px;
   }
-  .nav-links li a {
-    color: purple;
-  }
   .mobile-menu-toggle {
     display: none !important;
   }
@@ -167,7 +162,7 @@ body.light-mode .nav-links li a:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #333;
+    background-color: #310F62;
     position: absolute;
     top: 60px;
     right: 0;
@@ -178,9 +173,6 @@ body.light-mode .nav-links li a:hover {
   }
   .nav-links.mobile-menu-open {
     display: flex;
-  }
-  .nav-links li a {
-    color: purple;
   }
   .nav-links li a:hover {
     color: white;
@@ -196,5 +188,23 @@ body.light-mode .nav-links li a:hover {
 
 .div{
   padding: 0%;
-  background-color: #333;
+  background-color: #310F62;
+}
+
+.jambon .img{
+  width: 32px;
+  height: auto;
+  display: block;
+  margin-left: 1rem;
+}
+
+.jambon-hang {
+  position: absolute;
+  left: 35%;
+  top: 50%; /* Increase this value to move the image lower */
+  transform: translate(-30%, 0%) rotate(15deg); /* Remove -50% to stop vertical centering */
+  width: 100%; /* Keep the image small */
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
 }

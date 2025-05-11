@@ -33,13 +33,14 @@ const App: React.FC = () => {
   const HomePage: React.FC = () => (
     <div>
       <br /><br />
-      <img src="/public/vite.svg" alt="Logo" className="logo" />
+      <img src="public/Jambon/JambonLogo.png" alt="Logo" className="logo" width="25%" style={{ display: 'block', margin: '0 auto' }} />
       <h1>Eco de l'île</h1>
       <h2>La maison de jambon</h2>
       <p>
         L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par
         des élèves pour les élèves. Bonne lecture :)
       </p>
+      
       <SearchBar onSearch={handleSearch} />
       <div className="article-list">
         {filteredArticles.map((article) => (
