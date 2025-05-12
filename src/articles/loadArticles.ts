@@ -4,9 +4,15 @@ export async function loadAllArticles() {
     const content = mod.Content || {};
     const meta = mod.Metadata || {};
     const system = mod.system || {};
+    
+    // Get the ID from the article path and ensure it uses /articles/
+    const rawId = system.article?.replace(/^\/(article|articles)\//, '') || '';
+    const id = rawId;
+    const articleUrl = `/articles/${id}`;
+    
     return {
-      id: system.article.replace('/article/', ''),
-      articleUrl: system.article,
+      id,
+      articleUrl,
       title: content.title,
       description: content.description,
       content: content.content,
