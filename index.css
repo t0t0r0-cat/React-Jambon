@@ -18,6 +18,8 @@ body {
   font-family: 'Asap', sans-serif;
   padding: 20px;
   background-color: black;
+  display: block;
+  align-items: center;
 }
 
 .app {
@@ -82,6 +84,7 @@ body {
   font-size: 16px;
   color: white;
   background-color: rgb(117, 17, 100);
+  text-align: center;
 }
 
 @media (max-width: 768px) {
