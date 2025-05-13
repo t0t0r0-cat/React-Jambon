@@ -194,6 +194,12 @@ body.light-mode .nav-links li a:hover {
   margin-left: 1rem;
 }
 
+@keyframes rotateJambon {
+  0% { transform: translate(-30%, 0%) rotate(15deg); }
+  50% { transform: translate(-30%, 0%) rotate(30deg); }
+  100% { transform: translate(-30%, 0%) rotate(15deg); }
+}
+
 .jambon-hang {
   position: absolute;
   left: 35%;
@@ -202,5 +208,9 @@ body.light-mode .nav-links li a:hover {
   width: 100%;
   height: auto;
   z-index: 10;
-  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.jambon-hang:hover {
+  animation: rotateJambon 2s ease infinite;
 }

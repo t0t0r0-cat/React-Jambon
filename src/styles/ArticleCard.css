@@ -6,10 +6,12 @@
   box-shadow: 0 4px 6px rgba(86, 3, 134, 0.37);
   transition: transform 0.2s ease-in-out;
   text-align: center;
-  width: 45%;
-  padding: 10px;
+  width: calc(33.33% - 32px);
+  min-width: 280px;
+  max-width: 600px;
   margin: 16px;
   background-color: #310F62;
+  flex-grow: 1;
 }
 
 .article-card:hover {
@@ -18,12 +20,15 @@
 
 .article-card img {
   display: block;
-  max-width: 100%;
-  height: 33.375rem;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .article-card h3 {
