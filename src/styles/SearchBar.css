@@ -1,7 +1,17 @@
+.search-sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px;
+  margin-bottom: 20px;
+}
+
 .search-bar {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-grow: 1;
 }
 .search-bar input {
   padding: 8px;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ArticleCard from './components/ArticleCard';
+import SortDropdown from './components/SortDropdown';
 import PagesResources from './articles/PagesResources';
 import AboutUs from './articles/AboutUs';
 import ArticlePage from './articles/ArticlePage';
@@ -9,12 +10,14 @@ import ContactUs from './articles/ContactUs';
 import EspaceJambon from './articles/EspaceJambon';
 import BottomBar from './components/bottomBar.tsx';
 import './styles/App.css';
+import './styles/SortDropdown.css';
 import SearchBar from './components/SearchBar';
 import { loadAllArticles } from './articles/loadArticles.ts';
 
 const App: React.FC = () => {
   const [articles, setArticles] = useState<any[]>([]);
   const [filteredArticles, setFilteredArticles] = useState<any[]>([]);
+  const [sortBy, setSortBy] = useState<'newest' | 'oldest' | 'alphabetical'>('newest');
 
   useEffect(() => {
     loadAllArticles().then((loaded) => {
@@ -27,7 +30,27 @@ const App: React.FC = () => {
     const filtered = articles.filter((article) =>
       article.title.toLowerCase().includes(query.toLowerCase())
     );
-    setFilteredArticles(filtered);
+    setFilteredArticles(sortArticles(filtered, sortBy));
+  };
+
+  const sortArticles = (articlesToSort: any[], sort: string) => {
+    return [...articlesToSort].sort((a, b) => {
+      switch (sort) {
+        case 'newest':
+          return new Date(b.date).getTime() - new Date(a.date).getTime();
+        case 'oldest':
+          return new Date(a.date).getTime() - new Date(b.date).getTime();
+        case 'alphabetical':
+          return a.title.localeCompare(b.title);
+        default:
+          return 0;
+      }
+    });
+  };
+
+  const handleSort = (newSortBy: 'newest' | 'oldest' | 'alphabetical') => {
+    setSortBy(newSortBy);
+    setFilteredArticles(sortArticles(filteredArticles, newSortBy));
   };
 
   const HomePage: React.FC = () => (
@@ -40,8 +63,10 @@ const App: React.FC = () => {
         L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par
         des élèves pour les élèves. Bonne lecture :)
       </p>
-      
-      <SearchBar onSearch={handleSearch} />
+        <div className="search-sort-container">
+        <SearchBar onSearch={handleSearch} />
+        <SortDropdown onSortChange={handleSort} />
+      </div>
       <div className="article-list">
         {filteredArticles.map((article) => (
           <ArticleCard
@@ -51,6 +76,7 @@ const App: React.FC = () => {
             imageUrl={article.imageUrl}
             articleUrl={article.articleUrl}
             imageAlt={article.imageAlt}
+            date={article.date}
           />
         ))}
       </div>

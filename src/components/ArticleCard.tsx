@@ -8,13 +8,15 @@ interface ArticleCardProps {
   imageUrl: string;
   articleUrl: string;
   imageAlt: string;
+  date?: string;
 }
 
-const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl, articleUrl, imageAlt }) => (
+const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl, articleUrl, imageAlt, date }) => (
   <Link to={articleUrl}>
     <div className="article-card">
       <img src={imageUrl} alt={imageAlt} />
       <h3>{title}</h3>
+      {date && <p className="article-date">{new Date(date).toLocaleDateString()}</p>}
       <p>{description}</p>
     </div>
   </Link>
