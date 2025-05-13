@@ -1,19 +1,19 @@
 {
-    "system": {
-        "id": "4",
-        "article": "/articles/les-changements-climatiques"
-    },
-    "Content": {
-        "title": "Les changements climatiques",
-        "description": "Les changements climatiques",
-        "content": "<h1 >Les changements&nbsp;climatiques, c'est quand le climat de notre planète se réchauffe et change rapidement à cause de la pollution. Cela entraîne plusieurs problèmes, qui touchent les humains, les animaux et les plantes. </h1><div><div><img src=\"/images/16078074.jpg\" /></div><br /></div><h1 >Voici quelques exemples concrets de ses effets :&nbsp;</h1><div><ul><li>Fonte des glaciers et montée des eaux : Les glaciers et les calottes de glace fondent, ce qui fait monter le niveau des mers. Par exemple, certaines villes près des côtes risquent d’être inondées, comme Venise en Italie ou certaines îles du Pacifique.&nbsp;</li><li>Phénomènes météo extrêmes : Il y a plus de vagues de chaleur, de tempêtes violentes et d'incendies de forêt. Par exemple, les incendies en Californie et les ouragans dans les Caraïbes deviennent de plus en plus fréquents et violents.&nbsp;</li><li>Problèmes pour les animaux et les plantes : Beaucoup d'animaux et de plantes dépendent de leur environnement pour survivre. Avec le changement climatique, certains perdent leur habitat, comme les ours polaires dans l'Arctique.&nbsp;</li><li>Difficultés pour l'agriculture : Les cultures peuvent être endommagées par des sécheresses ou des inondations. Par exemple, les récoltes de blé ou de riz peuvent diminuer, ce qui peut créer des pénuries alimentaires.&nbsp;</li></ul></div><div><ul><li>Problèmes de santé pour les humains : Les vagues de chaleur peuvent causer des maladies et de la fatigue. Parfois, de nouvelles maladies se répandent plus facilement, car les moustiques qui les transportent se déplacent dans des zones plus chaudes.&nbsp;</li></ul></div><div><p>Pour limiter ces effets, chacun peut aider en réduisant la pollution, comme en recyclant, en économisant l'énergie et en prenant moins la voiture. Ensemble, on peut protéger notre planète !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Yéra Abigaïl Igiraneza</p></div>"
-    },
-    "Metadata": {
-        "imageUrl": "/images/149276ab.jpg",
-        "imageAlt": "",
-        "date": "2024-11-23T11:57:00.001-05:00",
-        "author": "Yéra Abigaïl Igiraneza",
-        "programe": "PEI",
-        "Niveau": "Secondaire 1"
-    }
+  "system": {
+    "id": "4",
+    "article": "/articles/les-changements-climatiques"
+  },
+  "Content": {
+    "title": "Les changements climatiques",
+    "description": "Les changements climatiques",
+    "content": "<h1 >Les changements&nbsp;climatiques, c'est quand le climat de notre planète se réchauffe et change rapidement à cause de la pollution. Cela entraîne plusieurs problèmes, qui touchent les humains, les animaux et les plantes. </h1><div><div><img src=\"/images/16078074.jpg\" /></div><br /></div><h1 >Voici quelques exemples concrets de ses effets :&nbsp;</h1><div><ul><li>Fonte des glaciers et montée des eaux : Les glaciers et les calottes de glace fondent, ce qui fait monter le niveau des mers. Par exemple, certaines villes près des côtes risquent d’être inondées, comme Venise en Italie ou certaines îles du Pacifique.&nbsp;</li><li>Phénomènes météo extrêmes : Il y a plus de vagues de chaleur, de tempêtes violentes et d'incendies de forêt. Par exemple, les incendies en Californie et les ouragans dans les Caraïbes deviennent de plus en plus fréquents et violents.&nbsp;</li><li>Problèmes pour les animaux et les plantes : Beaucoup d'animaux et de plantes dépendent de leur environnement pour survivre. Avec le changement climatique, certains perdent leur habitat, comme les ours polaires dans l'Arctique.&nbsp;</li><li>Difficultés pour l'agriculture : Les cultures peuvent être endommagées par des sécheresses ou des inondations. Par exemple, les récoltes de blé ou de riz peuvent diminuer, ce qui peut créer des pénuries alimentaires.&nbsp;</li></ul></div><div><ul><li>Problèmes de santé pour les humains : Les vagues de chaleur peuvent causer des maladies et de la fatigue. Parfois, de nouvelles maladies se répandent plus facilement, car les moustiques qui les transportent se déplacent dans des zones plus chaudes.&nbsp;</li></ul></div><div><p>Pour limiter ces effets, chacun peut aider en réduisant la pollution, comme en recyclant, en économisant l'énergie et en prenant moins la voiture. Ensemble, on peut protéger notre planète !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Yéra Abigaïl Igiraneza</p></div>"
+  },
+  "Metadata": {
+    "imageUrl": "/images/16078074.jpg",
+    "imageAlt": "",
+    "date": "2024-11-23T11:57:00.001-05:00",
+    "author": "Yéra Abigaïl Igiraneza",
+    "programe": "PEI",
+    "Niveau": "Secondaire 1"
+  }
 }

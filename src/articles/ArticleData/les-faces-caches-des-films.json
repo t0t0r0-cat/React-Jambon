@@ -1,19 +1,19 @@
 {
-    "system": {
-        "id": "7",
-        "article": "/articles/les-faces-caches-des-films"
-    },
-    "Content": {
-        "title": "Les faces cachées des films",
-        "description": "Les faces cachées des films",
-        "content": "<h1 >&nbsp;Les faces cachées des films</h1><div><p><b>Avez-vous déjà entendu le terme « scène post-crédits » ? Il a été popularisé à la suite des films Marvel o</b><b>ù, </b><b>à la toute fin, quelques secondes d’un nouvel élément de l’histoire sont présentées. Les gens « se tapent » donc le visionnement du générique pour faire partie de ceux qui auront vu la « scène post-crédits ».</b></p><div><img src=\"/images/df724122.jpg\" /></div><br /><b><br /></b> <p>Mais pourquoi devrions-nous <i>vraiment</i> rester assis lorsqu'un océan de noms commence à défiler sur l’écran du cinéma ? </p> <p>D’innombrables personnes travaillent dans les coulisses sur un film pour qu’il puisse nous parvenir dans toute sa splendeur. Il ne se rendrait jamais à nos écrans sans le travail colossal effectué par tous ces artisans de leurs domaines. Or, du film, on ne retient souvent que les acteurs. Les centaines d’autres travailleurs de l’industrie resteront des noms défilant sur l’écran à la fin. </p> <p>Cependant, travailleurs de l’ombre dans l’industrie du cinéma, ils en sont le pilier invisible. Iels passent des heures et des heures à peaufiner chaque seconde présentée, la moindre des choses est de regarder le film jusqu’à la toute fin.</p> <p>De plus, il est important de s’accorder un temps de réflexion après le visionnement, question de digérer l’œuvre, de s’imprégner de son essence avant de la célébrer. C’est le véritable moment de clôture. </p> <p>Bref, prenez le temps. Prenez le temps de regarder le générique en entier, prenez conscience des personnes qui rendent le cinéma possible. Qui sait, vos voisins ou la personne devant vous à l’épicerie ont peut-être contribué à créer votre film préféré. Qui sait, vos voisins ou la personne devant vous à l’épicerie ont peut-être contribué à créer votre film préféré...</p><div>Luz Germain-Lumagbas</div></div>"
-    },
-    "Metadata": {
-        "imageUrl": "/images/5c54322f.jpg",
-        "imageAlt": "",
-        "date": "2024-11-23T11:32:00.003-05:00",
-        "author": "Luz Germain-Lumagbas",
-        "programe": "PEI",
-        "Niveau": "Secondaire 5"
-    }
+  "system": {
+    "id": "7",
+    "article": "/articles/les-faces-caches-des-films"
+  },
+  "Content": {
+    "title": "Les faces cachées des films",
+    "description": "Les faces cachées des films",
+    "content": "<h1 >&nbsp;Les faces cachées des films</h1><div><p><b>Avez-vous déjà entendu le terme « scène post-crédits » ? Il a été popularisé à la suite des films Marvel o</b><b>ù, </b><b>à la toute fin, quelques secondes d’un nouvel élément de l’histoire sont présentées. Les gens « se tapent » donc le visionnement du générique pour faire partie de ceux qui auront vu la « scène post-crédits ».</b></p><div><img src=\"/images/df724122.jpg\" /></div><br /><b><br /></b> <p>Mais pourquoi devrions-nous <i>vraiment</i> rester assis lorsqu'un océan de noms commence à défiler sur l’écran du cinéma ? </p> <p>D’innombrables personnes travaillent dans les coulisses sur un film pour qu’il puisse nous parvenir dans toute sa splendeur. Il ne se rendrait jamais à nos écrans sans le travail colossal effectué par tous ces artisans de leurs domaines. Or, du film, on ne retient souvent que les acteurs. Les centaines d’autres travailleurs de l’industrie resteront des noms défilant sur l’écran à la fin. </p> <p>Cependant, travailleurs de l’ombre dans l’industrie du cinéma, ils en sont le pilier invisible. Iels passent des heures et des heures à peaufiner chaque seconde présentée, la moindre des choses est de regarder le film jusqu’à la toute fin.</p> <p>De plus, il est important de s’accorder un temps de réflexion après le visionnement, question de digérer l’œuvre, de s’imprégner de son essence avant de la célébrer. C’est le véritable moment de clôture. </p> <p>Bref, prenez le temps. Prenez le temps de regarder le générique en entier, prenez conscience des personnes qui rendent le cinéma possible. Qui sait, vos voisins ou la personne devant vous à l’épicerie ont peut-être contribué à créer votre film préféré. Qui sait, vos voisins ou la personne devant vous à l’épicerie ont peut-être contribué à créer votre film préféré...</p><div>Luz Germain-Lumagbas</div></div>"
+  },
+  "Metadata": {
+    "imageUrl": "/images/df724122.jpg",
+    "imageAlt": "",
+    "date": "2024-11-23T11:32:00.003-05:00",
+    "author": "Luz Germain-Lumagbas",
+    "programe": "PEI",
+    "Niveau": "Secondaire 5"
+  }
 }

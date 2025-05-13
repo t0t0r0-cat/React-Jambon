@@ -1,19 +1,19 @@
 {
-    "system": {
-        "id": "27",
-        "article": "/articles/dgi-2022"
-    },
-    "Content": {
-        "title": "DGI 2022",
-        "description": "DGI 2022",
-        "content": "<div>Une équipe de l'école secondaire de l'île est montée sur le podium avec une 3e place à la compétition finale régionale du Défi Génie Inventif qui a eu lieu au Collège Nouvelles Frontières le 14 avril dernier.&nbsp;<br>Bravo à l'équipe de Chloé, Émile, Eusebio et William pour leur belle performance!&nbsp;</div><div><br>Un merci tout spécial à Maryse et Joriane d'avoir accompagné nos participants!&nbsp;<br>Félicitations à tous nos participants!&nbsp;</div><div><br></div><div><div><img src=\"/images/94b39e30.jpg\" /></div><br><div><img src=\"/images/537420db.jpg\" /></div><br><div>Josée Pennober</div></div>"
-    },
-    "Metadata": {
-        "imageUrl": "/images/29847a0b.jpg",
-        "imageAlt": "",
-        "date": "2022-04-24T22:03:00.001-04:00",
-        "author": "Josée Pennober",
-        "programe": "",
-        "Niveau": ""
-    }
+  "system": {
+    "id": "27",
+    "article": "/articles/dgi-2022"
+  },
+  "Content": {
+    "title": "DGI 2022",
+    "description": "DGI 2022",
+    "content": "<div>Une équipe de l'école secondaire de l'île est montée sur le podium avec une 3e place à la compétition finale régionale du Défi Génie Inventif qui a eu lieu au Collège Nouvelles Frontières le 14 avril dernier.&nbsp;<br>Bravo à l'équipe de Chloé, Émile, Eusebio et William pour leur belle performance!&nbsp;</div><div><br>Un merci tout spécial à Maryse et Joriane d'avoir accompagné nos participants!&nbsp;<br>Félicitations à tous nos participants!&nbsp;</div><div><br></div><div><div><img src=\"/images/94b39e30.jpg\" /></div><br><div><img src=\"/images/537420db.jpg\" /></div><br><div>Josée Pennober</div></div>"
+  },
+  "Metadata": {
+    "imageUrl": "/images/94b39e30.jpg",
+    "imageAlt": "",
+    "date": "2022-04-24T22:03:00.001-04:00",
+    "author": "Josée Pennober",
+    "programe": "",
+    "Niveau": ""
+  }
 }

@@ -1,19 +1,19 @@
 {
-    "system": {
-        "id": "21",
-        "article": "/articles/dchets"
-    },
-    "Content": {
-        "title": "Déchets",
-        "description": "Déchets",
-        "content": "<div><div><img src=\"/images/c91e380a.jpg\" /></div><br /></div><div>Savais-tu que beaucoup d’espèces animales sont tués par des déchets de plastiques que nous produisons ? Pour éviter que le problème s’aggrave; tu peux utiliser des sacs réutilisables, des pots ainsi qu’une bouteille d’eau à usage multiple. Également, tu peux simplement bien trier tes déchets. Merci de faire des petits gestes pour l’environnement.&nbsp;&nbsp;</div><div>Joliane, élève de la Vague Verte</div>"
-    },
-    "Metadata": {
-        "imageUrl": "/images/4720d8c6.jpg",
-        "imageAlt": "",
-        "date": "2023-01-20T10:56:00.002-05:00",
-        "author": "Joliane",
-        "programe": "Vague verte",
-        "Niveau": "Secondaire 2"
-    }
+  "system": {
+    "id": "21",
+    "article": "/articles/dchets"
+  },
+  "Content": {
+    "title": "Déchets",
+    "description": "Déchets",
+    "content": "<div><div><img src=\"/images/c91e380a.jpg\" /></div><br /></div><div>Savais-tu que beaucoup d’espèces animales sont tués par des déchets de plastiques que nous produisons ? Pour éviter que le problème s’aggrave; tu peux utiliser des sacs réutilisables, des pots ainsi qu’une bouteille d’eau à usage multiple. Également, tu peux simplement bien trier tes déchets. Merci de faire des petits gestes pour l’environnement.&nbsp;&nbsp;</div><div>Joliane, élève de la Vague Verte</div>"
+  },
+  "Metadata": {
+    "imageUrl": "/images/c91e380a.jpg",
+    "imageAlt": "",
+    "date": "2023-01-20T10:56:00.002-05:00",
+    "author": "Joliane",
+    "programe": "Vague verte",
+    "Niveau": "Secondaire 2"
+  }
 }

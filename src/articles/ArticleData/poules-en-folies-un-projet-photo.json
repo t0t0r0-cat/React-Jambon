@@ -1,19 +1,19 @@
 {
-    "system": {
-        "id": "12",
-        "article": "/articles/poules-en-folies-un-projet-photo"
-    },
-    "Content": {
-        "title": "Poules en folies - Un projet photo",
-        "description": "Poules en folies - Un projet photo",
-        "content": "<p>&nbsp;</p><div><img src=\"/images/1af50de4.JPG\" /></div><br /><div><img src=\"/images/00a6cf28.JPG\" /></div><br /><div><img src=\"/images/27d38e88.JPG\" /></div><br /><div><img src=\"/images/68a9f83e.JPG\" /></div><br /><div><img src=\"/images/8685a1b8.JPG\" /></div><br /><div><img src=\"/images/4f66fc28.JPG\" /></div><div><br /></div><div>Oscar Hortop</div><div><i >***Texte provenant de la première édition de l'Éco de l'Île imprimé</i></div><br />"
-    },
-    "Metadata": {
-        "imageUrl": "/images/742e40e2.JPG",
-        "imageAlt": "",
-        "date": "2023-10-31T11:05:00.002-04:00",
-        "author": "Oscar Hortop",
-        "programe": "EXPLO",
-        "Niveau": "Secondaire 1"
-    }
+  "system": {
+    "id": "12",
+    "article": "/articles/poules-en-folies-un-projet-photo"
+  },
+  "Content": {
+    "title": "Poules en folies - Un projet photo",
+    "description": "Poules en folies - Un projet photo",
+    "content": "<p>&nbsp;</p><div><img src=\"/images/1af50de4.JPG\" /></div><br /><div><img src=\"/images/00a6cf28.JPG\" /></div><br /><div><img src=\"/images/27d38e88.JPG\" /></div><br /><div><img src=\"/images/68a9f83e.JPG\" /></div><br /><div><img src=\"/images/8685a1b8.JPG\" /></div><br /><div><img src=\"/images/4f66fc28.JPG\" /></div><div><br /></div><div>Oscar Hortop</div><div><i >***Texte provenant de la première édition de l'Éco de l'Île imprimé</i></div><br />"
+  },
+  "Metadata": {
+    "imageUrl": "/images/1af50de4.JPG",
+    "imageAlt": "",
+    "date": "2023-10-31T11:05:00.002-04:00",
+    "author": "Oscar Hortop",
+    "programe": "EXPLO",
+    "Niveau": "Secondaire 1"
+  }
 }

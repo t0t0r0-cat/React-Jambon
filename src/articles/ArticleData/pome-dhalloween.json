@@ -1,19 +1,19 @@
 {
-    "system": {
-        "id": "11",
-        "article": "/articles/pome-dhalloween"
-    },
-    "Content": {
-        "title": "Poème d'Halloween",
-        "description": "Poème d'Halloween",
-        "content": "<h2 >&nbsp;Automne</h2><div><p>Rouge, jaune, orange,</p> <p>Ces couleurs dominent alors que la saison change.</p> <p>C’est le temps des citrouilles, des costumes, des <i>Pumpkin Spice Latte</i>,</p> <p>Les coffres enflent de cet argent dépensé.</p> <p>L’embrasement des forêts,</p> <p>Présage l’arrivée prochaine de l’hiver,</p> <p>Précède le brun morne de transition,</p> <p>Offre à la nature le dernier gala de l’année,</p> <p>Avant que de blanc tout soit vêtu.</p><div><img src=\"/images/73e8ae1d.jpg\" /></div><br /><br /></div><h2 >Le peuple enchaîné</h2><div><p><v:shapetype coordsize=\"21600,21600\" filled=\"f\" id=\"_x0000_t75\" o:preferrelative=\"t\" o:spt=\"75\" path=\"m@4@5l@4@11@9@11@9@5xe\" stroked=\"f\"> <v:stroke join> <v:formulas> <v:f eqn=\"if lineDrawn pixelLineWidth 0\"> <v:f eqn=\"sum @0 1 0\"> <v:f eqn=\"sum 0 0 @1\"> <v:f eqn=\"prod @2 1 2\"> <v:f eqn=\"prod @3 21600 pixelWidth\"> <v:f eqn=\"prod @3 21600 pixelHeight\"> <v:f eqn=\"sum @0 0 1\"> <v:f eqn=\"prod @6 1 2\"> <v:f eqn=\"prod @7 21600 pixelWidth\"> <v:f eqn=\"sum @8 21600 0\"> <v:f eqn=\"prod @7 21600 pixelHeight\"> <v:f eqn=\"sum @10 21600 0\"> </v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas> <v:path gradientshapeok=\"t\" o:connecttype=\"rect\" o:extrusionok=\"f\"> <o:lock aspectratio=\"t\" v:ext=\"edit\"> </o:lock></v:path></v:stroke></v:shapetype><v:shape alt=\"Une image contenant Feuille d’érable, érable, automne, feuille Description générée automatiquement\" id=\"Image_x0020_18\" o:spid=\"_x0000_s1026\" type=\"#_x0000_t75\"> <v:imagedata o:title=\"Une image contenant Feuille d’érable, érable, automne, feuille Description générée automatiquement\" src=\"file:///C:/Users/charl/AppData/Local/Temp/msohtmlclip1/15/clip_image001.png\"> </v:imagedata></v:shape>En cette soirée hantée,</p> <p>Circule dans les quartiers un peuple déguisé,</p> <p>Les enfants mignons et ceux apeurant,</p> <p>Défilent aux portes allégrement.</p> <p>Que vous célébriez cette fête ou pas,</p> <p>Nous sommes tous déguisés, a-ha !</p> <p>En prisonniers malgré nous,</p> <p>Avec le capitalisme comme gardien de cellule,</p> <p>Victimes de l’attrait du sucré,</p> <p>Condamnés à perpétuité.</p></div><div><br /></div><div>Luz Germain-Lumagbas</div><div><i >***Texte provenant de la première édition de l'Éco de l'Île imprimé</i></div>"
-    },
-    "Metadata": {
-        "imageUrl": "/images/f13b892c.jpg",
-        "imageAlt": "",
-        "date": "2023-10-31T11:08:00.001-04:00",
-        "author": "Luz Germain-Lumagbas",
-        "programe": "PEI",
-        "Niveau": "Secondaire 4"
-    }
+  "system": {
+    "id": "11",
+    "article": "/articles/pome-dhalloween"
+  },
+  "Content": {
+    "title": "Poème d'Halloween",
+    "description": "Poème d'Halloween",
+    "content": "<h2 >&nbsp;Automne</h2><div><p>Rouge, jaune, orange,</p> <p>Ces couleurs dominent alors que la saison change.</p> <p>C’est le temps des citrouilles, des costumes, des <i>Pumpkin Spice Latte</i>,</p> <p>Les coffres enflent de cet argent dépensé.</p> <p>L’embrasement des forêts,</p> <p>Présage l’arrivée prochaine de l’hiver,</p> <p>Précède le brun morne de transition,</p> <p>Offre à la nature le dernier gala de l’année,</p> <p>Avant que de blanc tout soit vêtu.</p><div><img src=\"/images/73e8ae1d.jpg\" /></div><br /><br /></div><h2 >Le peuple enchaîné</h2><div><p><v:shapetype coordsize=\"21600,21600\" filled=\"f\" id=\"_x0000_t75\" o:preferrelative=\"t\" o:spt=\"75\" path=\"m@4@5l@4@11@9@11@9@5xe\" stroked=\"f\"> <v:stroke join> <v:formulas> <v:f eqn=\"if lineDrawn pixelLineWidth 0\"> <v:f eqn=\"sum @0 1 0\"> <v:f eqn=\"sum 0 0 @1\"> <v:f eqn=\"prod @2 1 2\"> <v:f eqn=\"prod @3 21600 pixelWidth\"> <v:f eqn=\"prod @3 21600 pixelHeight\"> <v:f eqn=\"sum @0 0 1\"> <v:f eqn=\"prod @6 1 2\"> <v:f eqn=\"prod @7 21600 pixelWidth\"> <v:f eqn=\"sum @8 21600 0\"> <v:f eqn=\"prod @7 21600 pixelHeight\"> <v:f eqn=\"sum @10 21600 0\"> </v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas> <v:path gradientshapeok=\"t\" o:connecttype=\"rect\" o:extrusionok=\"f\"> <o:lock aspectratio=\"t\" v:ext=\"edit\"> </o:lock></v:path></v:stroke></v:shapetype><v:shape alt=\"Une image contenant Feuille d’érable, érable, automne, feuille Description générée automatiquement\" id=\"Image_x0020_18\" o:spid=\"_x0000_s1026\" type=\"#_x0000_t75\"> <v:imagedata o:title=\"Une image contenant Feuille d’érable, érable, automne, feuille Description générée automatiquement\" src=\"file:///C:/Users/charl/AppData/Local/Temp/msohtmlclip1/15/clip_image001.png\"> </v:imagedata></v:shape>En cette soirée hantée,</p> <p>Circule dans les quartiers un peuple déguisé,</p> <p>Les enfants mignons et ceux apeurant,</p> <p>Défilent aux portes allégrement.</p> <p>Que vous célébriez cette fête ou pas,</p> <p>Nous sommes tous déguisés, a-ha !</p> <p>En prisonniers malgré nous,</p> <p>Avec le capitalisme comme gardien de cellule,</p> <p>Victimes de l’attrait du sucré,</p> <p>Condamnés à perpétuité.</p></div><div><br /></div><div>Luz Germain-Lumagbas</div><div><i >***Texte provenant de la première édition de l'Éco de l'Île imprimé</i></div>"
+  },
+  "Metadata": {
+    "imageUrl": "/images/73e8ae1d.jpg",
+    "imageAlt": "",
+    "date": "2023-10-31T11:08:00.001-04:00",
+    "author": "Luz Germain-Lumagbas",
+    "programe": "PEI",
+    "Niveau": "Secondaire 4"
+  }
 }
