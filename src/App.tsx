@@ -63,9 +63,11 @@ const App: React.FC = () => {
         L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par
         des élèves pour les élèves. Bonne lecture :)
       </p>
+      <div id='controls'>
         <div className="search-sort-container">
         <SearchBar onSearch={handleSearch} />
         <SortDropdown onSortChange={handleSort} />
+      </div>
       </div>
       <div className="article-list">
         {filteredArticles.map((article) => (
