@@ -25,14 +25,16 @@
 /* Style for image containers */
 .article-content table,
 .article-content div {
-   margin: 20px auto;
-   max-width: 600px;
+   text-wrap: normal;
+   overflow-wrap: break-word;
 }
 
 /* Style for image captions */
 .article-content td {
    text-align: center;
    padding: 10px;
+   text-wrap: normal;
+   overflow-wrap: break-word;
 }
 
 body.light-mode .article-content {
@@ -63,4 +65,12 @@ body.light-mode .article-content {
 .title-banner {
    width: 100%;
    text-align: center;
+}
+
+.metadata{
+   padding: 0px;
+}
+
+.article-content li{
+   color: #FFC849;
 }

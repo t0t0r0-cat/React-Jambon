@@ -27,9 +27,11 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ articles }) => {
       </div>
       <div className="article-content">
         <h1>{article.title}</h1>
-        <p><strong>Author:</strong> {article.author}</p>
-        <p><strong>Date:</strong> {article.date}</p>
-        <p>{article.description}</p>
+        <div className='metadata'>
+        <strong>Author:</strong> {article.author}<br />
+        <strong>Date:</strong> {article.date}<br />
+        {article.description}
+        </div>
         <div dangerouslySetInnerHTML={{ __html: article.content }} />
       </div>
     </>  
