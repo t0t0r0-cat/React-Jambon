@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const articlesDir = path.join(__dirname, '../src/articles/ArticleData');
+const articlesDir = path.join(__dirname, '../public/ArticleData');
 
 function cleanArticleContent(content) {
     // Remove h1 tags and their content

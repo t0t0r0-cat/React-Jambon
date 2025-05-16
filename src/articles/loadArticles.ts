@@ -1,5 +1,5 @@
 export async function loadAllArticles() {
-  const modules = import.meta.glob('./ArticleData/*.json', { eager: true });
+  const modules = import.meta.glob('/public/ArticleData/*.json', { eager: true });
   const articles = Object.values(modules).map((mod: any) => {
     const content = mod.Content || {};
     const metadata = mod.Metadata || {};
