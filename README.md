@@ -1,11 +1,38 @@
-# React + TypeScript + Vite
+# React-Jambon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application built with Vite and TypeScript that serves articles from a JSON-based content management system.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## Building for Production
+
+```bash
+# Build the application
+npm run build
+```
+
+This will:
+1. Generate the article manifest
+2. Clean and process articles
+3. Build the application
+
+The built files will be in the `dist` directory, ready to be served by any web server.
+
+## Features
+
+- React + TypeScript + Vite for fast development
+- JSON-based article management
+- Docker support for production deployment
+- Hot Module Replacement (HMR)
+- ESLint for code quality
 
 ## Expanding the ESLint configuration
 

@@ -1,0 +1,16 @@
+{
+  "Content": {
+    "title": "Sample Article",
+    "description": "This is a sample article to test the system",
+    "content": "<p>This is the content of the sample article. You can add your actual content here.</p>",
+    "imageUrl": "/images/18b0bf6d.png",
+    "imageAlt": "Sample Image"
+  },
+  "Metadata": {
+    "date": "2025-05-20",
+    "author": "Test Author"
+  },
+  "system": {
+    "article": "sample-article"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Content": {
+    "title": "La Vague Verte: Une Initiative Écologique",
+    "description": "Découvrez comment notre école s'engage dans la protection de l'environnement avec la Vague Verte",
+    "content": "<p>Notre école s'engage activement dans la protection de l'environnement à travers diverses initiatives écologiques. La Vague Verte est l'une de nos initiatives phares qui encourage les élèves à adopter des pratiques respectueuses de l'environnement.</p><p>Cette initiative comprend plusieurs projets, dont le journal numérique qui évite l'utilisation excessive de papier.</p>",
+    "imageUrl": "/La-vague-verte.jpg",
+    "imageAlt": "La vague verte - Initiative écologique"
+  },
+  "Metadata": {
+    "date": "2025-05-20",
+    "author": "Équipe Éditoriale"
+  },
+  "system": {
+    "article": "la-vague-verte"
+  }
+}
