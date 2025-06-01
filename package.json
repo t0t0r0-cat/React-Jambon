@@ -2,13 +2,16 @@
   "name": "jambonweb",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "scripts": {
+  "type": "module",  "scripts": {
     "dev": "vite",
     "dev:articles": "node serve-articles.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:articles\"",
-    "build": "vite build",
-    "preview": "vite preview --host"
+    "build": "vite build && npm run copy-articles",
+    "copy-articles": "powershell -Command \"if(Test-Path './dist/ArticleData') { Remove-Item -Path './dist/ArticleData' -Recurse -Force }; Copy-Item -Path './ArticleData' -Destination './dist/ArticleData' -Recurse -Force\"",
+    "preview": "cross-env NODE_ENV=production node serve-articles.js",
+    "serve": "npm run build && npm run preview",
+    "clean": "powershell -Command \"if(Test-Path './dist') { Remove-Item -Path './dist' -Recurse -Force }\"",
+    "serve:clean": "npm run clean && npm run serve"
   },
   "dependencies": {
     "axios": "^1.8.4",
@@ -26,6 +29,7 @@
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
