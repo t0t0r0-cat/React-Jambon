@@ -14,9 +14,21 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.ARTICLES_PORT || 3001;
 
-// Get the articles path from environment variable, removing any file:// prefix
+// Get the articles path from environment variable, normalizing the path for the current platform
 const rawPath = process.env.ARTICLES_PATH || path.join(__dirname, 'public', 'ArticleData');
-const ARTICLES_PATH = path.resolve(rawPath.replace('file://', ''));
+const ARTICLES_PATH = path.resolve(
+  rawPath
+    .replace('file://', '')
+    // Replace both forward and back slashes with the platform-specific separator
+    .split(/[\\/]/).join(path.sep)
+);
+
+// Ensure the articles directory exists
+if (!fs.existsSync(ARTICLES_PATH)) {
+  console.error(`Articles directory not found at: ${ARTICLES_PATH}`);
+  console.error('Please check your ARTICLES_PATH environment variable or create the directory');
+  process.exit(1);
+}
 
 // Enable CORS for development
 app.use(cors());
@@ -29,20 +41,32 @@ app.get('/ArticleData', (req, res) => {
       const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
       res.json(manifest);
     } else {
+      // If no manifest exists, list all JSON files
       const articles = fs.readdirSync(ARTICLES_PATH)
-        .filter(file => file.endsWith('.json'));
+        .filter(file => file.toLowerCase().endsWith('.json'));
       res.json(articles);
     }
   } catch (error) {
     console.error('Error reading articles:', error);
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ 
+      error: 'Internal server error',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
   }
 });
 
 // Serve individual article files
 app.get('/ArticleData/:filename', (req, res) => {
   try {
-    const articlePath = path.join(ARTICLES_PATH, req.params.filename);
+    // Sanitize the filename to prevent directory traversal
+    const filename = path.basename(req.params.filename);
+    const articlePath = path.join(ARTICLES_PATH, filename);
+
+    // Verify the resolved path is still within ARTICLES_PATH
+    if (!articlePath.startsWith(ARTICLES_PATH)) {
+      return res.status(403).json({ error: 'Access denied' });
+    }
+
     if (fs.existsSync(articlePath)) {
       const article = JSON.parse(fs.readFileSync(articlePath, 'utf-8'));
       res.json(article);
@@ -51,7 +75,10 @@ app.get('/ArticleData/:filename', (req, res) => {
     }
   } catch (error) {
     console.error('Error reading article:', error);
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ 
+      error: 'Internal server error',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
   }
 });
 
