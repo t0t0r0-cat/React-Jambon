@@ -35,4 +35,5 @@ The built files will be in the `dist` directory, ready to be served by any web s
 *Not yet available due to major CORS violations. If you have sugestions feel free to fork the repo
 
 ## About 
-This is a litle school progect, made for the school newspaper. The articles are in a semi-propriatary format witch i made a formating tool for [here](https://github.com/t0t0r0-cat/BeanPycager/)
+This is a litle school progect, made for the school newspaper. The articles are in a semi-propriatary format witch i made a formating tool for [here](https://github.com/t0t0r0-cat/BeanPycager/). Thanks to [@Waspsting](https://github.com/Waspsting) for doing most of the back-end stuff for this progect! As well as making sure we dont get hacked as a result of my bad programing choices.
+
