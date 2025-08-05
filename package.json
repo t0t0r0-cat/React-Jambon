@@ -2,7 +2,8 @@
   "name": "jambonweb",
   "private": true,
   "version": "0.0.0",
-  "type": "module",  "scripts": {
+  "type": "module",
+  "scripts": {
     "dev": "vite",
     "dev:articles": "node serve-articles.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:articles\"",
@@ -36,6 +37,6 @@
     "globals": "^15.15.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0"
+    "vite": "^6.3.5"
   }
 }
