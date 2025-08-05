@@ -56,7 +56,7 @@ const App: React.FC = () => {
   const HomePage: React.FC = () => (
     <div>
       <br /><br />
-      <img src="https://tse1.explicit.bing.net/th?id=OIP.sAGlDzpOrJ0-PDiuJ_Mu1AHaHV&pid=Api" alt="Logo" className="logo" width="25%" style={{ display: 'block', margin: '0 auto' }} />
+      <img src="./public/Jambon/jambonmainpagelogo.png" alt="Logo" className="logo" width="25%" style={{ display: 'block', margin: '0 auto' }} />
       <h1>Eco de l'île</h1>
       <h2>La maison de jambon</h2>
       <p>
