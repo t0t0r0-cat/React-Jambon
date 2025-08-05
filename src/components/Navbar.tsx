@@ -67,12 +67,12 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
           <Link to="https://ile.csspo.gouv.qc.ca/">Site Internet De L'ecole</Link>
         </li>
         <li style={{ position: "relative" }}>
-          <Link to="/espace-jambon">Espace Jambon</Link>
+          <Link to="/espace-jambon">Espace Jambon
           <img
             src="/Jambon/JambonLogo.png"
             alt="Logo jambon"
             className="img jambon-hang"
-          />
+          /></Link>
         </li>
       </ul>
     </nav>
