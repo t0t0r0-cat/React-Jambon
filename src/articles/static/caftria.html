@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafétéria</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/3a6960ef.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Cafétéria</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Alexandre&Aurélie<br>
+                <strong>Date:</strong> 2023-01-20T12:03:00.000-05:00<br>
+                Cafétéria
+            </div>
+            <p>Combien de fois commandez-vous à la cafétéria par semaine ? Si vous faîtes partie de la majorité des élèves; la réponse doit être plusieurs fois par semaine. Imaginé tous les ustensiles et assiettes que nous jetons par jour ? Sans compter, toutes les personnes qui jettent des déchets sans trier adéquatement.&nbsp;&nbsp;</p><div><img src="/images/3a6960ef.jpg" /></div><div><p>Comme vous pouvez le constater, l’empreinte écologique de l’école est tout de même inquiétante. Si, comme nous l’espérons, vous souhaiter participer à la lutte pour l’environnement, voici certains comportements que vous pouvez adoptés.&nbsp;&nbsp;</p><p><br /></p></div><div><p>Premièrement, vous pouvez apporter vos propres ustensiles pour éviter l’utilisation de ceux jetables. Vous pouvez également veillez à trier convenablement vos déchets et les jeter dans les bacs prévus à cet effet. Informer vos amis et discuter avec eux.&nbsp;&nbsp;&nbsp;</p><p><br /></p></div><div><p>Si vous souhaitez participer dans cette lutte ou encore si vous avez des questions vous pouvez en parler avec Marilyn au local 113-A ou encore te joindre à la vague verte.&nbsp;&nbsp;</p><p><br /></p><p>Alexandre et Aurélie, élèves de la Vague Verte</p></div>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

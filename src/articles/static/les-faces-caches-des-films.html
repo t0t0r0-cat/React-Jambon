@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les faces cachées des films</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/df724122.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Les faces cachées des films</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Luz Germain-Lumagbas<br>
+                <strong>Date:</strong> 2024-11-23T11:32:00.003-05:00<br>
+                Les faces cachées des films
+            </div>
+            <div><p>Avez-vous déjà entendu le terme « scène post-crédits » ? Il a été popularisé à la suite des films Marvel où, à la toute fin, quelques secondes d'un nouvel élément de l'histoire sont présentées. Les gens « se tapent » donc le visionnement du générique pour faire partie de ceux qui auront vu la « scène post-crédits ».</p><div><img src="/images/df724122.jpg" /></div><br /> <p>Mais pourquoi devrions-nous <i>vraiment</i> rester assis lorsqu'un océan de noms commence à défiler sur l'écran du cinéma ? </p> <p>D'innombrables personnes travaillent dans les coulisses sur un film pour qu'il puisse nous parvenir dans toute sa splendeur. Il ne se rendrait jamais à nos écrans sans le travail colossal effectué par tous ces artisans de leurs domaines. Or, du film, on ne retient souvent que les acteurs. Les centaines d'autres travailleurs de l'industrie resteront des noms défilant sur l'écran à la fin. </p> <p>Cependant, travailleurs de l'ombre dans l'industrie du cinéma, ils en sont le pilier invisible. Iels passent des heures et des heures à peaufiner chaque seconde présentée, la moindre des choses est de regarder le film jusqu'à la toute fin.</p> <p>De plus, il est important de s'accorder un temps de réflexion après le visionnement, question de digérer l'œuvre, de s'imprégner de son essence avant de la célébrer. C'est le véritable moment de clôture. </p> <p>Bref, prenez le temps. Prenez le temps de regarder le générique en entier, prenez conscience des personnes qui rendent le cinéma possible. Qui sait, vos voisins ou la personne devant vous à l'épicerie ont peut-être contribué à créer votre film préféré. Qui sait, vos voisins ou la personne devant vous à l'épicerie ont peut-être contribué à créer votre film préféré...</p><div>Luz Germain-Lumagbas</div></div>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

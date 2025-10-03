@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les changements climatiques</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/16078074.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Les changements climatiques</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Yéra Abigaïl Igiraneza<br>
+                <strong>Date:</strong> 2024-11-23T11:57:00.001-05:00<br>
+                Les changements climatiques
+            </div>
+            <div><div><img src="/images/16078074.jpg" /></div><br /></div><div><ul><li>Fonte des glaciers et montée des eaux : Les glaciers et les calottes de glace fondent, ce qui fait monter le niveau des mers. Par exemple, certaines villes près des côtes risquent d’être inondées, comme Venise en Italie ou certaines îles du Pacifique.&nbsp;</li><li>Phénomènes météo extrêmes : Il y a plus de vagues de chaleur, de tempêtes violentes et d'incendies de forêt. Par exemple, les incendies en Californie et les ouragans dans les Caraïbes deviennent de plus en plus fréquents et violents.&nbsp;</li><li>Problèmes pour les animaux et les plantes : Beaucoup d'animaux et de plantes dépendent de leur environnement pour survivre. Avec le changement climatique, certains perdent leur habitat, comme les ours polaires dans l'Arctique.&nbsp;</li><li>Difficultés pour l'agriculture : Les cultures peuvent être endommagées par des sécheresses ou des inondations. Par exemple, les récoltes de blé ou de riz peuvent diminuer, ce qui peut créer des pénuries alimentaires.&nbsp;</li></ul></div><div><ul><li>Problèmes de santé pour les humains : Les vagues de chaleur peuvent causer des maladies et de la fatigue. Parfois, de nouvelles maladies se répandent plus facilement, car les moustiques qui les transportent se déplacent dans des zones plus chaudes.&nbsp;</li></ul></div><div><p>Pour limiter ces effets, chacun peut aider en réduisant la pollution, comme en recyclant, en économisant l'énergie et en prenant moins la voiture. Ensemble, on peut protéger notre planète !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>Yéra Abigaïl Igiraneza</p></div>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

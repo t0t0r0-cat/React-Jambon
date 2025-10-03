@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poules en folies - Un projet photo</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/1af50de4.JPG" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Poules en folies - Un projet photo</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Oscar Hortop<br>
+                <strong>Date:</strong> 2023-10-31T11:05:00.002-04:00<br>
+                Poules en folies - Un projet photo
+            </div>
+            <p>&nbsp;</p><div><img src="/images/1af50de4.JPG" /></div><br /><div><img src="/images/00a6cf28.JPG" /></div><br /><div><img src="/images/27d38e88.JPG" /></div><br /><div><img src="/images/68a9f83e.JPG" /></div><br /><div><img src="/images/8685a1b8.JPG" /></div><br /><div><img src="/images/4f66fc28.JPG" /></div><div><br /></div><div>Oscar Hortop</div><div><i >***Texte provenant de la première édition de l'Éco de l'Île imprimé</i></div><br />
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

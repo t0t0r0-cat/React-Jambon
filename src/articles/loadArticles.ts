@@ -47,7 +47,7 @@ function processArticleData(filename: string, data: ArticleData): Article {
   // Get the ID from the article path and ensure it uses /articles/
   const rawId = system.article?.replace(/^\/(article|articles)\//, '') || '';
   const id = rawId || filename.replace('.json', '');
-  const articleUrl = `/articles/${id}`;
+  const articleUrl = `http://localhost:3001/articles/static/${id}.html`;
   
   return {
     id,

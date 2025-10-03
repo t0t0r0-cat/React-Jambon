@@ -14,22 +14,92 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.ARTICLES_PORT || 3001;
 
+// Log all requests
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  console.log('Headers:', req.headers);
+  
+  // Capture the original res.json
+  const originalJson = res.json;
+  res.json = function(body) {
+    console.log('Response body:', body);
+    return originalJson.call(this, body);
+  };
+  
+  next();
+});
+
+// Enable CORS for all routes and serve static files
+app.use(cors({
+  origin: 'http://localhost:5173',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type']
+}));
+
+// Serve static files directly from the ArticleData directory
+app.use('/files', express.static(path.join(__dirname, 'ArticleData')));
+
+// Test endpoint
+app.get('/test', (req, res) => {
+  console.log('Test request received');
+  res.json({ message: 'Hello World' });
+});
+
 // Determine if we're in production mode
 const isProduction = process.env.NODE_ENV === 'production';
 
 // In production, look for articles in the dist directory
+
+// Create and serve manifest.json
+const generateManifest = () => {
+  console.log('Generating manifest...');
+  console.log('ARTICLES_PATH:', ARTICLES_PATH);
+  
+  if (!fs.existsSync(ARTICLES_PATH)) {
+    console.error('Articles directory does not exist:', ARTICLES_PATH);
+    throw new Error('Articles directory not found');
+  }
+
+  const files = fs.readdirSync(ARTICLES_PATH);
+  console.log('All files in directory:', files);
+  
+  const jsonFiles = files.filter(file => file.endsWith('.json') && file !== 'manifest.json');
+  console.log('JSON files found:', jsonFiles);
+  
+  const manifest = {};
+  for (const file of jsonFiles) {
+    try {
+      const id = file.replace('.json', '');
+      const filePath = path.join(ARTICLES_PATH, file);
+      console.log('Reading file:', filePath);
+      
+      const fileContent = fs.readFileSync(filePath, 'utf-8');
+      const content = JSON.parse(fileContent);
+      
+      if (content && content.Content && content.Content.title) {
+        manifest[id] = {
+          title: content.Content.title,
+          description: content.Content.description || '',
+          imageUrl: content.Metadata?.imageUrl || ''
+        };
+        console.log('Successfully processed article:', id);
+      } else {
+        console.log('Article missing required fields:', id);
+      }
+    } catch (error) {
+      console.error(`Error processing file ${file}:`, error);
+    }
+  }
+  
+  console.log('Final manifest:', manifest);
+  return manifest;
+};
 const defaultArticlesPath = isProduction 
   ? path.join(__dirname, 'dist', 'ArticleData')
   : path.join(__dirname, 'ArticleData');
 
 // Get the articles path from environment variable, normalizing the path for the current platform
-const rawPath = process.env.ARTICLES_PATH || defaultArticlesPath;
-const ARTICLES_PATH = path.resolve(
-  rawPath
-    .replace('file://', '')
-    // Replace both forward and back slashes with the platform-specific separator
-    .split(/[\\/]/).join(path.sep)
-);
+const ARTICLES_PATH = path.join(__dirname, 'ArticleData');
 
 // Ensure the articles directory exists
 if (!fs.existsSync(ARTICLES_PATH)) {
@@ -39,8 +109,7 @@ if (!fs.existsSync(ARTICLES_PATH)) {
   process.exit(1);
 }
 
-// Enable CORS for all environments
-app.use(cors());
+// CORS is already enabled at the top of the file
 
 // Serve static files from the dist directory in production
 if (isProduction) {
@@ -49,7 +118,7 @@ if (isProduction) {
 }
 
 // Serve the manifest file
-app.get('/ArticleData', (req, res) => {
+app.get('/articles', (req, res) => {
   try {
     const manifestPath = path.join(ARTICLES_PATH, 'manifest.json');
     if (fs.existsSync(manifestPath)) {
@@ -71,10 +140,26 @@ app.get('/ArticleData', (req, res) => {
 });
 
 // Serve individual article files
-app.get('/ArticleData/:filename', (req, res) => {
+// Serve manifest.json
+app.get('/articles/manifest', (req, res) => {
+  console.log('Manifest request received');
+  try {
+    console.log('Reading manifest file...');
+    const manifestPath = path.join(ARTICLES_PATH, 'manifest.json');
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+
+    console.log('Sending manifest:', manifest);
+    res.json(manifest);
+  } catch (error) {
+    console.error('Error generating manifest:', error);
+    res.status(500).json({ error: 'Failed to generate manifest', details: error.message });
+  }
+});
+
+app.get('/articles/:articleId', (req, res) => {
   try {
     // Sanitize the filename to prevent directory traversal
-    const filename = path.basename(req.params.filename);
+    const filename = path.basename(req.params.articleId) + '.json';
     const articlePath = path.join(ARTICLES_PATH, filename);
 
     // Verify the resolved path is still within ARTICLES_PATH
@@ -97,7 +182,10 @@ app.get('/ArticleData/:filename', (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Article server is running on port ${PORT}`);
   console.log(`Serving articles from: ${ARTICLES_PATH}`);
+}).on('error', (err) => {
+  console.error('Error starting server:', err);
+  process.exit(1);
 });

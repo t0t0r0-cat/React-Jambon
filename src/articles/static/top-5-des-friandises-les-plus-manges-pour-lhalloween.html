@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 des friandises les plus mangées pour l’Halloween</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/a2f65c3f.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Top 5 des friandises les plus mangées pour l’Halloween</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Yassine Maïga<br>
+                <strong>Date:</strong> 2023-10-31T11:02:00.000-04:00<br>
+                Top 5 des friandises les plus mangées pour l’Halloween
+            </div>
+            <p>Durant cette semaine de peur et de frissons, les familles qui fêtent cette journée des plus palpitante, qu'est l'Halloween, une épreuve des plus ardues et complexes tourmente toutes les familles, des plus grands aux plus petits : CHOISIR les bonbons. Pour vous, faciliter cette tâche, j’ai fait une liste des bonbons les plus consommés durant cette journée des morts.&nbsp;</p> <div><img src="/images/a2f65c3f.jpg" /></div><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Les bonbons au chocolat&nbsp;: Il existe des milliers de variétés des sortes de bonbons au chocolat, mais certaines sortent du lot par la nostalgie de la douce enfance et de leur goût inoubliable&nbsp;: les M &amp;M, les Ferrero rocher, les Kitkats et les Lindors. <p><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Les bonbons de gélatine&nbsp;: leur texture, leur goût extra sucré, leurs couleurs. Ces bonbons ont tout pour plaire. Si vous avez déjà mangé un de ces bonbons, vous devez en offrir à vos proches&nbsp;: les bonbons en forme d’anneaux, de cœurs, de fruits, de vers ou d’oursons.</p> <p><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Les sucettes&nbsp;: le symbole de la friandise, le bonbon de notre enfance qu’on oublie peu à peu. Mais il n’est jamais trop tard pour se replonger dans ses souvenirs lointains.</p> <p><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Les gommes à mâcher&nbsp;: &nbsp;la gomme à mâcher ou la gomme a été inventée par les Aztèques. Maintenant, la gomme a beaucoup évolué, des dizaines de saveurs de gomme existent aujourd’hui.</p> <p><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Le caramel&nbsp;: du bonheur l’état pur, une texture molle et une saveur si nostalgique. Saviez vous que le caramel a été créé par les Arabes dans les années 1000.&nbsp;</p><p>Merci&nbsp;d’avoir lu mon article jusqu’à bout, je vous souhaite une bonne Halloween.</p><div>Yassine Maïga</div><div><i >***Texte provenant de la première édition de l'Éco de l'Île imprimé</i></div><p><br /><br /></p>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

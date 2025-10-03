@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de personnalité : Sucré ou salé ?</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/125b2079.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Test de personnalité : Sucré ou salé ?</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Zhi Xuan Wen&Jennifer Agbangla<br>
+                <strong>Date:</strong> 2022-02-21T21:47:00.012-05:00<br>
+                Test de personnalité : Sucré ou salé ?
+            </div>
+            <p>Salut à toi, cher enfant qui lis cet article. Toujours aussi indécis à propos de ton amour envers les sucreries ou les chips? On va t’aider à y mettre un terme ici et maintenant !&nbsp;</p><div><img src="/images/125b2079.jpg" /></div><p>Tu vas à une soirée entre ami(e)s et tu es chargé(e) d’apporter la nourriture. Tu choisis :&nbsp;</p><ol ><li>Du chocolat voyons ?</li><li>Des chips! Au barbecue, au ketchup, je prends tout.</li></ol><div>Tu viens de passer une terrible journée et tu veux juste regarder Netflix et mangeant tes émotions. Tu choisis :&nbsp;</div><div><ol ><li>La crème glacée, c’est une tradition.&nbsp;</li><li>De la pizza, quoi de mieux que du fromage bien garni pour se remonter le moral.&nbsp;</li></ol><div>Tu apportes une collation à l’école pour un film en classe. Tu prends :&nbsp;</div></div><div><ol ><li>Des jujubes en forme de ver, d’araignée et même de Tom Holland.&nbsp;</li><li>Des amendes, des pistaches et toutes mes noix favorites!&nbsp;</li></ol><div>Tu as un examen important et pour t’aider à relaxer un peu, tu prends :&nbsp;</div></div><div><ol ><li>Du chocolat chaud, c’est tellement réconfortant.&nbsp;</li><li>Du café salé, c’est plus qu’une amitié entre lui et moi.&nbsp;</li></ol><div>Un rendez-vous approche avec ton copain/copine. Tu choisis l’endroit où vous allez manger. Tu vas :&nbsp;</div></div><div><ol ><li>Dans mon café préféré! Leurs desserts sont de pures merveilles!&nbsp;</li><li>Je choisirais un fast-food. Les hamburgers avec frites, c’est ma vie! La romance ne pèse pas le poids.&nbsp;</li></ol><div>Bon, après tu as capté, tu regardes si tu as plus de 1. ou de 2. et cela définira ton résultat.&nbsp;Si tu as choisi plus de 1., le sucre prend le dessus, le salé ne pourrait jamais remplacer le sucré.&nbsp;Mais si tu as choisi plus de 2., le salé prend le dessus, le sucré ne pourrait jamais remplacer le salé.&nbsp;</div></div><div><br /></div><div>Remerciements de notre part pour ta participation!&nbsp;</div><div><br /></div><div>Zhi Xuan Wen et Jennifer Agbangla</div>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

@@ -9,6 +9,7 @@ import ArticlePage from './articles/ArticlePage';
 import ContactUs from './articles/ContactUs';
 import EspaceJambon from './articles/EspaceJambon';
 import BottomBar from './components/bottomBar.tsx';
+import StaticArticleList from './components/StaticArticleList';
 import './styles/App.css';
 import './styles/SortDropdown.css';
 import SearchBar from './components/SearchBar';
@@ -57,12 +58,14 @@ const App: React.FC = () => {
     <div>
       <br /><br />
       <img src="./public/Jambon/jambonmainpagelogo.png" alt="Logo" className="logo" width="25%" style={{ display: 'block', margin: '0 auto' }} />
+      <StaticArticleList />
       <h1>Eco de l'île</h1>
       <h2>La maison de jambon</h2>
       <p>
         L'Éco de l'Île est le journal étudiant de l'école secondaire de l'Île, créé par
         des élèves pour les élèves. Bonne lecture :)
       </p>
+      <h2>Articles</h2>
       <div id='controls'>
         <div className="search-sort-container">
         <SearchBar onSearch={handleSearch} />
@@ -76,9 +79,10 @@ const App: React.FC = () => {
             title={article.title}
             description={article.description}
             imageUrl={article.imageUrl}
-            articleUrl={article.articleUrl}
+            link={article.articleUrl}
             imageAlt={article.imageAlt}
             date={article.date}
+            author={article.author}
           />
         ))}
       </div>

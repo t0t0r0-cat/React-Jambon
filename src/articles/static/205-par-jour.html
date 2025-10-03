@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>205 par jour</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/1af163ff.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>205 par jour</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Rosemarie Proulx<br>
+                <strong>Date:</strong> 2022-03-07T19:26:00.000-05:00<br>
+                205 par jour
+            </div>
+            <div><img src="/images/1af163ff.jpg" /></div><p>Le soir du 3 mai 2007, le destin de Gerry et Kate McCann, deux médecins britanniques, change à tout jamais. Lors d'un séjour au Portugal, leur fille ainée, Madeleine, 3 ans, se volatilise de son lit. Rapidement, les parents sont sur toutes les chaînes de télé du monde pour parler de la disparition de leur Maddie. Les journalistes s'entichent de l'affaire, des milliers d'articles sont rédigés au sujet de la petite Anglaise. D'ailleurs, elle fera l'objet d'un documentaire Netflix en huit épisodes.</p><p>Un peu moins de deux ans plus tard, le 10 février 2009, c'est la vie de Ronald Cummings qui bascule. En rentrant du travail, tard dans la nuit, il découvre que sa fille de 5 ans, Haleigh n'est plus dans son lit, ni nulle part ailleurs dans la maison mobile. La disparition de la fillette a créé un certain bruit dans sa Floride natale, mais représente seulement une goutte d'eau comparativement à l'océan Maddie McCann.</p><div><img src="/images/ac039124.jpg" /></div><p>L'histoire de Madeleine et Haleigh est loin d'être une exception. En effet, tous les cas de disparitions ne sont pas médiatisés au même niveau. On se concentre souvent sur les femmes blanches, riches, jeunes et jolies. Ce biais informationnel porte un nom : le syndrome de la femme blanche disparue. Ainsi, les personnes issues de la diversité, celles au physique plus ordinaire, les individus moins fortunés et les hommes sont délaissés par les médias.</p><p>Ces critères, Madeleine McCann les remplissait tous, avec ses parents nantis, sa chevelure blonde et ses grand yeux bleus. Haleigh n'a pas eu la même chance. Ses parents étaient moins aisés et elle avait les cheveux châtains et les yeux noisette. Par conséquent, Maddie est devenue la personne disparue la plus connue de l'époque moderne.</p><p>Au Canada uniquement, 205 personnes sont reportées manquantes chaque jour, soit 75 000 par année (ne vous inquiétez-pas, la majorité est retrouvée rapidement). En parlant des disparitions, on augmente les chances de retrouver la victime. Effectivement, les informations du public sont cruciales. Elles permettent aux autorités d'explorer de nouvelles pistes, donnant ainsi l'espoir de régler l'affaire. Sans cette attention, des milliers de cas restent irrésolus, laissant leur famille dans l'incertitude et l'angoisse.</p><p class="author">Rosemarie Proulx</p>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

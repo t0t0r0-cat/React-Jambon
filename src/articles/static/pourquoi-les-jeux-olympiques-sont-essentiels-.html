@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pourquoi les Jeux Olympiques sont essentiels ?</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/a98527b1.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Pourquoi les Jeux Olympiques sont essentiels ?</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Félix Lafortune<br>
+                <strong>Date:</strong> 2022-03-16T20:58:00.001-04:00<br>
+                Pourquoi les Jeux Olympiques sont essentiels ?
+            </div>
+            <p>Avez-vous suivi les Jeux Olympiques de Pékin ? Qu'importe, vous êtes sans doute au fait du gouffre financier qu'ils ont causé ou du boycottage diplomatique mené par divers pays occidentaux. Devant ces deux situations, plusieurs se demandent si l'organisation de ces compétitions est encore pertinente dans notre monde actuel. À mon avis, non seulement la tenue de l'événement est utile, mais elle est une occasion qu'on ne peut manquer et offre la chance à plusieurs de trouver des modèles inspirants.</p><div><img src="/images/a98527b1.jpg" /></div><p>D'abord, les Jeux Olympiques sont une chance inouïe d'un point de vue sportif. Ou pouvez-vous retrouver, dans un même lieu, les meilleurs athlètes tous sports et tous pays confondus? Nulle part. C’est pendant ces 3 semaines, une fois à tous les 2 ans, que la quintessence du sport se réunit pour offrir un spectacle inoubliable à plus de 4,5 milliards de Terriens. C'est aussi une chance de voir plusieurs records être fracassés par des athlètes plus forts que jamais. Nul ne peut rester de glace devant un exploit sportif de la sorte, que l’on connaisse ou non le sportif derrière la performance. Pourquoi donc abandonnerions-nous cette opportunité? L'exposition et la visibilité offerte par les Jeux Olympiques sont inégalées et permettent l'amélioration des normes dans d'innombrables disciplines. Serions-nous aussi avancés physiquement dans des sports comme l'athlétisme, la natation ou le ski si ce n'était pas de ce merveilleux rendez-vous bisannuel? Je ne le crois pas. En somme, les Jeux Olympiques n'apportent que des bénéfices, sportivement parlant : le meilleur niveau de compétition, des performances ancrées dans nos mémoires et des avancées inoubliables pour le sport.</p><p>Ensuite, les Jeux Olympiques sont le moment parfait pour faire connaissance, via l'intermédiaire des retransmissions télévisées, avec des personnes plus qu'inspirantes. En effet qui ne fut pas sous le choc devant les exploits de Andre de Grasse, de Penny Oleksiak, de Marie-Philip Poulin et de Mikael Kingsbury? Qui n'a pas eu de frissons en suivant les matchs de nos équipes de hockey ou de soccer? Il est tout à fait normal d'être fiers de leurs performances, car ceux-ci sont de véritables ambassadeurs sportifs de nos communautés et de notre pays. En regardant ces exploits à la télévision, les spectateurs que vous êtes peut-être sont fiers de « faire partie » des succès que connait la délégation olympique canadienne. Tranquillement, on s'attache aux différents sportifs et ils nous inspirent à accomplir plus, à nous fixer des objectifs pour atteindre nos rêves. Vous savez sans aucun doute que d'avoir quelqu'un sur qui se baser dans des périodes d'anxiété ou de doute est tout à fait bénéfique. Et quel évènement permet cela? Les Jeux Olympiques! Ceux-ci&nbsp; présentent des athlètes qui émerveillent et qui inspirent, pour le plus grand bien de plusieurs.</p><p>Pour conclure, les Jeux Olympiques représentent bel et bien un évènement unique et ce pour toute l'humanité. Leurs avantages, du point de vue sportif et inspirationnel sont non négligeables et mérite d'être mentionnés. Bien sûr, la formule actuelle a ses défauts, mais on ne peut pas les surestimer au point de considérer la fin de ce rendez-vous immanquable. Après tout, comme le disait de Coubertin : « l’important, c’est de participer! »</p><p>&nbsp;Félix Lafortune</p>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

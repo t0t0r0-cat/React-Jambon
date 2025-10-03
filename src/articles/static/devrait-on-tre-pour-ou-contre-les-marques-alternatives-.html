@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devrait-on être pour ou contre les marques alternatives ?</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/0168fdf0.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Devrait-on être pour ou contre les marques alternatives ?</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Hawa Djamila Kaba<br>
+                <strong>Date:</strong> 2024-11-23T11:42:00.008-05:00<br>
+                Devrait-on être pour ou contre les marques alternatives ?
+            </div>
+            <div><p>Qui ne connait pas les fameuses marques comme Adidas, Converse, Gucci, Crocs, Stanley Cup, Nike, etc.&nbsp;? La plupart des élèves en possèdent, mais parfois elles sont des répliques «&nbsp;fakes&nbsp;».&nbsp;</p><div><img src="/images/0168fdf0.jpg" /></div><br /><p>Disons que tu vois ton ami au parc et que vous bavardez un peu, il te montre ses Crocs et tu remarques alors qu’il porte des fausses. Je suis sûre que tu lui dirais quelque chose comme «&nbsp;Dude, tes Crocs sont fakes&nbsp;». Cependant, avant de commencer à crier dans tous les sens que les Crocs jaune fluo de votre ami sont faux, lisez attentivement. </p> <p>Premièrement, on sait tous qu’une belle majorité de ces marques coûtent un bras et un pied. Et forcément, ce n’est pas tout le monde qui peut se permettre de mettre 50$ et plus sur une paire de Crocs quand on trouve une réplique à 14$ au Walmart. Les répliques ont pour but de recopier des marques le plus précisément possible et pour les vendre moins cher. Des cas de fraudes exagérées pourraient être probables, mais en général ce n’est pas le cas. J’avoue que c’est une forme de plagiat et que ça vient «&nbsp;piquer&nbsp;» des acheteurs, mais elles restent quand même un produit qu’une personne peut acheter si ça leur tente et c’est souvent beaucoup moins cher. </p> <p>Prenons le cas d’une tasse Stanley, admettons que votre ami(e) boit quotidiennement dans une Stanley violette et qu’il trouve que boire dans une tasse répliquée est «&nbsp;cheap&nbsp;», dites-vous qu’il a tort. Une Stanley violette de 60$ est autant une bouteille par lequel on boit, qu’une réplique. Évidemment, quelquefois les gens trompent leurs amis en disant que leur objet est un original, alors qu’il ne l’est pas. De toute façon, chacun a son point de vue et pourrait croire que l’un n’empêche pas l’autre, non&nbsp;? Donc essayons de ne pas juger tout le monde sur leur objet et possession et essayons de vivre une vie normale.&nbsp; </p> <p><o:p>&nbsp;Hawa Djamila Kaba</o:p></p><br /></div>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

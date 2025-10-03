@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix alimentaires</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/87c3c942.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Choix alimentaires</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Vague verte<br>
+                <strong>Date:</strong> 2023-01-20T14:23:00.004-05:00<br>
+                Choix alimentaires
+            </div>
+            <div><img src="/images/87c3c942.jpg" /></div><div><br /></div>La plupart des gens sont loin de se douter que l'alimentation touche à l'environnement. Pourtant, si on y pense, des mauvais choix alimentaires ont plusieurs conséquences. D'abord, tout ce que nous laissons pourrir se retrouve directement dans les sites d'enfouissement. Dans les pays occidentaux, ce sont environ 670 millions de tonnes de nourriture par année qui sont jetées. Cela représente près de 30% de la production agricole mondiale qui est gaspillée. Dans ces sites d'enfouissement, ce n'est un secret pour personne, les matières organiques, privées d'oxygène, sont alors soumise à une décomposition qui génère la production de gaz à effet de serre. Leurs effets sont connus de tous et nous devrions donc faire de notre mieux pour réduire notre empreinte écologique. Voici quelques moyens liés à l'alimentation :<div><ul ><li>Choisir judicieusement notre épicerie et ainsi éviter les achats compulsifs</li><li>Cuisiner les restes</li><li>Ne pas remplir trop le réfrigérateur, car un frigo plein consomme plus d'énergie (Eh oui. « La production d'électricité [...] compte pour près de 43% des émissions de gaz à effet de serre liées à l'activité humaine dans le monde »&nbsp;</li></ul><div>Élèves de la Vague Verte</div></div>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

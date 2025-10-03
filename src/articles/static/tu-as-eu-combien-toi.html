@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu as eu combien, toi?</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/45ddf4c8.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Tu as eu combien, toi?</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Charlie Huguet-Latour<br>
+                <strong>Date:</strong> 2021-12-09T11:50:00.003-05:00<br>
+                
+            </div>
+            <div>Réellement, qui ne se souvient pas d’avoir été accueilli à la maison avec cette question&nbsp;: «&nbsp;Et puis, cet examen, combien as-tu eu?&nbsp;» D’un côté on a le sourire et les félicitations de nos parents lorsque l’on répond 100%, mais c’est une toute autre chose si l’on répond 44% ! Les notes ont pris une importance incommensurable dans notre société, mais pourquoi? Quels sont les problèmes liés à ce système?</div><div><br /></div><div><div><img src="/images/45ddf4c8.jpg" /></div></div> <p>De nombreuses études démontrent que le système notationnel utilisé est loin d’être optimal, fiable et objectif. Effectivement, il est reconnu que de nombreux facteurs peuvent influencer la note d’un élève. Des facteurs qui malheureusement créent des inégalités et des injustices sans pareil. Par exemple, comment peut-on s’assurer que tous les enseignants corrigent de la même façon? Comment savoir que Mme Minerva accorderait le point à une réponse d’élève, alors que M. Rémus n’accorderait pas le point pour une même réponse? Et même avec le même enseignant, on arrive à observer des fluctuations de correction. Si un professeur corrige la rédaction écrite d’un élève à la suite d’une copie exceptionnelle, ne sera-t-il pas porter à être plus sévère qu’avec le premier élève qu’il a corrigé qui a remis un texte très bien, mais sans plus? Des petites inégalités de ce genre semble peu significatives, mais sur de nombreuses évaluations et à long terme, ces irrégularités de corrections se font voir et sentir dans les résultats finaux des étudiants. Cette situation peut avoir de grave conséquence sur l’élève, tels que sa cote R, nécessaire aux admissions universitaires. Ou encore, plus jeunes, aux admissions dans certaines écoles secondaires ou dans des programmes, tels que le Programme Primaire du Baccalauréat international chez les petits ! &nbsp;</p> <p>Dans un autre ordre d’idée, les études sur l’utilisation des notes en pourcentages, bien que contrairement aux croyances populaires qui stipulent que les notes motivent et stimulent les élèvent, révèlent que les notes ont plutôt un aspect dévalorisant et anxiogène pour les étudiants. En effet, un «&nbsp;mauvais&nbsp;» élève qui obtiendra des notes moins élevées se retrouvera découragé, désintéressé pour la matière, déçu de lui-même et même en perte d’estime de soi. Du côté des «&nbsp;bons&nbsp;» élèves, ceux-ci se retrouveront dans un état de déception sans pareil, de stress et d’anxiété de performance qui nuira à l’élève plus que d’autre choses. Des sentiments qui favorisent le décrochage scolaire, le désintérêt ou encore le sur-travail pour certains qui développera une détresse éventuelle chez celui-ci. </p> <p>Finalement, les moyennes de groupes créent chez les étudiants un esprit de compétitions sans égard, où la valeur de cet élève sera constamment remise en question par rapport à sa note et celle-ci comparé aux autres. Au même titre que les inégalités relevées, l’anxiété et le découragement créé par les notes, les moyennes empêchent l’élève d’atteindre son plein potentiel. Alors? Que pouvons-nous&nbsp;faire? Envisager un système comme celui de la Finlande, pays en tête des classement internationaux en matière d’éducation, serait-il une option? Peut-être qu’il aura le pouvoir de retirer de la bouche des élèves le fameux&nbsp;: «&nbsp;Tu as eu combien, toi?&nbsp;», non?</p><p>Charlie Huguet-Latour</p>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

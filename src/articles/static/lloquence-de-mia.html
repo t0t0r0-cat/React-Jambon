@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'éloquence de Mia</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/fa753315.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>L'éloquence de Mia</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Rosemarie Proulx<br>
+                <strong>Date:</strong> 2023-04-05T16:57:00.000-04:00<br>
+                L'éloquence de Mia
+            </div>
+            <p>Assise dans la classe de français, Mia, une élève de cinquième secondaire, a la chair de poule, des frissons. Or, ce n’est pas parce la fenêtre entrouverte laisse échapper un courant d’air. Pour la première fois, Mia écoute un slam de David Goudreault et les mots sont de véritables coups de poing. Ils la touchent, la frappent, la blessent, résonnent en elle.</p><table><tbody><tr><td><img src="/images/fa753315.jpg" /></td></tr><tr><td>Mia Lapointe - 5ième secondaire</td></tr></tbody></table><p>Ainsi, lorsqu’elle doit choisir une chanson, un poème ou un slam à réciter dans le cadre d’une présentation orale, le choix est évident. Elle veut faire ressentir aux autres la force des mots, telle qu’elle l’a éprouvée dans son cours.</p><p>Ensuite, les événements déboulent. Mia s’inscrit à Secondaire en Spectacle, elle a besoin de parler, de communiquer, de s’exprimer. L’adolescente a quelque chose à dire. En effet, son message, les mots de David Goudreault, est un appel à la fin de la masculinité toxique, de la violence, du sexisme et de tous ces comportements nocifs autant pour elles que pour eux.</p><p>Lors de sa performance transcendante, remplie d’une douce force, Mia remet à leur place les machos et invite les autres à se remettre en question. Dans son discours profondément humain, elle parle brillamment de misogynie, de violence conjugale, de gestion des émotions, de modèles, d’amour, de désir, bref d’existence.</p><p>Au cours de son numéro, la slameuse novice rappelle l’importance d’utiliser ses mots plutôt que ses poings pour s’exprimer, et surtout, de ne pas avoir peur de ses émotions, parce qu’en les contenant, elles ne font que nous ronger et finissent par exploser. Si tu n’as pas peur de te briser les jointures en frappant de toutes tes forces, pourquoi tu as peur de verser quelques larmes quand la vie devient rough ?</p><p>En résumé, lors de la finale régionale de Secondaire en Spectacle, Mia Lapointe a livré une performance mémorable, débordante d’émotions et porteuse d’un message capital&nbsp;: Prenez soin de nous et prenez soin de vous, les gars.&nbsp;</p><p>Rosemarie Proulx<br /></p>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGI 2022</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/94b39e30.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>DGI 2022</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Josée Pennober<br>
+                <strong>Date:</strong> 2022-04-24T22:03:00.001-04:00<br>
+                DGI 2022
+            </div>
+            <div>Une équipe de l'école secondaire de l'île est montée sur le podium avec une 3e place à la compétition finale régionale du Défi Génie Inventif qui a eu lieu au Collège Nouvelles Frontières le 14 avril dernier.&nbsp;<br>Bravo à l'équipe de Chloé, Émile, Eusebio et William pour leur belle performance!&nbsp;</div><div><br>Un merci tout spécial à Maryse et Joriane d'avoir accompagné nos participants!&nbsp;<br>Félicitations à tous nos participants!&nbsp;</div><div><br></div><div><div><img src="/images/94b39e30.jpg" /></div><br><div><img src="/images/537420db.jpg" /></div><br><div>Josée Pennober</div></div>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>

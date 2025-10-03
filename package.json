@@ -12,7 +12,10 @@
     "preview": "cross-env NODE_ENV=production node serve-articles.js",
     "serve": "npm run build && npm run preview",
     "clean": "powershell -Command \"if(Test-Path './dist') { Remove-Item -Path './dist' -Recurse -Force }\"",
-    "serve:clean": "npm run clean && npm run serve"
+    "serve:clean": "npm run clean && npm run serve",
+    "build:components": "vite build --config vite.config.static.ts",
+    "generate-static": "npm run build:components && node generate-static-pages.mjs",
+    "serve-static": "node serve-static.js"
   },
   "dependencies": {
     "axios": "^1.8.4",
@@ -26,9 +29,10 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@types/node": "^24.6.2",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^4.7.0",
     "concurrently": "^8.2.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.21.0",

@@ -43,7 +43,8 @@
   padding: 1px;
 }
 
-.article-card .article-date {
+.article-card .article-date,
+.article-card .article-author {
   font-size: 0.9rem;
   color: white;
   margin-bottom: 8px;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Je sais</title>
+    <base href="http://localhost:3000/">
+    <link rel="stylesheet" href="/styles/ArticlePage.css">
+    <link rel="stylesheet" href="/styles/App.css">
+    <link rel="stylesheet" href="/styles/Navbar.css">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.production.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="navbar-root"></div>
+    <main>
+        <div class="padding image-title-container">
+            <img src="/images/75b73294.jpg" alt="" class="article-image-centered">
+        </div>
+        <div class="article-content">
+            <h1>Je sais</h1>
+            <div class="metadata">
+                <strong>Author:</strong> Anonyme<br>
+                <strong>Date:</strong> 2022-11-22T16:50:00.000-05:00<br>
+                Je sais
+            </div>
+            <p>Une jeune poète excessivement talentueuse a voulu vous faire part de ce magnifique texte, plus que touchant. Lisez le avec attention et prenez le temps d'y voir votre sens et d'interpréter le texte à votre façon, la poésie est un art pour tous, profitez-en! Bonne lecture :)</p><div><img src="/images/75b73294.jpg" /></div><div><div>Je sais, tu as beaucoup de peine.<br />Je sais, tu as beaucoup de problèmes.<br />Je sais, tu t’es vraiment refermé.<br />Que tu ne peux plus te retrouver,<br />&nbsp;<br />Mais je sais aussi qu'après la ligne noire<br />Et après même le plus sombre des soirs,<br />Tout devient clair, le soleil revient<br />Et la ligne noire, elle, blanche devient.<br />&nbsp;<br />Que la peine disparaisse, le sourire revient<br />Que tous les problèmes se règlent vraiment bien<br />Que tu vas être heureux au lieu de paraitre<br /> Que tu vas retrouver dans la vie le bien-être.<br />&nbsp;<br />Donc arrête d’être triste et lève ton nez<br />Tu trouveras ton chemin, tu trouveras où aller.<br />N'oublie pas : après la ligne noire, toujours vient la blanche.<br />Tu seras heureux, tu auras ta chance.</div> </div><div>Anonyme</div><p><br /></p>
+        </div>
+    </main>
+    <div id="bottom-bar-root"></div>
+    <script type="module">
+        import { Navbar, BottomBar } from '/dist/components.es.js';
+        
+        // Mount navbar
+        const navbarRoot = ReactDOM.createRoot(document.getElementById('navbar-root'));
+        navbarRoot.render(
+            React.createElement(ReactRouterDOM.BrowserRouter, null,
+                React.createElement(Navbar, { onSearch: () => {} })
+            )
+        );
+
+        // Mount bottom bar
+        const bottomBarRoot = ReactDOM.createRoot(document.getElementById('bottom-bar-root'));
+        bottomBarRoot.render(React.createElement(BottomBar));
+    </script>
+</body>
+</html>
