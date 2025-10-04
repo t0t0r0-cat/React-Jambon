@@ -1,17 +1,12 @@
 {
   "name": "jambonweb",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:articles": "node serve-articles.js",
-    "dev:all": "concurrently \"npm run dev\" \"npm run dev:articles\"",
     "build": "vite build && npm run copy-articles",
-    "copy-articles": "powershell -Command \"if(Test-Path './dist/ArticleData') { Remove-Item -Path './dist/ArticleData' -Recurse -Force }; Copy-Item -Path './ArticleData' -Destination './dist/ArticleData' -Recurse -Force\"",
-    "preview": "cross-env NODE_ENV=production node serve-articles.js",
     "serve": "npm run build && npm run preview",
-    "clean": "powershell -Command \"if(Test-Path './dist') { Remove-Item -Path './dist' -Recurse -Force }\"",
     "serve:clean": "npm run clean && npm run serve",
     "build:components": "vite build --config vite.config.static.ts",
     "generate-static": "npm run build:components && node generate-static-pages.mjs",
