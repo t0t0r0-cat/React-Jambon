@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ArticleCard from './components/ArticleCard';
@@ -9,23 +9,17 @@ import ArticlePage from './articles/ArticlePage';
 import ContactUs from './articles/ContactUs';
 import EspaceJambon from './articles/EspaceJambon';
 import BottomBar from './components/bottomBar.tsx';
-import StaticArticleList from './components/StaticArticleList';
 import './styles/App.css';
 import './styles/SortDropdown.css';
 import SearchBar from './components/SearchBar';
-import { loadAllArticles } from './articles/loadArticles.ts';
+
 
 const App: React.FC = () => {
   const [articles, setArticles] = useState<any[]>([]);
   const [filteredArticles, setFilteredArticles] = useState<any[]>([]);
   const [sortBy, setSortBy] = useState<'newest' | 'oldest' | 'alphabetical'>('newest');
 
-  useEffect(() => {
-    loadAllArticles().then((loaded) => {
-      setArticles(loaded);
-      setFilteredArticles(loaded);
-    });
-  }, []);
+
 
   const handleSearch = (query: string) => {
     const filtered = articles.filter((article) =>
@@ -58,7 +52,6 @@ const App: React.FC = () => {
     <div>
       <br /><br />
       <img src="./public/Jambon/jambonmainpagelogo.png" alt="Logo" className="logo" width="25%" style={{ display: 'block', margin: '0 auto' }} />
-      <StaticArticleList />
       <h1>Eco de l'île</h1>
       <h2>La maison de jambon</h2>
       <p>
