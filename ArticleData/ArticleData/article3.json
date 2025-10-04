@@ -1,0 +1,16 @@
+{
+  "Content": {
+    "title": "Jambon et Bean: Nos Mascottes Adorées",
+    "description": "Découvrez les dernières aventures de Jambon et Bean, les mascottes adorables de notre journal",
+    "content": "<p>Jambon et Bean sont devenus les mascottes bien-aimées de notre journal étudiant. Leur présence apporte joie et légèreté à notre communauté scolaire.</p><p>Dans cet article, nous partageons quelques moments mémorables de nos amis à quatre pattes et leur impact sur notre vie étudiante.</p>",
+    "imageUrl": "/Jambon/BD Jambon Soirée du réveillon.jpg",
+    "imageAlt": "Jambon et Bean pendant la soirée du réveillon"
+  },
+  "Metadata": {
+    "date": "2025-05-19",
+    "author": "Club des Amis de Jambon"
+  },
+  "system": {
+    "article": "jambon-et-bean-mascottes"
+  }
+}

@@ -90,7 +90,7 @@ useEffect(() => {
     <div>
       <br />
       <br />
-      <img src="./Jambon/jambonmainpagelogo.png" alt="Logo" className="logo" width="25%" style={{ display: 'block', margin: '0 auto' }}/>
+      <img src="images/Jambon/jambonmainpagelogo.png" alt="Logo" className="logo" width="25%" style={{ display: 'block', margin: '0 auto' }}/>
       <h1>Eco de l'île</h1>
       <h2>La maison de jambon</h2>
       <p>

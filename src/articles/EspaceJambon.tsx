@@ -12,19 +12,19 @@ const EspaceJambon: React.FC = () => {
       </p>
       <div className="jambon-image-grid">
         <div className='jambon-image'>
-          <img src="/Jambon/Jambon du nouvel an.jpg" alt="Jambon et Bean au jour de l'an - Janvier 2023" />
+          <img src="images/Jambon/Jambon du nouvel an.jpg" alt="Jambon et Bean au jour de l'an - Janvier 2023" />
           <h2>Jambon et Bean au jour de l'an - Janvier 2023</h2>
         </div>
         <div className='jambon-image'>
-          <img src="/Jambon/BD Jambon Soirée du réveillon.jpg" alt="Jambon et Bean au réveillon - Décembre 2023" />
+          <img src="images/Jambon/BD Jambon Soirée du réveillon.jpg" alt="Jambon et Bean au réveillon - Décembre 2023" />
           <h2>Jambon et Bean au réveillon - Décembre 2023</h2>
         </div>
         <div className='jambon-image'>
-          <img src="/Jambon/Jambon en entrevue - oct 2023.jpg" alt="Jambon en entrevue - Octobre 2023" />
+          <img src="images/Jambon/Jambon en entrevue - oct 2023.jpg" alt="Jambon en entrevue - Octobre 2023" />
           <h2>Jambon en entrevue - Octobre 2023</h2>
         </div>
         <div className='jambon-image'>
-          <img src="/Jambon/Jambon a l'halwoweenjpg.jpg" alt="Jambon et Bean à l'Halloween - Octobre 2023" />
+          <img src="images/Jambon/Jambon a l'halwoweenjpg.jpg" alt="Jambon et Bean à l'Halloween - Octobre 2023" />
           <h2>Jambon et Bean à l'Halloween - Octobre 2023</h2>
         </div>
       </div>

@@ -69,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
         <li style={{ position: "relative" }}>
           <Link to="/espace-jambon">Espace Jambon
           <img
-            src="/Jambon/JambonLogo.png"
+            src="images/Jambon/JambonLogo.png"
             alt="Logo jambon"
             className="img jambon-hang"
           /></Link>
