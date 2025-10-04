@@ -31,17 +31,42 @@ foreach ($jsonFiles as $jsonFile) {
 
     // Check if the data is valid
     if ($articleData) {
-        // Safely access the keys and provide default values if missing
+        // Determine image URL: some files put it in Content, others in Metadata
+        $imageUrl = $articleData['Content']['imageUrl'] ?? $articleData['Metadata']['imageUrl'] ?? $articleData['Content']['image'] ?? '/default-image.png';
+
+        // Normalize the image path:
+        // - remove leading './'
+        // - ensure it has a leading '/' if it's a site-root relative path
+        if (strpos($imageUrl, './') === 0) {
+            $imageUrl = substr($imageUrl, 1);
+        }
+        if (!preg_match('#^(https?:)?//#', $imageUrl) && strpos($imageUrl, '/') !== 0) {
+            $imageUrl = '/' . ltrim($imageUrl, '/');
+        }
+
+        // Build article URL safely: JSON sometimes already stores '/articles/...' in system.article
+        $articlePath = '/articles/unknown';
+        if (!empty($articleData['system']['article'])) {
+            $raw = $articleData['system']['article'];
+            // If the stored value already starts with /articles, keep it; otherwise prefix
+            if (strpos($raw, '/articles') === 0) {
+                $articlePath = $raw;
+            } else {
+                $articlePath = '/articles/' . ltrim($raw, '/');
+            }
+        }
+
+        // Safely access other keys and provide default values if missing
         $articles[] = [
-            'id' => $articleData['system']['article'] ?? 'unknown', // Use 'unknown' if the ID is missing
-            'title' => $articleData['Content']['title'] ?? 'Untitled', // Default to 'Untitled' if missing
-            'description' => $articleData['Content']['description'] ?? 'No description available', // Default description
-            'content' => $articleData['Content']['content'] ?? '', // Default empty content if missing
-            'imageUrl' => $articleData['Content']['imageUrl'] ?? '/default-image.png', // Default image if missing
-            'imageAlt' => $articleData['Content']['imageAlt'] ?? 'Image not available', // Default alt text if missing
-            'date' => $articleData['Metadata']['date'] ?? 'Unknown date', // Default date if missing
-            'author' => $articleData['Metadata']['author'] ?? 'Unknown author', // Default author if missing
-            'articleUrl' => '/articles/' . ($articleData['system']['article'] ?? 'unknown'), // Default article URL
+            'id' => $articleData['system']['article'] ?? $articleData['system']['id'] ?? 'unknown',
+            'title' => $articleData['Content']['title'] ?? 'Untitled',
+            'description' => $articleData['Content']['description'] ?? 'No description available',
+            'content' => $articleData['Content']['content'] ?? '',
+            'imageUrl' => $imageUrl,
+            'imageAlt' => $articleData['Content']['imageAlt'] ?? $articleData['Metadata']['imageAlt'] ?? 'Image not available',
+            'date' => $articleData['Metadata']['date'] ?? 'Unknown date',
+            'author' => $articleData['Metadata']['author'] ?? 'Unknown author',
+            'articleUrl' => $articlePath,
         ];
     }
 }
