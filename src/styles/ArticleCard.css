@@ -6,12 +6,21 @@
   box-shadow: 0 4px 6px rgba(86, 3, 134, 0.37);
   transition: transform 0.2s ease-in-out;
   text-align: center;
-  width: calc(30%);
-  min-width: 280px;
-  max-width: 600px;
-  margin: 16px;
+  width: 28%;
+  margin: 1%;
   background-color: #310F62;
   flex-grow: 1;
+  height: 18%;
+}
+@media (max-width: 860px) {
+  .article-card {
+   width: 45%;
+  }
+}
+@media (max-width: 620px) {
+  .article-card {
+    width: 90%;
+  }
 }
 
 .article-card:hover {
