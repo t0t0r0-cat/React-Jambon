@@ -1,6 +1,6 @@
 import React from "react";
 
-const bottomBar: React.FC = () => {
+const BottomBar: React.FC = () => {
     const year = new Date().getFullYear();
     return (
         <>
@@ -14,4 +14,4 @@ const bottomBar: React.FC = () => {
     );
 };
 
-export default bottomBar;
+export default BottomBar;

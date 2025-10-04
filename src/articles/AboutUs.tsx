@@ -1,5 +1,5 @@
 import React from 'react';
-import BottomBar from '../components/bottomBar';
+import BottomBar from '../components/BottomBar';
 
 const AboutUs: React.FC = () => {
   return (

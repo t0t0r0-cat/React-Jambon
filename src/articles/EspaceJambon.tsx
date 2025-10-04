@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/App.css'; // Import CSS for styling
 import '../styles/EspaceJambon.css';
-import BottomBar from '../components/bottomBar';
+import BottomBar from '../components/BottomBar';
 
 const EspaceJambon: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Ressources.css';
-import BottomBar from '../components/bottomBar';
+import BottomBar from '../components/BottomBar';
 
 const PagesResources: React.FC = () => {
   return (

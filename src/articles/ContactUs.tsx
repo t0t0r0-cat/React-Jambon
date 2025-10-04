@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ContactUs.css';
-import BottomBar from '../components/bottomBar';
+import BottomBar from '../components/BottomBar';
 
   const ContactUs: React.FC = () => {
     return (

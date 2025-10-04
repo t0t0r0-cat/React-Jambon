@@ -6,7 +6,7 @@
   box-shadow: 0 4px 6px rgba(86, 3, 134, 0.37);
   transition: transform 0.2s ease-in-out;
   text-align: center;
-  width: calc(33.33% - 32px);
+  width: calc(30%);
   min-width: 280px;
   max-width: 600px;
   margin: 16px;

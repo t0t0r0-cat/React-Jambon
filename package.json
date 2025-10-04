@@ -15,7 +15,8 @@
     "serve:clean": "npm run clean && npm run serve",
     "build:components": "vite build --config vite.config.static.ts",
     "generate-static": "npm run build:components && node generate-static-pages.mjs",
-    "serve-static": "node serve-static.js"
+    "serve-static": "node serve-static.js",
+    "serve-articles": "node src/serve-articles.js"
   },
   "dependencies": {
     "axios": "^1.8.4",
@@ -28,6 +29,10 @@
     "react-router-dom": "^7.4.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
     "@eslint/js": "^9.21.0",
     "@types/node": "^24.6.2",
     "@types/react": "^19.0.10",
