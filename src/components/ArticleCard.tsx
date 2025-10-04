@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/ArticleCard.css';
 
 interface ArticleCardProps {
@@ -12,7 +13,7 @@ interface ArticleCardProps {
 }
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl, link, imageAlt = '', date, author }) => (
-  <a href={link}>
+  <Link to={link} className="article-card-link">
     <div className="article-card">
       <img src={imageUrl} alt={imageAlt} />
       <h3>{title}</h3>
@@ -20,7 +21,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ title, description, imageUrl,
       {date && <p className="article-date">{new Date(date).toLocaleDateString()}</p>}
       <p>{description}</p>
     </div>
-  </a>
+  </Link>
 );
 
 export default ArticleCard;
