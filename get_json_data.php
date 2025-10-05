@@ -59,13 +59,13 @@ foreach ($jsonFiles as $jsonFile) {
         // Safely access other keys and provide default values if missing
         $articles[] = [
             'id' => $articleData['system']['article'] ?? $articleData['system']['id'] ?? 'unknown',
-            'title' => $articleData['Content']['title'] ?? 'Untitled',
-            'description' => $articleData['Content']['description'] ?? 'No description available',
-            'content' => $articleData['Content']['content'] ?? '',
+            'title' => $articleData['Content']['title'] ?? 'Sans Titre',
+            'description' => $articleData['Content']['description'] ?? 'Aucune Description',
+            'content' => $articleData['Content']['content'] ?? 'Cet article n\'a pas de contenu',
             'imageUrl' => $imageUrl,
-            'imageAlt' => $articleData['Content']['imageAlt'] ?? $articleData['Metadata']['imageAlt'] ?? 'Image not available',
-            'date' => $articleData['Metadata']['date'] ?? 'Unknown date',
-            'author' => $articleData['Metadata']['author'] ?? 'Unknown author',
+            'imageAlt' => $articleData['Content']['imageAlt'] ?? $articleData['Metadata']['imageAlt'] ?? 'Image non disponible',
+            'date' => $articleData['Metadata']['date'] ?? 'Date inconnue',
+            'author' => $articleData['Metadata']['author'] ?? 'Inconnue/anonyme',
             'articleUrl' => $articlePath,
         ];
     }
